@@ -24,9 +24,9 @@ class StaticPageCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title_uz'=> 'required|string|max:255',
-            'title_ru'=> 'nullable|string|max:255',
-            'title_en'=> 'nullable|string|max:255',
+            'title_uz'=> 'required|string',
+            'title_ru'=> 'nullable|string',
+            'title_en'=> 'nullable|string',
 
             'sub_title_uz'=> 'nullable|string',
             'sub_title_ru'=> 'nullable|string',
