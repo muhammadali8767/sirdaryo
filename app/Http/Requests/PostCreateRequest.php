@@ -36,7 +36,7 @@ class PostCreateRequest extends FormRequest
             'text_ru' => 'string',
             'text_en' => 'string',
 
-            'img' => 'required|image',
+            'img' => 'required|string',
             'category_id' => 'required|exists:categories,id'
         ];
     }
