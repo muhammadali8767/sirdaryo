@@ -1,5 +1,5 @@
 <div class="col-11 col-lg-3 order-0 ps-0 ps-lg-3">
-    <a href="/front/index.html" class="header-logo">
+    <a href="{{ route('main') }}" class="header-logo">
         <img src="/front/img/Gerb-clean.png" alt="Brand Image" loading="lazy">
         <span>
             Sirdaryo viloyati iqtisodiy taraqqiyot va kambag‘allikni qisqartirish bosh boshqarmasi

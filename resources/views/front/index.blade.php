@@ -9,7 +9,7 @@
                 @lang('contact.yangiliklar')
             </h2>
         </div>
-        <div class="col-6 d-none d-lg-block">
+        {{-- <div class="col-6 d-none d-lg-block">
             <div class="d-flex align-items-center justify-content-end sort">
                 Saralash turi:
                 <select class="form-select border-0 ms-2 w-50"
@@ -20,7 +20,7 @@
                     <option value="3">Three</option>
                 </select>
             </div>
-        </div>
+        </div> --}}
     </div>
     <div class="row">
         @foreach ($posts as $post)
