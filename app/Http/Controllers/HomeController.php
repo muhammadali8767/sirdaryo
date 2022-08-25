@@ -10,21 +10,6 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
         $categories = Category::get();
@@ -45,20 +30,22 @@ class HomeController extends Controller
     {
         $page = StaticPage::where('slug', $slug)->firstOrFail();
 
+        $page->update(['seen' => $page->seen + 1]);
+        $page->save();
+
         return view('home.page', compact('page'));
     }
 
     public function category($category_slug)
     {
+        $category = Category::where('slug', $category_slug)->first();
         $posts = app(PostRepository::class)->getAllWithCategory($category_slug, 5);
-        
-        return view('front.news', compact('posts'));
+        // $posts = Post::where('category_id', $category->id)->get();
+        return view('front.news', compact('posts', 'category'));
         // return view('home.category', compact('posts'));
     }
     public function category_post($category_slug, $slug)
     {
-        // $posts = app(PostRepository::class)->getAllWithCategory($category_slug, 5);
-        // dd($posts);
         $category = Category::where('slug', $category_slug)->firstOrFail();
         $post = Post::where('slug', $slug)->where('category_id', $category->id)->firstOrFail();
 

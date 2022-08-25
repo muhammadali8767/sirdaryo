@@ -1,79 +1,95 @@
-<div class="container-fluid header__bg d-flex justify-content-center p-0">
-    <div class="container">
-        <div class="sliders owl-carousel">
-            <div class="slide">
-                <h1>@lang('carousel.БИЗНEСИНГИЗНИ  <br> САМАРАЛИ БОШҚАРИНГ')</h1>
-                <p>@lang('carousel.Бизнесингизни қандай қўллаб-қувватлашимиз ҳақида кўпроқ билмоқчи <br> бўлсангиз, дўстона жамоамизга қўнғироқ қилинг.')</p>
-                <div class="slider__btns">
-                    <a class="more_info" href="{{ route('page', 'biznesni-qandai-boslaiman') }}">@lang('carousel.Батафсил')</a>
-                    <a class="contact__btn" href="{{ route('contact') }}">@lang('carousel.Боғланиш')</a>
-                </div>
-            </div>
-            <div class="slide">
-                <h1>@lang('carousel.жамоамизга <br> қўнғироқ қилинг')</h1>
-                <p>@lang('carousel.Бизнесингизни қандай қўллаб-қувватлашимиз ҳақида кўпроқ билмоқчи <br> бўлсангиз, дўстона жамоамизга қўнғироқ қилинг.')</p>
-                <div class="slider__btns">
-                    <a class="more_info" href="{{ route('page', 'biznesni-qandai-boslaiman') }}">@lang('carousel.Батафсил')</a>
-                    <a class="contact__btn" href="{{ route('contact') }}">@lang('carousel.Боғланиш')</a>
-                </div>
-            </div>
-        </div>
-        <a href="#about">
-            <i class="fas fa-arrow-down header__down_btn"></i>
-        </a>
-        <div class="header__progress">
-            <div class="progress__line"></div>
-        </div>
-        <div class="row d-flex align-items-center mb-2 mb-md-5">
-            <div class="col-6">
-                <ul class="afzallik">
-                    <li>@lang('carousel.БИЗНИНГ АФЗАЛЛИКЛАРИМИЗ ҚУЙИДАГИЧА')</li>
-                </ul>
-            </div>
-            <div class="col-6">
-                <p class="dostona">@lang('carousel.Бизнесингизни қандай қўллаб-қувватлашимиз ҳақида кўпроқ билмоқчи <br> бўлсангиз, дўстона жамоамизга қўнғироқ қилинг.')</p>
-            </div>
-        </div>
-
-        <div class="row mb-5">
-            <div class="col-12 col-md-6 col-lg-4 my-2 ">
-                <div class="trinity__boxes">
-                    <div class="trinity__boxes-text">
-{{--
-                            <a href="{{ route('page', 'sirdaryo-eizda-faoliyat-turlari') }}">@lang('menu.types of activities')</a>
-                            <a href="{{ route('page', 'muvofaqqiyatli-loiialar') }}">@lang('menu.successful projects')</a> --}}
-
-                        <h5>@lang('menu.start_business')</h5>
-                        <a href="{{ route('page', 'biznesni-qandai-boslaiman') }}">
-                            <i class="fas fa-arrow-up"></i>
-                        </a>
+<div class="col-12 d-none d-lg-block p-0 order-2">
+    <div class="header__content">
+        <div id="sliders" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="/front/img/big_img.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex py-0 header__content_info">
+                        <div class="header__content_info-texts">
+                            <h2 class="big__news-title">MA’NAVIY HAYOTIMIZDAN BIR KUN</h2>
+                            <div class="header__content_text-btn">
+                                <p class="big__news-desc">Mamlakatimizda amalga oshirilayotgan keng
+                                    ko‘lamli
+                                    islohotlar va bunyodkorlik ishlari natijasida xalqimizning ong-u
+                                    tafakkuri,
+                                    dunyoqarashi o‘zgarmoqda. Yurtimizda huquqiy davlat, fuqarolik
+                                    jamiyatini
+                                    barpo
+                                    etishda...</p>
+                                <a href="#" class="big__news-btn">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="header__content_info-dots">
+                            <button class="carousel-control-prev" data-bs-slide="prev"
+                                data-bs-target="#sliders">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#sliders"
+                                data-bs-slide="next">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <img class="trinity__boxes-img" src="/images/header_small_img.png" alt="">
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 my-2">
-                <div class="trinity__boxes">
-                    <div class="trinity__boxes-text">
-                        <h5>@lang('menu.why')</h5>
-                        <a href="{{ route('page', 'nima-ucun-sirdaryo-eiz') }}">
-                            <i class="fas fa-arrow-up"></i>
-                        </a>
+                <div class="carousel-item">
+                    <img src="/front/img/big_img.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex py-0 header__content_info">
+                        <div class="header__content_info-texts">
+                            <h2 class="big__news-title">MA’NAVIY HAYOTIMIZDAN BIR KUN</h2>
+                            <div class="header__content_text-btn">
+                                <p class="big__news-desc">Mamlakatimizda amalga oshirilayotgan keng
+                                    ko‘lamli
+                                    islohotlar va bunyodkorlik ishlari natijasida xalqimizning ong-u
+                                    tafakkuri,
+                                    dunyoqarashi o‘zgarmoqda. Yurtimizda huquqiy davlat, fuqarolik
+                                    jamiyatini
+                                    barpo
+                                    etishda...</p>
+                                <a href="#" class="big__news-btn">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="header__content_info-dots">
+                            <button class="carousel-control-prev" data-bs-slide="prev"
+                                data-bs-target="#sliders">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#sliders"
+                                data-bs-slide="next">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <img class="trinity__boxes-img" src="/images/header_small_img.png" alt="">
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 my-2">
-                <div class="trinity__boxes">
-                    <div class="trinity__boxes-text">
-                        <h5>@lang('menu.preferences')</h5>
-                        <a href="{{ route('page', 'imtiyoz-va-prefereciyalar') }}">
-                            <i class="fas fa-arrow-up"></i>
-                        </a>
+                <div class="carousel-item">
+                    <img src="/front/img/big_img.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex py-0 header__content_info">
+                        <div class="header__content_info-texts">
+                            <h2 class="big__news-title">MA’NAVIY HAYOTIMIZDAN BIR KUN</h2>
+                            <div class="header__content_text-btn">
+                                <p class="big__news-desc">Mamlakatimizda amalga oshirilayotgan keng
+                                    ko‘lamli
+                                    islohotlar va bunyodkorlik ishlari natijasida xalqimizning ong-u
+                                    tafakkuri,
+                                    dunyoqarashi o‘zgarmoqda. Yurtimizda huquqiy davlat, fuqarolik
+                                    jamiyatini
+                                    barpo
+                                    etishda...</p>
+                                <a href="#" class="big__news-btn">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="header__content_info-dots">
+                            <button class="carousel-control-prev" data-bs-slide="prev"
+                                data-bs-target="#sliders">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#sliders"
+                                data-bs-slide="next">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <img class="trinity__boxes-img" src="/images/header_small_img.png" alt="">
                 </div>
             </div>
         </div>
-
     </div>
 </div>

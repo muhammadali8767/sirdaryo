@@ -29,9 +29,10 @@ Route::namespace('App\Http\Controllers\Admin')
         Route::resource('post', 'PostController')->except('show');
         Route::resource('pages', 'StaticPageController')->except('show');
         Route::resource('users', 'UserController');
-        Route::post('users/change-password/{user}', 'UserController@change_password')->name('change-password');
         Route::resource('contact', 'ContactController')->except('create', 'store', 'edit');
         Route::resource('media', 'MediaController')->except('show');
+
+        Route::post('users/change-password/{user}', 'UserController@change_password')->name('change-password');
         Route::get('media/photoList', 'MediaController@photoList')->name('photoList');
         Route::get('media/videoList', 'MediaController@videoList')->name('videoList');
     }
@@ -43,25 +44,13 @@ Route::namespace('App\Http\Controllers')
     ->middleware(['setLocale'])
     ->group(function () {
         Route::get('', 'FrontController@index')->name('main');
-
         // Route::get('about', 'FrontController@about')->name('about');
-        // Route::get('territory', 'FrontController@territory')->name('territory');
-        // Route::get('eiz_vazifasi', 'FrontController@eiz_vazifasi')->name('eiz-vazifasi');
-        // Route::get('sirdaryo_eiz_mk', 'FrontController@sirdaryo_eiz_mk')->name('sirdaryo-eiz-mk');
-
-        // Route::get('bussiness', 'FrontController@bussiness')->name('bussiness');
-        // Route::get('why', 'FrontController@why')->name('why');
-        // Route::get('privilege', 'FrontController@privilege')->name('privilege');
-        // Route::get('activity_types', 'FrontController@activity_types')->name('activity_types');
-        // Route::get('project', 'FrontController@project')->name('project');
-
         Route::get('news', 'FrontController@news')->name('news');
         Route::get('multimedia', 'FrontController@multimedia')->name('multimedia');
         Route::get('contact', 'FrontController@contact')->name('contact');
-
         Route::post('contact', 'FrontController@post_contact')->name('post-contact');
 
-        // Route::get('home', 'HomeController@index')->name('home');
+        Route::get('home', 'HomeController@index')->name('home');
         Route::get('page/{slug}', 'HomeController@page')->name('page');
         Route::get('/{slug}', 'HomeController@category')->name('category');
         Route::get('post/{slug}', 'HomeController@post')->name('post'); // route('post', $post->slug)

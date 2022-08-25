@@ -21,7 +21,7 @@ tinymce.init({
     selector: '.editor',
     height: 500,
     language: 'ru',
-    plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak code',
     toolbar_mode: 'floating',
     relative_urls : false,
     image_dimensions: false,

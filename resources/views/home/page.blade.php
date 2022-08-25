@@ -2,50 +2,39 @@
 
 @section('content')
 
-    @if ($page->type == 1)
-        <div class="news">
-            <h2>{{ $page->title }}</h2>
-            <div class="news__category">
-                <a href="{{ route('main') }}">@lang('menu.main')</a>
-                <span>/</span>
-                <a href="#">{{ $page->title }}</a>
+<div class="col-12 order-1 order-lg-0">
+    <div class="row mb-3">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{{ route('main') }}" class="breadcrumb-link">@lang('menu.main')</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">{{ $page->title }}</a></li>
+                </ol>
+              </nav>
+        </div>
+        <div class="col-12 col-lg-8">
+            <h2 class="section-title mb-1">
+                {{ $page->title }}
+            </h2>
+        </div>
+        <div class="col-4 d-none d-lg-block">
+            <div class="d-flex align-items-center justify-content-end sort news-card-time">
+                <small class=" me-4">
+                    <i class="fas fa-calendar me-1"></i>
+                    {{ $page->created_at->format('d/m/Y - H:i') }}
+                </small>
+                <span>
+                    <i class="fas fa-eye me-1"></i>
+                    {{ $page->seen }}
+                </span>
             </div>
         </div>
-        <div class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        @include('layouts.components.left_sidebar')
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <p>{!! $page->text !!}</p>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="row bg-white ms-1 py-4 rounded-3">
+        <div class="col-12">
+            <p>{!! $page->text !!}</p>
         </div>
-    @else
-        <div class="container-fluid header__bg d-flex justify-content-center p-0">
-            <div class="about__inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="about__inner-item">
-                                <h2>{{ $page->title }}</h2>
-                                <p>{{ $page->sub_title }}</p>
-                                <img class="w-100" src="{{ $page->image }}" alt="png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="container-fluid p-0 bg-white">
-            <div class="container about__text">
-                <p>{!! $page->text !!}</p>
-            </div>
-        </section>
-    @endif
-
-
+    </div>
+</div>
 
 @endsection

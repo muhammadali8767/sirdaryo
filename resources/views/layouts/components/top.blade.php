@@ -1,69 +1,76 @@
-<div class="container ">
-    <div class="row header__logo__address align-items-center">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-            <a href="{{ route('main') }}">
-                <img src="/images/logo.png" alt="" class="logo">
-                @lang('menu.logo')
-            </a>
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="row">
-                <div class="col-md-7 col-lg-8 col-sm-12">
-                    <div class="input-group top_search">
-                        <input type="text" class="form-control">
-                        <div class="input-group-append">
-                            <button class="btn search-button" type="button">@lang('menu.search')</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-lg-4 col-sm-12 align-right">
-                    <div class="dropdown top_lang">
-                        <button class="btn btn-block dropdown-toggle labg-button" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            @switch(app()->getLocale())
-                            @case('en') English @break
-                            @case('ru') Русский @break
-                            @default Ўзбекча @break
-                            @endswitch
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            @if (app()->getLocale() != 'uz') <a class="dropdown-item" href="?locale=uz">Ўзбекча</a> @endif
-                            @if (app()->getLocale() != 'ru') <a class="dropdown-item" href="?locale=ru">Русский</a> @endif
-                            @if (app()->getLocale() != 'en') <a class="dropdown-item" href="?locale=en">English</a> @endif
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="col-11 col-lg-3 order-0 ps-0 ps-lg-3">
+    <a href="/front/index.html" class="header-logo">
+        <img src="/front/img/Gerb-clean.png" alt="Brand Image" loading="lazy">
+        <span>
+            Sirdaryo viloyati iqtisodiy taraqqiyot va kambag‘allikni qisqartirish bosh boshqarmasi
+        </span>
+    </a>
+</div>
+<div class="col-12 col-lg-9 px-0 order-2 order-lg-2">
+    <div class="header__links">
+        <a href="#" class="header__links-link d-none d-sm-block">
+            <i class="fas fa-map-marker-alt"></i>
+            Guliston sh. I.Karimov, 35-uy
+        </a>
+        <a href="#" class="header__links-link me-auto">
+            <i class="fas fa-phone-alt"></i>
+            (67) 235-03-95
+        </a>
+        <a href="#" class="header__links-link d-none d-sm-block">
+            <i class="fas fa-envelope"></i>
+            sirdaryo@mineconomy.uz <br>
+
+        </a>
+        <a href="https://www.youtube.com/channel/UCJrg-jweIdz7zwcZdvzTJXQ" class="header__links-messenger">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://t.me/sirdeconomy" class="header__links-messenger">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://www.facebook.com/sirdeconomy/" class="header__links-messenger">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/sirdeconomy.uz/" class="header__links-messenger">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <button class="header__links-searchBtn">
+            <i class="fas fa-search"></i>
+        </button>
+        <div class="dropdown">
+            <button class="btn header__links-langBtn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/front/img/lang_uzb.png" alt="Uzb flag logo">
+                @switch(app()->getLocale())
+                    @case('en')
+                        Eng
+                    @break
+
+                    @case('ru')
+                        Rus
+                    @break
+
+                    @default
+                        Uzb
+                    @break
+                @endswitch
+
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                @if (app()->getLocale() != 'uz')
+                    <li><a class="dropdown-item" href="?locale=uz"><img src="/front/img/lang_uzb.png"
+                                alt="Uzb flag logo">Uzb</a></li>
+                @endif
+                @if (app()->getLocale() != 'ru')
+                    <li><a class="dropdown-item" href="?locale=ru"><img src="/front/img/lang_uzb.png"
+                                alt="Uzb flag logo">Rus</a></li>
+                @endif
+                @if (app()->getLocale() != 'en')
+                    <li><a class="dropdown-item" href="?locale=en"><img src="/front/img/lang_uzb.png"
+                                alt="Uzb flag logo">Eng</a></li>
+                @endif
+            </ul>
         </div>
     </div>
-        <div class="row header__weather-money justify-content-end">
-            <div class="col-12 col-md-9 col-lg-4 d-flex text-lg-right justify-content-end align-items-center">
-                {{-- <i class="fas fa-cloud-meatball weather-logo"></i> --}}
-                <div class="weather" id="weather">
-                    {{-- <p>+17 <span>C<sup>o</sup></span></p>
-                    <div class="dropdown">
-                        <button class="btn weather-dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Uzbekiston
-                        </button>
-
-                    </div> --}}
-                </div>
-                <div class="dropdown ml-3">
-                    <button class="btn money-btn dropdown-toggle valyuta-name" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                    </button>
-                    <div class="dropdown-menu money-dropdown-menu valyuta-list" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item valyuta" href="#" data-val="usd">USD</a>
-                        <a class="dropdown-item valyuta" href="#" data-val="eur">EUR</a>
-                        <a class="dropdown-item valyuta" href="#" data-val="rub">RUB</a>
-                        <a class="dropdown-item valyuta" href="#" data-val="cny">CNY</a>
-                    </div>
-                </div>
-                <div class="sell money-degree">
-                    <span class="valyuta-show valyuta-text"></span><span class="valyuta-text">@lang("menu.Сум")</span>
-                </div>
-            </div>
-        </div>
-        </div>
+</div>

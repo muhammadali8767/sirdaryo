@@ -5,27 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="512x512" href="img/Gerb-clean.png">
+    <title>O‘zbekiston respublikasi iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligi</title>
 
-    <!-- FontAwesome Connect Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!-- Bootstrap Link Connect -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
-    <!-- Owl-carousel Link Connect -->
-    <link rel="stylesheet" href="/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="/owl-carousel/owl.theme.default.min.css">
-
-    <!-- My Style Link Connect -->
-    <link rel="stylesheet" href="/styles/style.css">
-    <title>"Сирдарё" эркин иктисодий зонаси Дирекцияси – "Сирдарё" эркин иктисодий зонаси Дирекцияси расмий веб сайти
-    </title>
+    <link rel="stylesheet" href="/front/css/all.min.css">
+    <link rel="stylesheet" href="/front/libs/bootstrap.css">
+    <link rel="stylesheet" href="/front/css/main.css">
+    <link rel="stylesheet" href="/front/css/media.css">
 </head>
 
 <body>
-    <div class="scroll__top">
-        <i class="fas fa-arrow-alt-circle-up"></i>
-    </div>
-
     @if (session('success'))
         <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert"
             style="position: absolute ; width: 30%; left: 69%; top: 2%; z-index:100">
@@ -36,31 +25,45 @@
         </div>
     @endif
 
-    <header>
-        @include('layouts.components.top')
-
-        @include('layouts.components.menu')
-
-        {{-- if index page --}}
-        @if (request()->routeIs('main'))
-            @include('layouts.components.carousel')
-        @endif
+    <!-- ======== Header Start  ======== -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row header__parent">
+                @include('layouts.components.top')
+                @include('layouts.components.carousel')
+                @include('layouts.components.menu')
+            </div>
+        </div>
     </header>
+    <!-- ======== Header End    ======== -->
 
-    @yield('content')
+    <!-- ======== Main Start  ======== -->
+    <main class="site__content">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-8  order-sm-1 order-lg-0">
+                    <div class="row">
+                        @yield('content')
+                        @include('layouts.components.useful_links')
+                    </div>
+                </div>
+                @include('layouts.components.sidebar')
+            </div>
+        </div>
+    </main>
+    <!-- ======== Main End    ======== -->
 
+    <!-- ======== Footer Start  ======== -->
     @include('layouts.components.footer')
+    <!-- ======== Footer End    ======== -->
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-    </script>
 
-    <script src="/owl-carousel/jquery.min.js"></script>
-    <script src="/owl-carousel/owl.carousel.min.js"></script>
-    <script src="/js/main.js"></script>
+    <!-- Bootstrap Link -->
+    <script src="/front/libs/bootstrap.js"></script>
+    <!-- JQuery Link -->
+    <script src="/front/libs/jquery-3.3.1.min.js"></script>
+    <!-- My Scripts Link -->
+    <script src="/front/scripts/script.js"></script>
 </body>
 
 </html>

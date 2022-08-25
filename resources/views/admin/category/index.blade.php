@@ -50,7 +50,7 @@
                                         {{ $category->id }}
                                     </td>
                                     <td>
-                                        {{ $category->title }}
+                                        {{ $category->slug }}
                                     </td>
 
                                     <td>

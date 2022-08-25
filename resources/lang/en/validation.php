@@ -132,7 +132,9 @@ return [
 
     'custom' => [
         'attribute-name' => [
-            'rule-name' => 'custom-message',
+            'title_uz' => 'Sarlavha O\'zbekcha',
+            'title_ru' => 'Название Русский',
+            'title_en' => 'Title English',
         ],
     ],
 
@@ -147,6 +149,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title_uz' => 'Sarlavha O\'zbekcha',
+        'title_ru' => 'Название Русский',
+        'title_en' => 'Title English',
+    ],
 
 ];

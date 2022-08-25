@@ -27,6 +27,8 @@ class CategoryFactory extends Factory
             'title_uz' => $title_uz,
             'title_ru' => $this->faker->sentence,
             'title_en' => $this->faker->sentence,
+            'created_at' => now(),
+            'updated_at' => now(),
 
             'slug' => \Str::slug($title_uz),
         ];

@@ -50,6 +50,8 @@ class PostFactory extends Factory
             'category_id' => Category::all()->random()->id,
 
             'slug' => \Str::slug($title_uz),
+            'created_at' => now(),
+            'updated_at' => now(),
             'img' => $images[rand(1, 5)],
         ];
         return $post;

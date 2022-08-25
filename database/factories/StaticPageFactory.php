@@ -47,6 +47,8 @@ class StaticPageFactory extends Factory
 
             'slug' => \Str::slug($title_uz),
             'type' => $type,
+            'created_at' => now(),
+            'updated_at' => now(),
 
             'user_id' => User::all()->random()->id,
         ];

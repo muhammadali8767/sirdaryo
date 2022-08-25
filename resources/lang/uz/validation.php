@@ -134,7 +134,9 @@ return [
 
     'custom' => [
         'attribute-name' => [
-            'rule-name' => 'custom-message',
+            'title_uz' => 'Sarlavha O\'zbekcha',
+            'title_ru' => 'Название Русский',
+            'title_en' => 'Title English',
         ],
     ],
 
@@ -149,6 +151,18 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title_uz' => 'Sarlavha O\'zbekcha',
+        'title_ru' => 'Название Русский',
+        'title_en' => 'Title English',
+        'short_uz' => 'Qisqacha matn O\'zbekcha',
+        'short_ru' => 'Кароткий текст Русский',
+        'short_en' => 'Short content English',
+        'text_uz' => 'Matn O\'zbekcha',
+        'text_ru' => 'Текст Русский',
+        'text_en' => 'Content English',
+        'category_id' => 'Категория',
+        'img' => 'Изображение',
+    ],
 
 ];

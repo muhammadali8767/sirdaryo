@@ -14,55 +14,14 @@ class FrontController extends Controller
     public function index()
     {
         $about = StaticPage::where('slug', 'biz-haqimizda')->first();
-        $lastPost = Post::orderBy('created_at', 'DESC')->with('category')->first();
-        $posts = Post::orderBy('created_at', 'DESC')->where('id', '!=', $lastPost->id)->with('category')->limit(4)->get();
+        $posts = Post::orderBy('created_at', 'DESC')->with('category')->paginate(10);
 
-        return view('front.index', compact('about', 'lastPost', 'posts'));
+        return view('front.index', compact('about','posts'));
     }
 
     public function about()
     {
         return view('front.about');
-    }
-
-    public function territory()
-    {
-        return view('front.territory');
-    }
-
-    public function eiz_vazifasi()
-    {
-        return view('front.eiz_vazifasi');
-    }
-
-    public function sirdaryo_eiz_mk()
-    {
-        return view('front.sirdaryo_eiz_mk');
-    }
-
-    public function bussiness()
-    {
-        return view('front.bussiness');
-    }
-
-    public function why()
-    {
-        return view('front.why');
-    }
-
-    public function privilege()
-    {
-        return view('front.privilege');
-    }
-
-    public function activity_types()
-    {
-        return view('front.activity_types');
-    }
-
-    public function project()
-    {
-        return view('front.project');
     }
 
     public function news()
@@ -96,26 +55,10 @@ class FrontController extends Controller
         }
     }
 
-    // public function project()
-    // {
-    //     return view('front.project');
-    // }
-
-    // public function elements()
-    // {
-    //     return view('front.elements');
-    // }
-
-    // public function projectDetails()
-    // {
-    //     return view('front.projectDetails');
-    // }
-
     public function blog()
     {
         // $posts = Post::latest()->paginate(5);
         $posts = app(PostRepository::class)->getAllWithPaginate(5);
-        // dd($posts);
         return view('front.blog', compact('posts'));
     }
 

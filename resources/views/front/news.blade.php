@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="news">
+    {{-- <div class="news">
         <h2>@lang('menu.news')</h2>
         <div class="news__category">
             <a href="{{ route('main') }}">@lang('menu.main')</a>
@@ -11,29 +11,71 @@
         </div>
 
     </div>
-    <div class="news__items">
-        <div class="container">
-            <div class="row">
-                @foreach ($posts as $post)
-                    <div class="col-12 col-sm-6 col-lg-4 my-5">
-                        <img class="img-fluid" src="{{ $post->img }}">
-                        <span class="type">{{ $post->category->title }}</span>
-                        <h4 class="news__title">{{ $post->title }}</h4>
-                        <a class="news__text" href="{{ route('category_post', [$post->category->slug, $post->slug]) }}">{{ $post->short }}</a>
-                        <div class="info-time">
-                            <i class="far fa-clock"></i>
-                            <span>{{ $post->created_at }}</span>
-                            <i class="far fa-eye"></i>
-                            <span>{{ $post->seen }}</span>
+ --}}
+
+<div class="col-12 order-1 order-lg-0">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h2 class="section-title">
+                {{ $category->title }}
+            </h2>
+        </div>
+        {{-- <div class="col-6 d-none d-lg-block">
+            <div class="d-flex align-items-center justify-content-end sort">
+                Saralash turi:
+                <select class="form-select border-0 ms-2 w-50"
+                    aria-label="Default select example">
+                    <option selected>Yangiliklar</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div> --}}
+    </div>
+    <div class="row">
+        @foreach ($posts as $post)
+        <div class="col-12">
+            <div class="card mb-4 news-card">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-4 mb-lg-0">
+                        <img src="{{ $post->img }}" class="img-fluid rounded-start w-100"
+                            alt="News image">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="card-body p-0">
+                            <h5 class="card-title news-card-title">{{ $post->title }}</h5>
+                            <p class="card-text news-card-text">
+                                {{ $post->short }}
+                            </p>
+                            <p
+                                class="card-text d-flex align-items-center justify-content-between news-card-time">
+                                <small class="news-card-time">
+                                    <i class="fas fa-calendar me-1"></i>
+                                    {{ $post->created_at->format('d/m/Y - H:i') }}
+                                </small>
+                                <a href="{{ route('post', $post->slug) }}" class="news-card-link">
+                                    @lang('front.batafsil')
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                            </p>
                         </div>
                     </div>
-                @endforeach
+                </div>
             </div>
+        </div>
+
+        @endforeach
+        <div class="col-12 text-lg-end">
+            <a href="{{ route('main') }}" class="btn btn-primary px-5">
+                Barcha yangiliklar
+            </a>
         </div>
         <div class="row justify-content-center align-items-center">
             {{ $posts->links() }}
         </div>
+
     </div>
-
-
+</div>
 @endsection
+

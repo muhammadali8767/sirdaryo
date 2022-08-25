@@ -29,6 +29,7 @@ class CreateStaticPagesTable extends Migration
             $table->text('text_en')->nullable();
 
             $table->string('slug');
+            $table->integer('seen')->default(0);
             $table->string('image')->nullable();
             $table->tinyInteger('type');
 

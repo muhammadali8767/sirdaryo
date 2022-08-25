@@ -23,7 +23,7 @@ return [
     'phone' => 'Телефон рақамингиз',
     'theme' => 'Мавзу',
     'text' => 'Хабар матни',
-    'yangiliklar' => 'Янгиликлар',
+    'yangiliklar' => 'Yangiliklar',
     'media' => 'Мадиа',
     'more' => 'Кўпроқ кўриш',
 ];

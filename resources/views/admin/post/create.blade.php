@@ -52,41 +52,32 @@
                                             <label for="exampleInputEmail1">Sarlavha O'zbekcha</label>
                                             <input type="text" name="title_uz"
                                                 class="form-control @error('password') is-invalid @enderror"
-                                                id="exampleInputEmail1" required>
-                                            <div class="invalid-feedback">
-                                                Please fill a valid data.
-                                            </div>
-                                            @error('title_uz')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
+                                                id="exampleInputEmail1" required value="{{ old('title_uz') }}">
+                                        @error('title_uz')
+                                            <p class="text-danger small">{{ $message }}</p>
+                                        @enderror
 
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Qisqacha matn O'zbekcha</label>
                                             <textarea name="short_uz" rows="5"
                                                 class="form-control @error('password') is-invalid @enderror"
-                                                required></textarea>
+                                                required>{{ old('short_uz') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('short_uz')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Matn O'zbekcha</label>
-                                            <textarea name="text_uz" class="editor" required></textarea>
+                                            <textarea name="text_uz" class="editor" required>{{ old('text_uz') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('text_uz')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                     </div>
@@ -96,39 +87,33 @@
                                             <label for="exampleInputEmail1">Название Русский</label>
                                             <input type="text" name="title_ru"
                                                 class="form-control @error('password') is-invalid @enderror"
-                                                id="exampleInputEmail1">
+                                                id="exampleInputEmail1" value="{{ old('title_ru') }}">
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('title_ru')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Кароткий текст Русский</label>
                                             <textarea name="short_ru" rows="5"
-                                                class="form-control @error('password') is-invalid @enderror"></textarea>
+                                                class="form-control @error('password') is-invalid @enderror">{{ old('short_ru') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('short_ru')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Текст Русский</label>
-                                            <textarea name="text_ru" class="editor"></textarea>
+                                            <textarea name="text_ru" class="editor">{{ old('text_ru') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('text_ru')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                     </div>
@@ -138,39 +123,33 @@
                                             <label for="exampleInputEmail1">Title English</label>
                                             <input type="text" name="title_en"
                                                 class="form-control @error('password') is-invalid @enderror"
-                                                id="exampleInputEmail1">
+                                                id="exampleInputEmail1" value="{{ old('title_en') }}">
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('title_en')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Short content English</label>
                                             <textarea name="short_en" rows="5"
-                                                class="form-control @error('password') is-invalid @enderror"></textarea>
+                                                class="form-control @error('password') is-invalid @enderror">{{ old('short_en') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('short_en')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Content English</label>
-                                            <textarea name="text_en" class="editor"></textarea>
+                                            <textarea name="text_en" class="editor">{{ old('text_en') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
                                             @error('text_en')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
+                                                <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
                                     </div>
@@ -182,35 +161,29 @@
                                         <select name="category_id"
                                             class="form-control @error('password') is-invalid @enderror" required>
                                             @foreach ($categories as $category)
-                                                <option value="{{ $category['id'] }}">{{ $category['title'] }}
-                                                </option>
+                                                <option value="{{ $category->id }}" @if ($category->id == old('category_id')) selected @endif>{{ $category->title }}</option>
                                             @endforeach
                                         </select>
                                         <div class="invalid-feedback">
                                             Please fill a valid data.
                                         </div>
                                         @error('category_id')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                            <p class="text-danger small">{{ $message }}</p>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="feature_image">Изображение статьи</label>
-                                    <img src="" alt="" class="img-uploaded" style="display: block; width: 300px">
+                                    <img src="{{ old('img') }}" alt="" class="img-uploaded" style="display: block; width: 300px">
                                     <input type="text" name="img"
                                         class="form-control @error('password') is-invalid @enderror" id="feature_image"
-                                        name="feature_image" value="" readonly>
+                                        name="feature_image" value="{{ old('img') }}" readonly>
                                     <div class="invalid-feedback">
                                         Please fill a valid data.
                                     </div>
                                     @error('img')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
+                                        <p class="text-danger small">{{ $message }}</p>
                                     @enderror
-
                                     <a href="" class="popup_selector" data-inputid="feature_image">Выбрать изображение</a>
                                 </div>
                             </div>
