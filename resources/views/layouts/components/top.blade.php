@@ -40,7 +40,7 @@
         <div class="dropdown">
             <button class="btn header__links-langBtn dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="/front/img/lang_uzb.png" alt="Uzb flag logo">
+                <img src="/front/img/lang_{{ app()->getLocale() }}.png" alt="Uzb flag logo">
                 @switch(app()->getLocale())
                     @case('en')
                         Eng
@@ -59,15 +59,15 @@
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 @if (app()->getLocale() != 'uz')
-                    <li><a class="dropdown-item" href="?locale=uz"><img src="/front/img/lang_uzb.png"
+                    <li><a class="dropdown-item" href="?locale=uz"><img src="/front/img/lang_uz.png"
                                 alt="Uzb flag logo">Uzb</a></li>
                 @endif
                 @if (app()->getLocale() != 'ru')
-                    <li><a class="dropdown-item" href="?locale=ru"><img src="/front/img/lang_uzb.png"
+                    <li><a class="dropdown-item" href="?locale=ru"><img src="/front/img/lang_ru.png"
                                 alt="Uzb flag logo">Rus</a></li>
                 @endif
                 @if (app()->getLocale() != 'en')
-                    <li><a class="dropdown-item" href="?locale=en"><img src="/front/img/lang_uzb.png"
+                    <li><a class="dropdown-item" href="?locale=en"><img src="/front/img/lang_en.png"
                                 alt="Uzb flag logo">Eng</a></li>
                 @endif
             </ul>
