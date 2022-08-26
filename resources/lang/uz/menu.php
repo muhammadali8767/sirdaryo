@@ -1,27 +1,8 @@
 <?php
 
 return [
-    'Сум' => 'Сум',
-    'logo' => '««СИРДАРЁ» ЭРКИН ИКТИСОДИЙ ЗОНА ДИРЕКЦИЯСИ» ДАВЛАТ УНИТАР КОРХОНАСИ',
-    'search' => 'Qidirish',
-    'main' => 'Bosh sahifa',
-    'about' => 'Биз ҳақимизда',
-    'direction' => '«Сирдарё» ЭИЗ Дирекцияси',
-    'functions' => '«Сирдарё» ЭИЗнинг вазифалари',
-    'council' => '«Сирдарё» ЭИЗ маъмурий кенгаши',
-    'business' => '«Сирдарё» ЭИЗ бизнес',
-    'start_business' => 'Бизнесни қандай бошлайман?',
-    'why' => 'Нима учун «Сирдарё» ЭИЗ?',
-    'preferences' => 'Имтиёз ва преферециялар',
-    'types of activities' => '«Сирдарё» ЭИЗда фаолият турлари',
-    'successful projects' => 'Мувофаққиятли лойиҳалар',
-    'news' => 'Yangiliklar',
-    'multimedia' => 'Мултимедиа',
-    'contact' => 'Алоқалар',
-    'Sotib olish' => 'Sotib olish',
-    'Sotish' => 'Sotish',
-
-
+    'logo' => 'Sirdaryo viloyati iqtisodiy taraqqiyot va kambag‘allikni qisqartirish bosh boshqarmasi',
+    'location' => 'Guliston sh. I.Karimov, 35-uy',
     "BOSHQARMA HAQIDA" => "BOSHQARMA HAQIDA",
     "Umumiy ma'lumotlar" => "Umumiy ma'lumotlar",
     "Bosh boshqarma asosiy funksiyalari" => "Bosh boshqarma asosiy funksiyalari",
