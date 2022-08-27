@@ -1,18 +1,16 @@
 <?php
 
 return [
-    "Бўлимда" => "In the section",
-    "Иш вақти" => "Working hours",
-    "Фойдали ҳаволалар" => "Useful links",
-
-    "Ўзбекистон Республикаси Президентининг расмий веб-сайти" => "Official website of the President of Uzbekistan",
-    "Ўзбекистон Республикаси Ҳукумат портали" => "The Government portal of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Адлия вазирлиги" => "Ministry of Justice of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Иқтисодиёт Вазирлиги" => "Ministry of Economy of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Ташқи савдо вазирлиги" => "Ministry for foreign trade of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Давлат солиқ қўмитаси" => "State Tax Committee of the Republic of Uzbekistan",
-
-    "Ду - Ша" => "Mon - Fri",
-    "Бўлимлар" => "Sections",
-    "Калит сўзлар" => "Keywords",
+    "hududiy_bolinmalar" => "Territorial units",
+    'hokim_yordamchi' => "Activities of the mayor's assistants",
+    "tadbirkor"     => "State fund for support of entrepreneurship activities",
+    "elektron_hukumat" => "E-Government",
+    "xalqaro_moliya"  => "Cooperation with international financial institutions",
+    "onlayn_axborot"  => "ONLINE PRESS SERVICE",
+    "davlat_budjet"   => "Davlat byudjeti mablag‘lari hisobidan subsidiyalar ajratish haqida ",
+    "vazirlik_xati"  => "Vazirlikka yuborilgan xatlar holatini ko'rish",
+    "ijro_intizom" => "Ijro intizom idoralararo yagona elektron tizim",
+    "2017-2021"  => "2017-2021-yillarda O'zbekiston Respublikasini rivojlantirishning beshta ustuvor yo'nalishi bo'yicha Harakatlar strategiyasi",
+    "ochiq_malumot" => "O'zbekiston Respublikasi Ochiq ma'lumotlar portali",
+    "ayrim_narxlar" => "Ayrim turdagi mahsulotlar narxlari",
 ];

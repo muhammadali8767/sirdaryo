@@ -14,10 +14,9 @@
                 <a href="https://www.instagram.com/sirdeconomy.uz/" class="header__links-messenger">
                     <i class="fab fa-instagram"></i>
                 </a>
-
             </div>
             <div class="col-12 order-2 order-lg-1 col-lg-9 footer__exchange-parent">
-                <h4>Ishonch Telefoni: </h4>
+                <h4>@lang('footer.Ishonch Telefoni') : </h4>
                 <p>
                     <i class="fas fa-phone-alt"></i>
                     (67) 235-03-95
@@ -28,7 +27,7 @@
             <div class="col-12 order-0 order-lg-2 footer__connect_address">
                 <a href="#" class="header__links-link">
                     <i class="fas fa-map-marker-alt"></i>
-                    Guliston sh. I.Karimov,35-uy
+                    @lang("menu.location")
                 </a>
 
 
@@ -44,15 +43,15 @@
 
                 <a href="#" class="header__links-link">
                     <i class="fas fa-envelope"></i>
-                    Faks: (67) 235-03-95
+                     @lang('footer.Faks')  (67) 235-03-95
                 </a>
 
             </div>
             <div class="col-12 order-3 col-md-6 footer__company-text">
-                ООО «O‘zbekiston respublikasi iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligi» © 2022
+               @lang('footer.start-end')
             </div>
             <div class="col-12 order-3 col-md-6 text-md-end footer__sponsor-text">
-                Разработка и поддержка веб-сайта <a href="#">IT-Live</a>
+                @lang('footer.sayt') <a href="#">IT-Live</a>
             </div>
         </div>
     </div>

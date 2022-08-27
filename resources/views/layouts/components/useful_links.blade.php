@@ -2,7 +2,7 @@
     <div class="row my-accordion-btn">
         <div class="col-12">
             <h2 class="section-title d-flex justify-content-between align-items-center">
-                Foydali havolalar
+                @lang('useful_links.foydali_havola')
                 <i class="fas fa-angle-down d-block d-lg-none"></i>
             </h2>
         </div>
@@ -13,9 +13,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://www.gov.uz/uz" class="card__for__info-link">O'zbekiston
-                    Respublikasining Hukumat
-                    portali
+                <a href="https://www.gov.uz/uz" class="card__for__info-link">
+                   @lang('useful_links.hukumat')
                 </a>
             </div>
         </div>
@@ -24,9 +23,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/lexuz.png" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://president.uz/uz" class="card__for__info-link">O'zbekiston
-                    Respublikasi Prezidentining
-                    Matbuot xizmati
+                <a href="https://president.uz/uz" class="card__for__info-link">
+                    @lang('useful_links.matbuot')
                 </a>
             </div>
         </div>
@@ -36,9 +34,8 @@
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
                 <a href="https://parliament.gov.uz/uz/"
-                    class="card__for__info-link">O'zbekiston
-                    Respublikasi Oliy
-                    Majlisining Senati
+                    class="card__for__info-link">
+                    @lang('useful_links.senat')
                 </a>
             </div>
         </div>
@@ -48,9 +45,8 @@
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
                 <a href="https://parliament.gov.uz/uz/"
-                    class="card__for__info-link">O'zbekiston
-                    Respublikasi Oliy Majlis
-                    Qonunchilik Palatasi
+                    class="card__for__info-link">
+                     @lang('useful_links.qonunchilik')
                 </a>
             </div>
         </div>
@@ -59,9 +55,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://www.standart.uz/" class="card__for__info-link">O'zbekiston
-                    Respublikasining eksportga
-                    yo'naltirilgan mahsulotlari ro'yxati
+                <a href="https://business.gov.uz/" class="card__for__info-link">
+                    @lang('useful_links.eksport')
                 </a>
             </div>
         </div>
@@ -70,9 +65,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://huquqiyportal.uz/" class="card__for__info-link">O‘zbekiston
-                    Respublikasi Milliy huquqiy
-                    internet portali
+                <a href="https://huquqiyportal.uz/" class="card__for__info-link">
+                    @lang('useful_links.milliy')
                 </a>
             </div>
         </div>
@@ -81,8 +75,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://president.uz/uz" class="card__for__info-link">O'zbekiston
-                    Respublikasi Prezidenti
+                <a href="https://president.uz/uz" class="card__for__info-link">
+                    @lang('useful_links.prezident')
                 </a>
             </div>
         </div>
@@ -91,10 +85,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/lex_uz.svg" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://lex.uz/" class="card__for__info-link">O‘zbekiston
-                    Respublikasi
-                    Qonun
-                    hujjatlari ma’lumotlari milliy bazasi
+                <a href="https://lex.uz/" class="card__for__info-link">
+                    @lang('useful_links.milliy_baza')
                 </a>
 
             </div>
@@ -104,8 +96,8 @@
                 <div class="card__for__info-img">
                     <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
                 </div>
-                <a href="https://mineconomy.uz/" class="card__for__info-link">O'zbekiston
-                    Respublikasi Iqtisodiy taraqqiyot vazirligi
+                <a href="https://mineconomy.uz/" class="card__for__info-link">
+                    @lang('useful_links.iqtisodiy')
                 </a>
             </div>
         </div>
