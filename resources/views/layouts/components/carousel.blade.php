@@ -6,17 +6,10 @@
                     <img src="/front/img/big_img.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-flex py-0 header__content_info">
                         <div class="header__content_info-texts">
-                            <h2 class="big__news-title">MA’NAVIY HAYOTIMIZDAN BIR KUN</h2>
+                            <h2 class="big__news-title"> @lang("carousel.carousel_title")</h2>
                             <div class="header__content_text-btn">
-                                <p class="big__news-desc">Mamlakatimizda amalga oshirilayotgan keng
-                                    ko‘lamli
-                                    islohotlar va bunyodkorlik ishlari natijasida xalqimizning ong-u
-                                    tafakkuri,
-                                    dunyoqarashi o‘zgarmoqda. Yurtimizda huquqiy davlat, fuqarolik
-                                    jamiyatini
-                                    barpo
-                                    etishda...</p>
-                                <a href="#" class="big__news-btn">Batafsil</a>
+                                <p class="big__news-desc">@lang("carousel.carousel_text")</p>
+                                <a href="#" class="big__news-btn">@lang("carousel.carousel_link")</a>
                             </div>
                         </div>
                         <div class="header__content_info-dots">
@@ -35,17 +28,10 @@
                     <img src="/front/img/big_img.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-flex py-0 header__content_info">
                         <div class="header__content_info-texts">
-                            <h2 class="big__news-title">MA’NAVIY HAYOTIMIZDAN BIR KUN</h2>
+                            <h2 class="big__news-title"> @lang("carousel.carousel_title")</h2>
                             <div class="header__content_text-btn">
-                                <p class="big__news-desc">Mamlakatimizda amalga oshirilayotgan keng
-                                    ko‘lamli
-                                    islohotlar va bunyodkorlik ishlari natijasida xalqimizning ong-u
-                                    tafakkuri,
-                                    dunyoqarashi o‘zgarmoqda. Yurtimizda huquqiy davlat, fuqarolik
-                                    jamiyatini
-                                    barpo
-                                    etishda...</p>
-                                <a href="#" class="big__news-btn">Batafsil</a>
+                                <p class="big__news-desc">@lang("carousel.carousel_text")</p>
+                                <a href="#" class="big__news-btn">@lang("carousel.carousel_link")</a>
                             </div>
                         </div>
                         <div class="header__content_info-dots">
@@ -64,17 +50,10 @@
                     <img src="/front/img/big_img.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-flex py-0 header__content_info">
                         <div class="header__content_info-texts">
-                            <h2 class="big__news-title">MA’NAVIY HAYOTIMIZDAN BIR KUN</h2>
+                            <h2 class="big__news-title">@lang("carousel.carousel_title")</h2>
                             <div class="header__content_text-btn">
-                                <p class="big__news-desc">Mamlakatimizda amalga oshirilayotgan keng
-                                    ko‘lamli
-                                    islohotlar va bunyodkorlik ishlari natijasida xalqimizning ong-u
-                                    tafakkuri,
-                                    dunyoqarashi o‘zgarmoqda. Yurtimizda huquqiy davlat, fuqarolik
-                                    jamiyatini
-                                    barpo
-                                    etishda...</p>
-                                <a href="#" class="big__news-btn">Batafsil</a>
+                                <p class="big__news-desc">@lang("carousel.carousel_text")</p>
+                                <a href="#" class="big__news-btn">@lang("carousel.carousel_link")</a>
                             </div>
                         </div>
                         <div class="header__content_info-dots">

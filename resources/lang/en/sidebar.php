@@ -1,18 +1,16 @@
 <?php
 
 return [
-    "Бўлимда" => "In the section",
-    "Иш вақти" => "Working hours",
-    "Фойдали ҳаволалар" => "Useful links",
-
-    "Ўзбекистон Республикаси Президентининг расмий веб-сайти" => "Official website of the President of Uzbekistan",
-    "Ўзбекистон Республикаси Ҳукумат портали" => "The Government portal of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Адлия вазирлиги" => "Ministry of Justice of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Иқтисодиёт Вазирлиги" => "Ministry of Economy of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Ташқи савдо вазирлиги" => "Ministry for foreign trade of the Republic of Uzbekistan",
-    "Ўзбекистон Республикаси Давлат солиқ қўмитаси" => "State Tax Committee of the Republic of Uzbekistan",
-
-    "Ду - Ша" => "Mon - Fri",
-    "Бўлимлар" => "Sections",
-    "Калит сўзлар" => "Keywords",
+    "hududiy_bolinmalar" => "Territorial units",
+    'hokim_yordamchi' => "Activities of the mayor's assistants",
+    "tadbirkor"     => "State fund for support of entrepreneurship activities",
+    "elektron_hukumat" => "E-Government",
+    "xalqaro_moliya"  => "Cooperation with international financial institutions",
+    "onlayn_axborot"  => "ONLINE PRESS SERVICE",
+    "davlat_budjet"   => "About allocating subsidies from the state budget funds ",
+    "vazirlik_xati"  => " View the status of letters sent to the Ministry",
+    "ijro_intizom" => "Ijro intizom idoralararo yagona elektron tizim",
+    "2017-2021"  => "Single electronic system of executive discipline interdepartmental",
+    "ochiq_malumot" => "Open data portal of the Republic of Uzbekistan",
+    "ayrim_narxlar" => "Prices of certain types of products",
 ];

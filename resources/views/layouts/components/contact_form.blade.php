@@ -1,4 +1,5 @@
 <form action="{{ route('post-contact') }}" method="POST" class="mb-3">
+    @csrf
     <div class="row">
         <div class="col">
             <input type="text" name="name" class="form-control" placeholder="@lang('contact.name')">

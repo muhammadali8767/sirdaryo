@@ -2,7 +2,7 @@
     <a href="{{ route('main') }}" class="header-logo">
         <img src="/front/img/Gerb-clean.png" alt="Brand Image" loading="lazy">
         <span>
-            Sirdaryo viloyati iqtisodiy taraqqiyot va kambag‘allikni qisqartirish bosh boshqarmasi
+            @lang("menu.logo")
         </span>
     </a>
 </div>
@@ -10,7 +10,7 @@
     <div class="header__links">
         <a href="#" class="header__links-link d-none d-sm-block">
             <i class="fas fa-map-marker-alt"></i>
-            Guliston sh. I.Karimov, 35-uy
+            @lang("menu.location")
         </a>
         <a href="#" class="header__links-link me-auto">
             <i class="fas fa-phone-alt"></i>

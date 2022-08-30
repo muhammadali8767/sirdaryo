@@ -2,7 +2,7 @@
     <div class="row my-accordion-btn">
         <div class="col-12">
             <h2 class="section-title d-flex justify-content-between align-items-center">
-                Hududiy bo‘linmalar
+                @lang('sidebar.hududiy_bolinmalar')
                 <i class="fas fa-angle-down d-block d-lg-none"></i>
             </h2>
         </div>
@@ -14,8 +14,8 @@
                     <img src="/front/img/person.png" class="img-fluid" alt="Photo error">
 
                 </div>
-                <a href="#" class="card__for__info-link card__for__info-link-absolute">Hokim
-                    yordamchilari faoliyati
+                <a href="https://mineconomy.uz/uz/info/4323" class="card__for__info-link card__for__info-link-absolute">
+                    @lang('sidebar.hokim_yordamchi')
                 </a>
 
             </div>
@@ -25,7 +25,7 @@
             <div class="card__for__info py-0">
                 <div class="card-h-0">
                     <a href="https://statefund.uz/uz/" class="">
-                        Tadbirkorlik faoliyatini qo’llab-quvvatlash davlat jamg’armasi
+                        @lang('sidebar.tadbirkor')
                     </a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="card__for__info py-0">
                 <div class="card-h-0">
                     <a href="https://my.gov.uz/oz" class="">
-                        Elektron hukumat
+                        @lang('sidebar.elektron_hukumat')
                     </a>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="card__for__info py-0">
                 <div class="card-h-0">
                     <a href="http://ridp.uz/ru/" class="">
-                        Xalqaro moliya institutlari bilan hamkorlik
+                        @lang('sidebar.xalqaro_moliya')
                     </a>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </div>
                 <a href="./onlayn-axborot.html"
                     class="card__for__info-link card__for__info-link-absolute">
-                    Onlayn axborot xizmati
+                    @lang('sidebar.onlayn_axborot')
                 </a>
             </div>
         </div>
@@ -68,7 +68,7 @@
                 </div>
                 <a href="https://mineconomy.uz/site/subsidiya?region_id=9"
                     class="card__for__info-link card__for__info-link-absolute">
-                    Davlat byudjeti mablag‘lari hisobidan subsidiyalar ajratish haqida
+                    @lang('sidebar.davlat_budjet')
                 </a>
             </div>
         </div>
@@ -79,7 +79,7 @@
                 </div>
                 <a href="https://isv.ijro.uz/#!/check-document"
                     class="card__for__info-link card__for__info-link-absolute">
-                    Vazirlikka yuborilgan xatlar holatini ko'rish
+                    @lang('sidebar.vazirlik_xati')
                 </a>
             </div>
         </div>
@@ -90,8 +90,7 @@
                 </div>
                 <a href="https://check.ijro.uz/d"
                     class="card__for__info-link card__for__info-link-absolute">
-                    Ijro intizomi idoralararo
-                    yagona elektron tizimi
+                    @lang('sidebar.ijro_intizom')
                 </a>
             </div>
         </div>
@@ -102,8 +101,7 @@
                 </div>
                 <a href="http://strategy.gov.uz/uz"
                     class="card__for__info-link card__for__info-link-absolute">
-                    2017-2021-yillarda O'zbekiston Respublikasini rivojlantirishning beshta ustuvor
-                    yo'nalishi bo'yicha Harakatlar strategiyasi
+                    @lang('sidebar.2017-2021')
                 </a>
             </div>
         </div>
@@ -113,7 +111,7 @@
                     <img src="/front/img/ochiq.jpg" class="img-fluid" alt="Photo error">
                 </div>
                 <a href="#" class="card__for__info-link card__for__info-link-absolute">
-                    O'zbekiston Respublikasi Ochiq ma'lumotlar portali
+                    @lang('sidebar.ochiq_malumot')
                 </a>
             </div>
         </div>
@@ -124,7 +122,7 @@
                 </div>
                 <a href="https://mineconomy.uz/site/qishloq-xujaligi-mahsulotlari-narxlari"
                     class="card__for__info-link card__for__info-link-absolute">
-                    Ayrim turdagi mahsulotlar narxlari
+                    @lang('sidebar.ayrim_narxlar')
                 </a>
             </div>
         </div>
