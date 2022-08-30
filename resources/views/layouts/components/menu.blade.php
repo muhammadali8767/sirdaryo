@@ -12,6 +12,9 @@
                             <li>
                                 <a href="{{ route('page', 'boshqarma-haqida-umumiy-malumotlar') }}">@lang("menu.Umumiy ma'lumotlar")</a>
                             </li>
+                            {{-- <li>
+                                <a href="{{ route('page', 'sirdaryo-viloyati-iqtisodiy-taraqqiyot-va-kambagallikni-qisqartirish-bosh-boshqarmasida-vakant-lavozimlarga-qoyilgan-malaka-talablari') }}">@lang("menu.Umumiy ma'lumotlar")</a>
+                            </li> --}}
                             <li>
                                 <a href="{{ route('page', 'boshqarma-vazifa-va-funksiyalari') }}">@lang("menu.Bosh boshqarma asosiy vazifalari")</a>
                             </li>
@@ -24,8 +27,11 @@
                             <li>
                                 <a href="{{ route('page', 'tarkibiy-tuzilma-royxati') }}">@lang("menu.Tarkibiy tuzilma")</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="{{ route('category', 'bosh-ish-orinlari') }}">@lang("menu.Bo'sh ish o'rinlari")</a>
+                            </li> --}}
+                            <li>
+                                <a href="{{ route('category', 'sirdaryo-viloyati-iqtisodiy-taraqqiyot-va-kambagallikni-qisqartirish-bosh-boshqarmasida-vakant-lavozimlarga-qoyilgan-malaka-talablari') }}">@lang("menu.Bo'sh ish o'rinlari")</a>
                             </li>
                             <li>
                                 <a href="{{ route('category', 'korrupsiyaga-qarshi-kurashish') }}">@lang("menu.Korrupsiyaga qarshi kurashish")</a>
