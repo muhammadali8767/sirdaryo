@@ -38,6 +38,5 @@ return [
     "Ishonch telefoni" => "Hotline",
     "Faoliyat sohasiga oid aholi va tadbirkorlik sub'ektlari tomonidan tez-tez beriladigan savollarga javoblar" => "Answers to frequently asked questions by residents and business entities related to the field of activity",
     "Veb-sayt xaritasi" => "Website map",
-    'vakant-talablari' => "Sirdaryo viloyati Iqtisodiy taraqqiyot va kambag'allikni qisqartirish bosh boshqarmasida vakant lavozimlarga qo'yilgan malaka talablari",
-
+    'vakant-talablari' => "Vakant lavozimlarga qo'yilgan talablar",
 ];
