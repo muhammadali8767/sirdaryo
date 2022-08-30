@@ -38,6 +38,7 @@ return [
     "Ishonch telefoni" => "Горячая линия",
     "Faoliyat sohasiga oid aholi va tadbirkorlik sub'ektlari tomonidan tez-tez beriladigan savollarga javoblar" => "Ответы на часто задаваемые вопросы жителей и субъектов хозяйствования, связанные со сферой деятельности",
     "Veb-sayt xaritasi" => "Карта сайта",
+    'vakant-talablari' => "Квалификационные требования на вакантные должности в Главном управлении Экономического развития и сокращения бедности Сырдарьинской области",
 ];
 
 

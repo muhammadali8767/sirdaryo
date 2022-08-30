@@ -27,11 +27,11 @@
                             <li>
                                 <a href="{{ route('page', 'tarkibiy-tuzilma-royxati') }}">@lang("menu.Tarkibiy tuzilma")</a>
                             </li>
-                            {{-- <li>
-                                <a href="{{ route('category', 'bosh-ish-orinlari') }}">@lang("menu.Bo'sh ish o'rinlari")</a>
-                            </li> --}}
                             <li>
-                                <a href="{{ route('category', 'sirdaryo-viloyati-iqtisodiy-taraqqiyot-va-kambagallikni-qisqartirish-bosh-boshqarmasida-vakant-lavozimlarga-qoyilgan-malaka-talablari') }}">@lang("menu.Bo'sh ish o'rinlari")</a>
+                                <a href="{{ route('category', 'bosh-ish-orinlari') }}">@lang("menu.Bo'sh ish o'rinlari")</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('page', 'sirdaryo-viloyati-iqtisodiy-taraqqiyot-va-kambagallikni-qisqartirish-bosh-boshqarmasida-vakant-lavozimlarga-qoyilgan-malaka-talablari') }}">@lang("menu.vakant-talablari")</a>
                             </li>
                             <li>
                                 <a href="{{ route('category', 'korrupsiyaga-qarshi-kurashish') }}">@lang("menu.Korrupsiyaga qarshi kurashish")</a>
