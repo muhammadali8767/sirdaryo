@@ -5,13 +5,13 @@
             <input type="text" name="name" class="form-control" placeholder="@lang('contact.name')">
         </div>
         <div class="col">
-            <input type="text" name="name" class="form-control" placeholder="@lang('contact.name')">
+            <input type="text" name="location" class="form-control" placeholder="@lang('contact.mavzu')">
         </div>
     </div>
 
     <div class="mb-3 mt-3">
 
-        <input type="number" name="phone" class="form-control" id="number" placeholder="@lang('contact.phone')">
+        <input type="number" name="phone" class="form-control" placeholder="@lang('contact.phone')">
     </div>
     <div class="mb-3">
         <textarea class="form-control" name="text" id="comment" rows="7" placeholder="@lang('contact.text')"></textarea>

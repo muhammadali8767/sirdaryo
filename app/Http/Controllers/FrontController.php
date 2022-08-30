@@ -46,6 +46,7 @@ class FrontController extends Controller
 
     public function post_contact(ContacCreateRequest $request)
     {
+        // dd($request->all());
         $contact = Contact::create($request->except('_token'));
 
         if ($contact->save()) {

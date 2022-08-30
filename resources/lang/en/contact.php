@@ -20,6 +20,7 @@ return [
     'Биз билан боғланиш учун' => 'To contact us',
     'yuborish' => 'Send',
     'name' => 'Name',
+    'mavzu' => 'Theme',
     'phone' => 'Phone',
     'theme' => 'Theme',
     'text' => 'Text',
