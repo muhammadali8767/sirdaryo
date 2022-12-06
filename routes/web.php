@@ -27,6 +27,7 @@ Route::namespace('App\Http\Controllers\Admin')
 
         Route::resource('category', 'CategoryController')->except('show');
         Route::resource('director', 'DirectorController')->except('show');
+        Route::resource('senator', 'SenatorController')->except('show');
         Route::resource('post', 'PostController')->except('show');
         Route::resource('pages', 'StaticPageController')->except('show');
         Route::resource('users', 'UserController');

@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 tinymce.init({
     selector: '.editor',
-    height: 500,
+    height: 300,
     language: 'ru',
     plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak code',
     toolbar_mode: 'floating',

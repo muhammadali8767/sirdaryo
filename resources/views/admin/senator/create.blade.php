@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Редактирование категории')
+@section('title', 'Добавить сенатора')
 
 @section('content')
     <!-- Content Header (Page header) -->
@@ -8,31 +8,26 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Редактирование категории: {{ $director->title }}</h1>
+                    <h1 class="m-0">Добавить сенатора</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('homeAdmin') }}">Главная</a></li>
                         <li class="breadcrumb-item"><a href="{{ route('director.index') }}">Директоры</a></li>
-                        <li class="breadcrumb-item active">Редактирование директора</li>
+                        <li class="breadcrumb-item active">Добавить сенатора</li>
                     </ol>
                 </div>
 
             </div><!-- /.row -->
             @include('layouts.components.admin.message')
-        </div><!-- /.container-fluid -->
+        </div>
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- form start -->
-                    <form action="{{ route('director.update', $director->id) }}" method="POST">
+                    <form action="{{ route('director.store') }}" method="POST" class="needs-validation" novalidate>
                         @csrf
-                        @method('PUT')
                         <div class="card card-primary card-outline card-outline-tabs">
                             <div class="card-header p-0 border-bottom-0">
                                 <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
@@ -62,7 +57,7 @@
                                             <label for="exampleInputEmail1">Lavozim</label>
                                             <input type="text" name="job_title_uz"
                                                 class="form-control @error('job_title_uz') is-invalid @enderror"
-                                                required value="{{ $director->job_title_uz }}">
+                                                required value="{{ old('job_title_uz') }}">
                                             @error('job_title_uz')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -72,7 +67,7 @@
                                             <label for="exampleInputEmail1">F.I.SH</label>
                                             <input type="text" name="fullname_uz"
                                                 class="form-control @error('fullname_uz') is-invalid @enderror"
-                                                required value="{{ $director->fullname_uz }}">
+                                                required value="{{ old('fullname_uz') }}">
                                             @error('fullname_uz')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -80,7 +75,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Biografiya</label>
-                                            <textarea name="biography_uz" class="editor" required>{{ $director->biography_uz }}</textarea>
+                                            <textarea name="biography_uz" class="editor" required>{{ old('biography_uz') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -91,7 +86,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Majburiyatlar</label>
-                                            <textarea name="obligation_uz" class="editor" required>{{ $director->obligation_uz }}</textarea>
+                                            <textarea name="obligation_uz" class="editor" required>{{ old('obligation_uz') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -102,7 +97,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Faoliyat</label>
-                                            <textarea name="activity_uz" class="editor" required>{{ $director->activity_uz }}</textarea>
+                                            <textarea name="activity_uz" class="editor" required>{{ old('activity_uz') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -119,7 +114,7 @@
                                             <label for="exampleInputEmail1">Должность</label>
                                             <input type="text" name="job_title_ru"
                                                 class="form-control @error('job_title_ru') is-invalid @enderror"
-                                                value="{{ $director->job_title_ru }}">
+                                                value="{{ old('job_title_ru') }}">
                                             @error('job_title_ru')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -129,7 +124,7 @@
                                             <label for="exampleInputEmail1">Ф.И.О.</label>
                                             <input type="text" name="fullname_ru"
                                                 class="form-control @error('fullname_ru') is-invalid @enderror"
-                                                value="{{ $director->fullname_ru }}">
+                                                value="{{ old('fullname_ru') }}">
                                             @error('fullname_ru')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -137,7 +132,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">биография</label>
-                                            <textarea name="biography_ru" class="editor">{{ $director->biography_ru }}</textarea>
+                                            <textarea name="biography_ru" class="editor">{{ old('biography_ru') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -148,7 +143,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Обязательства</label>
-                                            <textarea name="obligation_ru" class="editor">{{ $director->obligation_ru }}</textarea>
+                                            <textarea name="obligation_ru" class="editor">{{ old('obligation_ru') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -159,7 +154,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Деятельность</label>
-                                            <textarea name="activity_ru" class="editor">{{ $director->activity_ru }}</textarea>
+                                            <textarea name="activity_ru" class="editor">{{ old('activity_ru') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -176,7 +171,7 @@
                                             <label for="exampleInputEmail1">Position</label>
                                             <input type="text" name="job_title_en"
                                                 class="form-control @error('job_title_en') is-invalid @enderror"
-                                                value="{{ $director->job_title_en }}">
+                                                value="{{ old('job_title_en') }}">
                                             @error('job_title_en')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -186,7 +181,7 @@
                                             <label for="exampleInputEmail1">Full name</label>
                                             <input type="text" name="fullname_en"
                                                 class="form-control @error('fullname_en') is-invalid @enderror"
-                                                value="{{ $director->fullname_en }}">
+                                                value="{{ old('fullname_en') }}">
                                             @error('fullname_en')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -194,7 +189,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Biography</label>
-                                            <textarea name="biography_en" class="editor">{{ $director->biography_en }}</textarea>
+                                            <textarea name="biography_en" class="editor">{{ old('biography_en') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -205,7 +200,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Obligations</label>
-                                            <textarea name="obligation_en" class="editor">{{ $director->obligation_en }}</textarea>
+                                            <textarea name="obligation_en" class="editor">{{ old('obligation_en') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -216,7 +211,7 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Activity</label>
-                                            <textarea name="activity_en" class="editor">{{ $director->activity_en }}</textarea>
+                                            <textarea name="activity_en" class="editor">{{ old('activity_en') }}</textarea>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
                                             </div>
@@ -235,11 +230,11 @@
                                     <div class="col-3">
                                         <div class="form-group">
                                             <label for="feature_image">Изображение</label>
-                                            <img src="{{ $director->image }}" alt="" class="img-uploaded"
+                                            <img src="{{ old('image') }}" alt="" class="img-uploaded"
                                                 style="display: block; width: 300px">
                                             <input type="text" name="image"
                                                 class="form-control @error('password') is-invalid @enderror"
-                                                id="feature_image" name="feature_image" value="{{ $director->image }}"
+                                                id="feature_image" name="feature_image" value="{{ old('image') }}"
                                                 readonly>
                                             <div class="invalid-feedback">
                                                 Please fill a valid data.
@@ -256,7 +251,7 @@
                                             <label for="exampleInputEmail1">Номер телефона</label>
                                             <input type="phone" name="phone"
                                                 class="form-control @error('phone') is-invalid @enderror"
-                                                required value="{{ $director->phone }}">
+                                                required value="{{ old('phone') }}">
                                             @error('phone')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -268,7 +263,7 @@
                                             <label for="exampleInputEmail1">Время приема</label>
                                             <input type="text" name="reception_times"
                                                 class="form-control @error('reception_times') is-invalid @enderror"
-                                                required value="{{ $director->reception_times }}">
+                                                required value="{{ old('reception_times') }}">
                                             @error('reception_times')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -279,7 +274,7 @@
                                             <label for="exampleInputEmail1">Фейсбук линк</label>
                                             <input type="text" name="fb_link"
                                                 class="form-control @error('fb_link') is-invalid @enderror"
-                                                required value="{{ $director->fb_link }}">
+                                                required value="{{ old('fb_link') }}">
                                             @error('fb_link')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -290,7 +285,7 @@
                                             <label for="exampleInputEmail1">Твиттер линк</label>
                                             <input type="text" name="tw_link"
                                                 class="form-control @error('tw_link') is-invalid @enderror"
-                                                required value="{{ $director->tw_link }}">
+                                                required value="{{ old('tw_link') }}">
                                             @error('tw_link')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -301,7 +296,7 @@
                                             <label for="exampleInputEmail1">Инстаграм линк</label>
                                             <input type="text" name="ig_link"
                                                 class="form-control @error('ig_link') is-invalid @enderror"
-                                                required value="{{ $director->ig_link }}">
+                                                required value="{{ old('ig_link') }}">
                                             @error('ig_link')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -312,7 +307,7 @@
                                             <label for="exampleInputEmail1">Линкед ин линк</label>
                                             <input type="text" name="in_link"
                                                 class="form-control @error('in_link') is-invalid @enderror"
-                                                required value="{{ $director->in_link }}">
+                                                required value="{{ old('in_link') }}">
                                             @error('in_link')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -323,7 +318,7 @@
                                             <label for="exampleInputEmail1">Ютуб линк</label>
                                             <input type="text" name="yt_link"
                                                 class="form-control @error('yt_link') is-invalid @enderror"
-                                                required value="{{ $director->yt_link }}">
+                                                required value="{{ old('yt_link') }}">
                                             @error('yt_link')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -340,7 +335,6 @@
                 </div>
             </div>
         </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
-    <!-- /.content -->
 @endsection

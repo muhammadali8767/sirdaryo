@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\DirectorCreateRequest;
-use App\Models\Director;
+use App\Http\Requests\SenatorCreateRequest;
+use App\Models\Senator;
 use Illuminate\Http\Request;
 
-class DirectorController extends Controller
+class SenatorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +16,9 @@ class DirectorController extends Controller
      */
     public function index()
     {
-        $directors = Director::orderBy('created_at', 'desc')->paginate(10);
+        $senators = Senator::orderBy('created_at', 'desc')->paginate(10);
 
-        return view('admin.director.index', compact('directors'));
+        return view('admin.senator.index', compact('senators'));
     }
 
     /**
@@ -28,7 +28,7 @@ class DirectorController extends Controller
      */
     public function create()
     {
-        return view('admin.director.create');
+        return view('admin.senator.create');
     }
 
     /**
@@ -37,11 +37,11 @@ class DirectorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(DirectorCreateRequest $request)
+    public function store(SenatorCreateRequest $request)
     {
-        $director = Director::create($request->validated());
+        $senator = Senator::create($request->validated());
 
-        if ($director->save()) {
+        if ($senator->save()) {
             return redirect()->back()->withSuccess('Руководитель была успешно добавлена!');
         } else {
             return redirect()->back()->withErrors('Руководитель не была добавлена!');
@@ -51,10 +51,10 @@ class DirectorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Director  $director
+     * @param  \App\Models\Senator  $senator
      * @return \Illuminate\Http\Response
      */
-    public function show(Director $director)
+    public function show(Senator $senator)
     {
         //
     }
@@ -62,26 +62,26 @@ class DirectorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Director  $director
+     * @param  \App\Models\Senator  $senator
      * @return \Illuminate\Http\Response
      */
-    public function edit(Director $director)
+    public function edit(Senator $senator)
     {
-        return view('admin.director.edit', compact('director'));
+        return view('admin.senator.edit', compact('senator'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Director  $director
+     * @param  \App\Models\Senator  $senator
      * @return \Illuminate\Http\Response
      */
-    public function update(DirectorCreateRequest $request, Director $director)
+    public function update(SenatorCreateRequest $request, Senator $senator)
     {
-        $director->update($request->except('_token'));
+        $senator->update($request->validated());
 
-        if ($director->save()) {
+        if ($senator->save()) {
             return redirect()->back()->withSuccess('Руководитель была успешно обновлена!');
         } else {
             return redirect()->back()->withErrors('Руководитель не была обновлена!');
@@ -91,12 +91,12 @@ class DirectorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Director  $director
+     * @param  \App\Models\Senator  $senator
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Director $director)
+    public function destroy(Senator $senator)
     {
-        $director->delete();
+        $senator->delete();
 
         return redirect()->back()->withSuccess('Руководитель была успешно удалена!');
     }

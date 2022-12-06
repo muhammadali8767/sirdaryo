@@ -35,6 +35,7 @@ class CreateDirectorsTable extends Migration
             $table->text('activity_ru');
             $table->text('activity_en');
 
+            $table->text('image');
             $table->text('phone');
             $table->text('reception_times');
 
