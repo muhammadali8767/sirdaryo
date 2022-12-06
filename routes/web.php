@@ -26,6 +26,7 @@ Route::namespace('App\Http\Controllers\Admin')
         Route::get('dashboard', 'HomeController@index')->name('homeAdmin');
 
         Route::resource('category', 'CategoryController')->except('show');
+        Route::resource('director', 'DirectorController')->except('show');
         Route::resource('post', 'PostController')->except('show');
         Route::resource('pages', 'StaticPageController')->except('show');
         Route::resource('users', 'UserController');

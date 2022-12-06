@@ -114,6 +114,42 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Руководство<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('director.index') }}" class="nav-link">
+                                <p>Все руководители</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('director.create') }}" class="nav-link">
+                                <p>Добавить руководителя</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Члены Сената<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('pages.index') }}" class="nav-link">
+                                <p>Все члены сената</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('pages.create') }}" class="nav-link">
+                                <p>Добавить члена сената</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>Ползователи<i class="right fas fa-angle-left"></i></p>
                     </a>

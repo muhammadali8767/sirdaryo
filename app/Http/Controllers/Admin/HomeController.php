@@ -18,8 +18,18 @@ class HomeController extends Controller
         $users_count = User::all()->count();
         $pages_count = StaticPage::all()->count();
 
+        $last_posts = Post::orderBy('id')->limit(5)->get();
+        $last_pages = StaticPage::orderBy('id')->limit(5)->get();
+
         return view('admin.home.index',
-            compact('posts_count', 'categories_count', 'users_count', 'pages_count')
+            compact(
+                'posts_count',
+                'categories_count',
+                'users_count',
+                'pages_count',
+                'last_posts',
+                'last_pages',
+            )
         );
     }
 
