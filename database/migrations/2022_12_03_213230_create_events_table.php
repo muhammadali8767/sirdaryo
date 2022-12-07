@@ -19,7 +19,7 @@ class CreateEventsTable extends Migration
             $table->text('title_uz');
             $table->text('title_ru');
             $table->text('title_en');
-            $table->boolean('is_active');
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }

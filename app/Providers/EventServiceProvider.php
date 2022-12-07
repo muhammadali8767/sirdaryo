@@ -4,11 +4,13 @@ namespace App\Providers;
 
 use App\Models\Deputat;
 use App\Models\Director;
+use App\Models\Event as ModelsEvent;
 use App\Models\HeadOfSecretariat;
 use App\Models\Reception;
 use App\Models\Senator;
 use App\Observers\DeputatObserver;
 use App\Observers\DirectorObserver;
+use App\Observers\EventObserver;
 use App\Observers\HeadOfSecretariatObserver;
 use App\Observers\ReceptionObserver;
 use App\Observers\SenatorObserver;
@@ -42,5 +44,6 @@ class EventServiceProvider extends ServiceProvider
         Deputat::observe(DeputatObserver::class);
         HeadOfSecretariat::observe(HeadOfSecretariatObserver::class);
         Reception::observe(ReceptionObserver::class);
+        ModelsEvent::observe(EventObserver::class);
     }
 }

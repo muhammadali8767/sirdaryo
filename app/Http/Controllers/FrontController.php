@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContacCreateRequest;
+use App\Http\Requests\EventCreateRequest;
 use App\Models\Contact;
+use App\Models\Event;
 use App\Models\Media;
 use App\Models\Post;
 use App\Models\StaticPage;
 use App\Repositories\PostRepository;
+use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
@@ -72,5 +75,17 @@ class FrontController extends Controller
     public function services()
     {
         return view('front.services');
+    }
+
+    public function getEvents()
+    {
+        $month = request()->month ? request()->month : date('m');
+        $year = request()->year ? request()->year : date('Y');
+        $events = Event::where('is_active', true)
+            ->whereMonth('event_time', $month)
+            ->whereYear('event_time', $year)
+            ->select('id', 'event_time', 'title_uz', 'title_ru', 'title_en', 'id as link')
+            ->get();
+        return response()->json($events);
     }
 }

@@ -202,6 +202,24 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Событие<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('event.index') }}" class="nav-link">
+                                <p>Все Событие</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('event.create') }}" class="nav-link">
+                                <p>Добавить Событие</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>Ползователи<i class="right fas fa-angle-left"></i></p>
                     </a>

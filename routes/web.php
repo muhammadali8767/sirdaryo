@@ -32,6 +32,7 @@ Route::namespace('App\Http\Controllers\Admin')
         Route::resource('deputat', 'DeputatController')->except('show');
         Route::resource('headOfSecretariat', 'HeadOfSecretariatController')->except('show');
         Route::resource('reception', 'ReceptionController')->except('show');
+        Route::resource('event', 'EventController')->except('show');
 
 
         Route::resource('post', 'PostController')->except('show');
