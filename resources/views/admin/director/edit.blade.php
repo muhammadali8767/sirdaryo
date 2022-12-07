@@ -8,7 +8,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Редактирование категории: {{ $director->title }}</h1>
+                    <h1 class="m-0">Редактирование директора: {{ $director->id }}</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -334,7 +334,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Добавить</button>
+                            <button type="submit" class="btn btn-primary">Обновить</button>
                         </div>
                     </form>
                 </div>

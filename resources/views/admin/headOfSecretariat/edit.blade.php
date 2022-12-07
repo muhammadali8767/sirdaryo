@@ -8,13 +8,13 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Редактирование сенатора: {{ $senator->id }}</h1>
+                    <h1 class="m-0">Редактирование Главы Секретариата: {{ $headOfSecretariat->id }}</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('homeAdmin') }}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('senator.index') }}">Директоры</a></li>
-                        <li class="breadcrumb-item active">Редактирование сенатора</li>
+                        <li class="breadcrumb-item"><a href="{{ route('headOfSecretariat.index') }}">Главы Секретариата</a></li>
+                        <li class="breadcrumb-item active">Редактирование Главы Секретариата</li>
                     </ol>
                 </div>
 
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <!-- form start -->
-                    <form action="{{ route('senator.update', $senator->id) }}" method="POST">
+                    <form action="{{ route('headOfSecretariat.update', $headOfSecretariat->id) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="card card-primary card-outline card-outline-tabs">
@@ -59,11 +59,11 @@
                                         aria-labelledby="custom-tabs-four-home-tab">
 
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Ish joyi va lavozimi</label>
-                                            <input type="text" name="job_and_position_uz"
-                                                class="form-control @error('job_and_position_uz') is-invalid @enderror"
-                                                required value="{{ $senator->job_and_position_uz }}">
-                                            @error('job_and_position_uz')
+                                            <label for="exampleInputEmail1">Okrug nomi</label>
+                                            <input type="text" name="okrug_uz"
+                                                class="form-control @error('okrug_uz') is-invalid @enderror"
+                                                required value="{{ $headOfSecretariat->okrug_uz }}">
+                                            @error('okrug_uz')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -72,7 +72,7 @@
                                             <label for="exampleInputEmail1">F.I.SH</label>
                                             <input type="text" name="fullname_uz"
                                                 class="form-control @error('fullname_uz') is-invalid @enderror"
-                                                required value="{{ $senator->fullname_uz }}">
+                                                required value="{{ $headOfSecretariat->fullname_uz }}">
                                             @error('fullname_uz')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -83,11 +83,11 @@
                                         aria-labelledby="custom-tabs-four-profile-tab">
 
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Рабочее место и должность</label>
-                                            <input type="text" name="job_and_position_ru"
-                                                class="form-control @error('job_and_position_ru') is-invalid @enderror"
-                                                value="{{ $senator->job_and_position_ru }}">
-                                            @error('job_and_position_ru')
+                                            <label for="exampleInputEmail1">Название округа</label>
+                                            <input type="text" name="okrug_ru"
+                                                class="form-control @error('okrug_ru') is-invalid @enderror"
+                                                value="{{ $headOfSecretariat->okrug_ru }}">
+                                            @error('okrug_ru')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -96,7 +96,7 @@
                                             <label for="exampleInputEmail1">Ф.И.О.</label>
                                             <input type="text" name="fullname_ru"
                                                 class="form-control @error('fullname_ru') is-invalid @enderror"
-                                                value="{{ $senator->fullname_ru }}">
+                                                value="{{ $headOfSecretariat->fullname_ru }}">
                                             @error('fullname_ru')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -107,11 +107,11 @@
                                         aria-labelledby="custom-tabs-four-messages-tab">
 
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Workplace and position</label>
-                                            <input type="text" name="job_and_position_en"
-                                                class="form-control @error('job_and_position_en') is-invalid @enderror"
-                                                value="{{ $senator->job_and_position_en }}">
-                                            @error('job_and_position_en')
+                                            <label for="exampleInputEmail1">County name</label>
+                                            <input type="text" name="okrug_en"
+                                                class="form-control @error('okrug_en') is-invalid @enderror"
+                                                value="{{ $headOfSecretariat->okrug_en }}">
+                                            @error('okrug_en')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -120,26 +120,8 @@
                                             <label for="exampleInputEmail1">Full name</label>
                                             <input type="text" name="fullname_en"
                                                 class="form-control @error('fullname_en') is-invalid @enderror"
-                                                value="{{ $senator->fullname_en }}">
+                                                value="{{ $headOfSecretariat->fullname_en }}">
                                             @error('fullname_en')
-                                                <p class="text-danger small">{{ $message }}</p>
-                                            @enderror
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <hr>
-                            <div class="container-fluid">
-                                <h2>Дополнителные</h2>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Партия</label>
-                                            <input type="text" name="party"
-                                                class="form-control @error('party') is-invalid @enderror"
-                                                required value="{{ $senator->party }}">
-                                            @error('party')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>

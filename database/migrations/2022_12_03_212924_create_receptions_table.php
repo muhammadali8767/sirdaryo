@@ -15,6 +15,17 @@ class CreateReceptionsTable extends Migration
     {
         Schema::create('receptions', function (Blueprint $table) {
             $table->id();
+            $table->text('fullname_uz');
+            $table->text('fullname_ru');
+            $table->text('fullname_en');
+
+            $table->text('job_title_uz');
+            $table->text('job_title_ru');
+            $table->text('job_title_en');
+
+            $table->text('reception_day');
+            $table->text('reception_time');
+
             $table->timestamps();
         });
     }

@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SenatorCreateRequest;
 use App\Models\Senator;
-use Illuminate\Http\Request;
 
 class SenatorController extends Controller
 {
@@ -42,9 +41,9 @@ class SenatorController extends Controller
         $senator = Senator::create($request->validated());
 
         if ($senator->save()) {
-            return redirect()->back()->withSuccess('Руководитель была успешно добавлена!');
+            return redirect()->back()->withSuccess('Член Сената была успешно добавлена!');
         } else {
-            return redirect()->back()->withErrors('Руководитель не была добавлена!');
+            return redirect()->back()->withErrors('Член Сената не была добавлена!');
         }
     }
 
@@ -82,9 +81,9 @@ class SenatorController extends Controller
         $senator->update($request->validated());
 
         if ($senator->save()) {
-            return redirect()->back()->withSuccess('Руководитель была успешно обновлена!');
+            return redirect()->back()->withSuccess('Член Сената была успешно обновлена!');
         } else {
-            return redirect()->back()->withErrors('Руководитель не была обновлена!');
+            return redirect()->back()->withErrors('Член Сената не была обновлена!');
         }
     }
 
@@ -98,6 +97,6 @@ class SenatorController extends Controller
     {
         $senator->delete();
 
-        return redirect()->back()->withSuccess('Руководитель была успешно удалена!');
+        return redirect()->back()->withSuccess('Член Сената была успешно удалена!');
     }
 }

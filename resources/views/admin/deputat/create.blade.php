@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Редактирование категории')
+@section('title', 'Добавить сенатора')
 
 @section('content')
     <!-- Content Header (Page header) -->
@@ -8,31 +8,26 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Редактирование сенатора: {{ $senator->id }}</h1>
+                    <h1 class="m-0">Добавить сенатора</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('homeAdmin') }}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('senator.index') }}">Директоры</a></li>
-                        <li class="breadcrumb-item active">Редактирование сенатора</li>
+                        <li class="breadcrumb-item"><a href="{{ route('deputat.index') }}">Директоры</a></li>
+                        <li class="breadcrumb-item active">Добавить сенатора</li>
                     </ol>
                 </div>
 
             </div><!-- /.row -->
             @include('layouts.components.admin.message')
-        </div><!-- /.container-fluid -->
+        </div>
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- form start -->
-                    <form action="{{ route('senator.update', $senator->id) }}" method="POST">
+                    <form action="{{ route('deputat.store') }}" method="POST" class="needs-validation" novalidate>
                         @csrf
-                        @method('PUT')
                         <div class="card card-primary card-outline card-outline-tabs">
                             <div class="card-header p-0 border-bottom-0">
                                 <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
@@ -59,11 +54,11 @@
                                         aria-labelledby="custom-tabs-four-home-tab">
 
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Ish joyi va lavozimi</label>
-                                            <input type="text" name="job_and_position_uz"
-                                                class="form-control @error('job_and_position_uz') is-invalid @enderror"
-                                                required value="{{ $senator->job_and_position_uz }}">
-                                            @error('job_and_position_uz')
+                                            <label for="exampleInputEmail1">Okrug nomi</label>
+                                            <input type="text" name="okrug_uz"
+                                                class="form-control @error('okrug_uz') is-invalid @enderror"
+                                                required value="{{ old('okrug_uz') }}">
+                                            @error('okrug_uz')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -72,8 +67,18 @@
                                             <label for="exampleInputEmail1">F.I.SH</label>
                                             <input type="text" name="fullname_uz"
                                                 class="form-control @error('fullname_uz') is-invalid @enderror"
-                                                required value="{{ $senator->fullname_uz }}">
+                                                required value="{{ old('fullname_uz') }}">
                                             @error('fullname_uz')
+                                                <p class="text-danger small">{{ $message }}</p>
+                                            @enderror
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Ish joyi va lavozimi</label>
+                                            <input type="text" name="job_and_position_uz"
+                                                class="form-control @error('job_and_position_uz') is-invalid @enderror"
+                                                required value="{{ old('job_and_position_uz') }}">
+                                            @error('job_and_position_uz')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -81,13 +86,12 @@
 
                                     <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel"
                                         aria-labelledby="custom-tabs-four-profile-tab">
-
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Рабочее место и должность</label>
-                                            <input type="text" name="job_and_position_ru"
-                                                class="form-control @error('job_and_position_ru') is-invalid @enderror"
-                                                value="{{ $senator->job_and_position_ru }}">
-                                            @error('job_and_position_ru')
+                                            <label for="exampleInputEmail1">Название округа</label>
+                                            <input type="text" name="okrug_ru"
+                                                class="form-control @error('okrug_ru') is-invalid @enderror"
+                                                value="{{ old('okrug_ru') }}">
+                                            @error('okrug_ru')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -96,8 +100,18 @@
                                             <label for="exampleInputEmail1">Ф.И.О.</label>
                                             <input type="text" name="fullname_ru"
                                                 class="form-control @error('fullname_ru') is-invalid @enderror"
-                                                value="{{ $senator->fullname_ru }}">
+                                                value="{{ old('fullname_ru') }}">
                                             @error('fullname_ru')
+                                                <p class="text-danger small">{{ $message }}</p>
+                                            @enderror
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Рабочее место и должность</label>
+                                            <input type="text" name="job_and_position_ru"
+                                                class="form-control @error('job_and_position_ru') is-invalid @enderror"
+                                                value="{{ old('job_and_position_ru') }}">
+                                            @error('job_and_position_ru')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -105,13 +119,12 @@
 
                                     <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel"
                                         aria-labelledby="custom-tabs-four-messages-tab">
-
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Workplace and position</label>
-                                            <input type="text" name="job_and_position_en"
-                                                class="form-control @error('job_and_position_en') is-invalid @enderror"
-                                                value="{{ $senator->job_and_position_en }}">
-                                            @error('job_and_position_en')
+                                            <label for="exampleInputEmail1">County name</label>
+                                            <input type="text" name="okrug_en"
+                                                class="form-control @error('okrug_en') is-invalid @enderror"
+                                                value="{{ old('okrug_en') }}">
+                                            @error('okrug_en')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
@@ -120,11 +133,22 @@
                                             <label for="exampleInputEmail1">Full name</label>
                                             <input type="text" name="fullname_en"
                                                 class="form-control @error('fullname_en') is-invalid @enderror"
-                                                value="{{ $senator->fullname_en }}">
+                                                value="{{ old('fullname_en') }}">
                                             @error('fullname_en')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
                                         </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Workplace and position</label>
+                                            <input type="text" name="job_and_position_en"
+                                                class="form-control @error('job_and_position_en') is-invalid @enderror"
+                                                value="{{ old('job_and_position_en') }}">
+                                            @error('job_and_position_en')
+                                                <p class="text-danger small">{{ $message }}</p>
+                                            @enderror
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -133,12 +157,13 @@
                             <div class="container-fluid">
                                 <h2>Дополнителные</h2>
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-12">
+
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Партия</label>
                                             <input type="text" name="party"
                                                 class="form-control @error('party') is-invalid @enderror"
-                                                required value="{{ $senator->party }}">
+                                                required value="{{ old('party') }}">
                                             @error('party')
                                                 <p class="text-danger small">{{ $message }}</p>
                                             @enderror
@@ -149,13 +174,12 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Обновить</button>
+                            <button type="submit" class="btn btn-primary">Добавить</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
-    <!-- /.content -->
 @endsection

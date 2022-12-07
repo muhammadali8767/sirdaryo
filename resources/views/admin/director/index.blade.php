@@ -40,12 +40,7 @@
                                 <tr>
                                     <td>{{ $director->id }}</td>
                                     <td>{{ $director->job_title }}</td>
-
-                                    <td>
-                                        {{--  <a href="{{ route('director', $director->slug) }}">
-                                            {{ route('director', $director->slug) }}
-                                        </a>  --}}
-                                    </td>
+                                    <td>{{ $director->fullname }}</td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-info btn-sm" href="{{ route('director.edit', $director->id) }}">
                                             <i class="fas fa-pencil-alt"></i>
