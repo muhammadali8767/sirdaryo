@@ -5,10 +5,12 @@ namespace App\Providers;
 use App\Models\Deputat;
 use App\Models\Director;
 use App\Models\HeadOfSecretariat;
+use App\Models\Reception;
 use App\Models\Senator;
 use App\Observers\DeputatObserver;
 use App\Observers\DirectorObserver;
 use App\Observers\HeadOfSecretariatObserver;
+use App\Observers\ReceptionObserver;
 use App\Observers\SenatorObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -39,5 +41,6 @@ class EventServiceProvider extends ServiceProvider
         Senator::observe(SenatorObserver::class);
         Deputat::observe(DeputatObserver::class);
         HeadOfSecretariat::observe(HeadOfSecretariatObserver::class);
+        Reception::observe(ReceptionObserver::class);
     }
 }

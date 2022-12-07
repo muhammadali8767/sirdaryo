@@ -42,19 +42,19 @@ class Reception extends Model
         return $job_title;
     }
 
-    public function getREceptionDayAttribute($reseption_day){
-        switch (app()->getLocale()) {
-            case 'en':
-                $reseption_day = $this->reseption_day_en;
-                break;
-            case 'ru':
-                $reseption_day = $this->reseption_day_ru;
-                break;
-            default:
-                $reseption_day = $this->reseption_day_uz;
-                break;
-        }
-        $reseption_day = ($reseption_day) ? $reseption_day : $this->reseption_day_uz;
-        return $reseption_day;
-    }
+    // public function getREceptionDayAttribute($reseption_day){
+    //     switch (app()->getLocale()) {
+    //         case 'en':
+    //             $reseption_day = $this->reseption_day_en;
+    //             break;
+    //         case 'ru':
+    //             $reseption_day = $this->reseption_day_ru;
+    //             break;
+    //         default:
+    //             $reseption_day = $this->reseption_day_uz;
+    //             break;
+    //     }
+    //     $reseption_day = ($reseption_day) ? $reseption_day : $this->reseption_day_uz;
+    //     return $reseption_day;
+    // }
 }

@@ -184,6 +184,24 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Порядок приема граждан<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('reception.index') }}" class="nav-link">
+                                <p>Все порядок приема граждан</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('reception.create') }}" class="nav-link">
+                                <p>Добавить порядок приема граждан</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>Ползователи<i class="right fas fa-angle-left"></i></p>
                     </a>
