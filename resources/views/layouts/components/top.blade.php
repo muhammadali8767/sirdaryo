@@ -1,76 +1,122 @@
-<div class="col-11 col-lg-3 order-0 ps-0 ps-lg-3">
-    <a href="{{ route('main') }}" class="header-logo">
-        <img src="/front/img/Gerb-clean.png" alt="Brand Image" loading="lazy">
-        <span>
-            @lang("menu.logo")
-        </span>
-    </a>
-</div>
-<div class="col-12 col-lg-9 px-0 order-2 order-lg-2">
-    <div class="header__links">
-        <a href="#" class="header__links-link d-none d-sm-block">
-            <i class="fas fa-map-marker-alt"></i>
-            @lang("menu.location")
-        </a>
-        <a href="#" class="header__links-link me-auto">
-            <i class="fas fa-phone-alt"></i>
-            (67) 235-03-95
-        </a>
-        <a href="#" class="header__links-link d-none d-sm-block">
-            <i class="fas fa-envelope"></i>
-            sirdaryo@mineconomy.uz <br>
+<header class="header">
+    <!-- header top start -->
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top_row">
+                <a href="{{ route('main') }}" class="header__top_logo">
+                    <img src="/front/img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
+                    <span class="header__top_logo-text">Boyovut tuman hokimligi</span>
+                </a>
 
-        </a>
-        <a href="https://www.youtube.com/channel/UCJrg-jweIdz7zwcZdvzTJXQ" class="header__links-messenger">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://t.me/sirdeconomy" class="header__links-messenger">
-            <i class="fab fa-telegram-plane"></i>
-        </a>
-        <a href="https://www.facebook.com/sirdeconomy/" class="header__links-messenger">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/sirdeconomy.uz/" class="header__links-messenger">
-            <i class="fab fa-instagram"></i>
-        </a>
+                <div class="header__top_text">
+                    <i class="fas fa-map-marker-alt header__top_text-icon"></i>
+                    <p class="header__top_text-text">
+                        Boyovut tumani "Ijodkor" mahallasi Jayxun ko'chasi 5-uy
+                    </p>
+                </div>
 
-        <button class="header__links-searchBtn">
-            <i class="fas fa-search"></i>
-        </button>
-        <div class="dropdown">
-            <button class="btn header__links-langBtn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="/front/img/lang_{{ app()->getLocale() }}.png" alt="Uzb flag logo">
-                @switch(app()->getLocale())
-                    @case('en')
-                        Eng
-                    @break
+                <div class="header__top_text">
+                    <i class="fas fa-clock header__top_text-icon"></i>
+                    <p class="header__top_text-text">
+                        Dushanba - Juma, 9:00 - 18:00,
+                        Tushlik 13:00-14:00
+                    </p>
+                </div>
 
-                    @case('ru')
-                        Rus
-                    @break
+                <div class="header__top_connect">
+                    <a href="tel: +998672254090" class="tel_nomer">
+                        <i class="fas fa-phone-alt tel_nomer-icon"></i>
+                        +998 (67) 390-13-58
+                    </a>
+                    <div class="messenger__icons">
+                        <a href="https://www.facebook.com/Boyovut.tumani.hokimligi/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/boyovut_ovozi/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/Boyovutliklar">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@boyovuttumani">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
 
-                    @default
-                        Uzb
-                    @break
-                @endswitch
+                <div class="header__top_translatebox">
+                    <div class="translatebox">
+                        <div class="dropdown">
+                            <button class="btn btn-white dropdown-toggle lang-btn" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fal fa-language lang-icon"></i>
+                                @switch(app()->getLocale())
+                                    @case('en')
+                                        En
+                                    @break
+                                    @case('ru')
+                                        Ru
+                                    @break
 
-            </button>
+                                    @default
+                                        Uz
+                                    @break
+                                @endswitch
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item @if (app()->getLocale() == 'uz') active @endif" href="?locale=uz">Uz</a></li>
+                                <li><a class="dropdown-item @if (app()->getLocale() == 'ru') active @endif" href="?locale=ru">Ru</a></li>
+                                <li><a class="dropdown-item @if (app()->getLocale() == 'en') active @endif" href="?locale=en">En</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                @if (app()->getLocale() != 'uz')
-                    <li><a class="dropdown-item" href="?locale=uz"><img src="/front/img/lang_uz.png"
-                                alt="Uzb flag logo">Uzb</a></li>
-                @endif
-                @if (app()->getLocale() != 'ru')
-                    <li><a class="dropdown-item" href="?locale=ru"><img src="/front/img/lang_ru.png"
-                                alt="Uzb flag logo">Rus</a></li>
-                @endif
-                @if (app()->getLocale() != 'en')
-                    <li><a class="dropdown-item" href="?locale=en"><img src="/front/img/lang_en.png"
-                                alt="Uzb flag logo">Eng</a></li>
-                @endif
-            </ul>
+                    <div class="eyebox">
+                        <div class="dropdown">
+                            <button class="btn btn-white dropdown-toggle eye-btn" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-eye eyebox-icon"></i>
+                                <p class="eyebox-text">
+                                    Ko'zi ojizlar uchun
+                                </p>
+                            </button>
+                            <ul class="dropdown-menu eye-dropdown-menu">
+                                <li class="eye-item">
+                                    Tashqi ko'rinish
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex align-items-center eye-item">
+                                    <button class="eye-function-btn simple-theme">A</button>
+                                    <button class="eye-function-btn gray-theme">A</button>
+                                    <button class="eye-function-btn white-black-theme">A</button>
+                                </li>
+                                <li class="eye-item">
+                                    Shrift hajmi
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="eye-item">
+                                    <p class="eye-function-info mb-0">
+                                        <span>0%</span>
+                                        Kattalashtirish
+                                    </p>
+                                    <input type="range" class="form-range window-range">
+                                </li>
+                                <li class="eye-item">
+                                    <p class="eye-function-info mb-0">
+                                        <span>0%</span>
+                                        Kattalashtirish
+                                    </p>
+                                    <input type="range" class="form-range page-range">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <!-- header top end -->
+</header>

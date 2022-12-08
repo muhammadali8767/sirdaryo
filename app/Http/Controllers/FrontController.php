@@ -31,6 +31,7 @@ class FrontController extends Controller
     {
         $posts = Post::orderBy('created_at', 'DESC')->with('category')->paginate(9);
 
+        // dd($posts->getOptions());
         return view('front.news', compact('posts'));
     }
 

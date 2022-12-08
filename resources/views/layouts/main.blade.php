@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" sizes="512x512" href="img/Gerb-clean.png">
-    <title>O‘zbekiston respublikasi iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligi</title>
-
+    <link rel="shortcut icon" href="/front/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/front/libs/calendar.css">
+    <link rel="stylesheet" href="/front/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="/front/libs/slick/slick.css">
+    <link rel="stylesheet" href="/front/libs/bootstrap.min.css">
+    <title>Boyovut tuman hokimligi</title>
     <link rel="stylesheet" href="/front/css/all.min.css">
-    <link rel="stylesheet" href="/front/libs/bootstrap.css">
     <link rel="stylesheet" href="/front/css/main.css">
     <link rel="stylesheet" href="/front/css/media.css">
 </head>
@@ -26,30 +28,32 @@
     @endif
 
     <!-- ======== Header Start  ======== -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row header__parent">
-                @include('layouts.components.top')
-                @include('layouts.components.carousel')
-                @include('layouts.components.menu')
-            </div>
-        </div>
-    </header>
+    @include('layouts.components.top')
+    {{-- @include('layouts.components.carousel') --}}
+    @include('layouts.components.menu')
     <!-- ======== Header End    ======== -->
 
     <!-- ======== Main Start  ======== -->
-    <main class="site__content">
-        <div class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-8  order-sm-1 order-lg-0">
+
+    <main>
+        @if(in_array(Route::current()->getName(), ['main', 'news', 'post', 'category']))
+            @yield('content')
+        @else
+            <!-- main slider start -->
+            <section class="site-info-page">
+                <div class="container">
                     <div class="row">
-                        @yield('content')
-                        @include('layouts.components.useful_links')
+                        <div class="col-12 col-xl-9 px-0">
+                            @yield('content')
+                        </div>
+                        <div class="col-12 col-xl-3 px-0">
+                            @include('layouts.components.sidebar')
+                        </div>
                     </div>
                 </div>
-                @include('layouts.components.sidebar')
-            </div>
-        </div>
+            </section>
+            <!-- main slider end -->
+        @endif
     </main>
     <!-- ======== Main End    ======== -->
 
@@ -57,13 +61,12 @@
     @include('layouts.components.footer')
     <!-- ======== Footer End    ======== -->
 
-
-    <!-- Bootstrap Link -->
-    <script src="/front/libs/bootstrap.js"></script>
-    <!-- JQuery Link -->
-    <script src="/front/libs/jquery-3.3.1.min.js"></script>
-    <!-- My Scripts Link -->
-    <script src="/front/scripts/script.js"></script>
+    <script src="/front/libs/jquery.js"></script>
+    <script src="/front/libs/calendar.js"></script>
+    <script src="/front/libs/slick/slick.min.js"></script>
+    <script src="/front/libs/countTo.js"></script>
+    <script src="/front/libs/bootstrap.bundle.min.js"></script>
+    <script src="/front/js/scripts.js"></script>
 </body>
 
 </html>

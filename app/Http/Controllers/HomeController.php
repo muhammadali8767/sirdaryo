@@ -40,7 +40,6 @@ class HomeController extends Controller
     {
         $category = Category::where('slug', $category_slug)->first();
         $posts = app(PostRepository::class)->getAllWithCategory($category_slug, 5);
-        // $posts = Post::where('category_id', $category->id)->get();
         return view('front.news', compact('posts', 'category'));
         // return view('home.category', compact('posts'));
     }

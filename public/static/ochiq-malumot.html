@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/calendar.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/aos.css">
+    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <title>Boyovut tuman hokimligi</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- ===  Header Starting  === -->
+    <!-- ========================= -->
+    <header class="header">
+        <!-- header top start -->
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top_row">
+                    <a href="index.html" class="header__top_logo">
+                        <img src="img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
+                        <span class="header__top_logo-text">Boyovut tuman hokimligi</span>
+                    </a>
+
+                    <div class="header__top_text">
+                        <i class="fas fa-map-marker-alt header__top_text-icon"></i>
+                        <p class="header__top_text-text">
+                            Boyovut tumani "Ijodkor" mahallasi Jayxun ko'chasi 5-uy
+                        </p>
+                    </div>
+
+                    <div class="header__top_text">
+                        <i class="fas fa-clock header__top_text-icon"></i>
+                        <p class="header__top_text-text">
+                            Dushanba - Juma, 9:00 - 18:00,
+                            Tushlik 13:00-14:00
+                        </p>
+                    </div>
+
+                    <div class="header__top_connect">
+                        <a href="tel: +998672254090" class="tel_nomer">
+                            <i class="fas fa-phone-alt tel_nomer-icon"></i>
+                            +998 (67) 390-13-58
+                        </a>
+                        <div class="messenger__icons">
+                            <a href="https://www.facebook.com/Boyovut.tumani.hokimligi/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/boyovut_ovozi/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://t.me/Boyovutliklar">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@boyovuttumani">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header__top_translatebox">
+                        <div class="translatebox">
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle lang-btn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fal fa-language lang-icon"></i>
+                                    UZ
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Uz</a></li>
+                                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                                    <li><a class="dropdown-item" href="#">Eng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="eyebox">
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle eye-btn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-eye eyebox-icon"></i>
+                                    <p class="eyebox-text">
+                                        Ko'zi ojizlar uchun
+                                    </p>
+                                </button>
+                                <ul class="dropdown-menu eye-dropdown-menu">
+                                    <li class="eye-item">
+                                        Tashqi ko'rinish
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="d-flex align-items-center eye-item">
+                                        <button class="eye-function-btn simple-theme">A</button>
+                                        <button class="eye-function-btn gray-theme">A</button>
+                                        <button class="eye-function-btn white-black-theme">A</button>
+                                    </li>
+                                    <li class="eye-item">
+                                        Shrift hajmi
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="eye-item">
+                                        <p class="eye-function-info mb-0">
+                                            <span>0%</span>
+                                            Kattalashtirish
+                                        </p>
+                                        <input type="range" class="form-range window-range">
+                                    </li>
+                                    <li class="eye-item">
+                                        <p class="eye-function-info mb-0">
+                                            <span>0%</span>
+                                            Kattalashtirish
+                                        </p>
+                                        <input type="range" class="form-range page-range">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header top end -->
+    </header>
+
+    <!-- header navabr start -->
+    <div class="header__navbar">
+        <div class="container">
+            <div class="header__navbar_row">
+                <div class="header__navbar_bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="primary-menu header__navbar_list">
+                    <li class="header__navbar_item">
+                        Hokimiyat haqida
+                        <ul>
+                            <li><a href="rahbariyat.html">Rahbariyat</a></li>
+                            <li><a href="tuzilma.html">Tashkiliy tuzilma</a></li>
+                            <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari, huquqlari va
+                                    majburiyatlari</a></li>
+                            <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
+                            <li><a href="rekvizit.html">Rekvizitlar</a></li>
+                            <li><a href="hokimga-murojaat.html">Hokimga murojaat</a></li>
+                            <li><a href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar_item">
+                        <a href="news.html" home-link>Yangiliklar</a>
+                    </li>
+                    <li class="header__navbar_item">
+                        Boshqarma va tashkilotlar
+                    </li>
+                    <li class="header__navbar_item">
+                        Mahalliy Kengash
+                        <ul>
+                            <li><a href="senat.html">Senat a'zolari</a></li>
+                            <li><a href="./deputat.html">Deputatlar tarkibi</a></li>
+                            <li><a href="./kotib-mudirlari.html">Kotibiyat mudirlari</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar_item">
+                        Matbuot xizmati
+                        <ul>
+                            <li><a href="./media-xizmat.html">Media xizmati haqida</a></li>
+                            <li><a href="#">Media rejalar</a></li>
+                            <li><a href="vebsayt-malumotlar.html">Veb saytda joylashtirilgan ma'lumotlar</a></li>
+                            <li><a href="./axborot-olish.html">Axborot olish uchun so'rovlarni qabul qilish tartibi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar_item">
+                        <a href="aloqa.html" home-link>Aloqa</a>
+                    </li>
+                    <li class="header__navbar_item">
+                        <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
+                    </li>
+                </ul>
+
+                <div class="big-nav-list deactive d-none d-lg-block">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="header__navbar_bars active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="header__navbar_list">
+                            <li class="header__navbar_item">
+                                Hokimiyat haqida
+                                <ul>
+                                    <li><a href="rahbariyat.html">Rahbariyat</a></li>
+                                    <li><a href="tuzilma.html">Tashkiliy tuzilma</a></li>
+                                    <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari,
+                                            huquqlari va
+                                            majburiyatlari</a></li>
+                                    <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
+                                    <li><a href="rekvizit.html">Rekvizitlar</a></li>
+                                    <li><a href="hokimga-murojaat.html">Hokimga murojaat</a></li>
+                                    <li><a href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar_item">
+                                <a href="news.html" home-link>Yangiliklar</a>
+                            </li>
+                            <li class="header__navbar_item">
+                                Boshqarma va tashkilotlar
+                            </li>
+                            <li class="header__navbar_item">
+                                Mahalliy Kengash
+                                <ul>
+                                    <li><a href="senat.html">Senat a'zolari</a></li>
+                                    <li><a href="#">Deputatlar tarkibi</a></li>
+                                    <li><a href="#">Kotibiyat mudirlari</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar_item">
+                                Matbuot xizmati
+                                <ul>
+                                    <li><a href="media-xizmat.html">Media xizmati haqida</a></li>
+                                    <li><a href="#">Media rejalar</a></li>
+                                    <li><a href="vebsayt-malumotlar.html">Veb saytda joylashtirilgan ma'lumotlar</a></li>
+                                    <li><a href="./axborot-olish.html">Axborot olish uchun so'rovlarni qabul qilish tartibi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar_item">
+                                <a href="aloqa.html" home-link>Aloqa</a>
+                            </li>
+                            <li class="header__navbar_item">
+                                <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header navabr end -->
+    <!-- ========================= -->
+    <!-- ===  Header End  === -->
+    <!-- ========================= -->
+
+
+    <!-- ========================= -->
+    <!-- ===  Main Starting  === -->
+    <!-- ========================= -->
+    <main>
+        <!-- main slider start -->
+        <section class="open-data-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-9 px-0">
+                        <div class="container">
+                            <h2 class="section-title mb-30">
+                                Ochiq ma'lumotlar
+                            </h2>
+
+                            <table class="info-tabel">
+                                <tr>
+                                    <td>Uy-joy sharoitlarini yaxshilashga muhtoj boʻlgan shaxslarning subsidiya ajratish
+                                        haqida bergan arizalari roʻyxati (navbati) toʻgʻrisida maʼlumot</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mahalliy budjetning daromadlar va xarajatlar smetasi, rejadan orttirib
+                                        bajarilgan qismi va mazkur mablagʻlar yoʻnaltiriladigan maqsadlar toʻgʻrisida
+                                        maʼlumotlar
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tuman (shahar) xokimliklari tasarrufidagi yengil avtomobillar, xizmat uylari va
+                                        boshqa ko‘chmas mulklar to‘g‘risida ma’lumot
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tasdiqlangan yillik xarajatlar smetasi, uning ijrosi, shu jumladan obyektlarni
+                                        qurish, rekonstruksiya qilish va kapital taʼmirlash ishlari, avtomototransport
+                                        vositalarini sotib olish va saqlash xarajatlari toʻgʻrisidagi maʼlumotlar
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Viloyat hokimligida byudjetdan tashqari jamg‘armalar hisobiga hech qanday
+                                        tovarlar (ishlar, xizmatlar) rejalashtirilmagan hamda xarajatlar amalga
+                                        oshirilmagan
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Viloyat hokimligining tashqi yoki ishonchli boshqaruvga berilgan davlat ulushi
+                                        mavjud boʻlgan xoʻjalik jamiyatlari, ishonchli boshqaruvchi tomonidan jalb
+                                        qilingan toʻgʻridan-toʻgʻri xorijiy investitsiyalari mavjud emas
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Viloyat hokimligining doimiy foydalanuvida boʻlgan yer maydoni va mol-mulklari
+                                        yuridik va jismoniy shaxslarga davlat-xususiy sherikchilik asosida berilmagan
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Viloyati hokimligi huzuridagi jamoatchilik kengashi toʻgʻrisida maʼlumot
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Qishloq xoʻjaligiga moʻljallangan yer uchastkalariga ijara huquqini berish
+                                        boʻyicha ochiq tanlov gʻoliblari boʻlgan shaxslar toʻgʻrisida maʼlumot
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Viloyat xokimligi tasarrufidagi yengil avtomobillar, xizmat uylari va boshqa
+                                        koʻchmas mulklar toʻgʻrisida maʼlumot
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mansabdor shaxslarning xizmat safarlari va xorijdan tashrif buyurgan mehmonlarni
+                                        kutib olish xarajatlari (xizmat safarining yoki tashrifning maqsadi, sutkalik
+                                        pul, transport va yashash bilan bog‘liq xarajatlar
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Davlat xaridlari toʻgʻrisidagi maʼlumotlar, shu jumladan davlat xaridlarini
+                                        amalga oshiruvchi shaxslar tomonidan toʻgʻridan-toʻgʻri shartnomalar boʻyicha
+                                        xarid qilinadigan tovarlar (ishlar, xizmatlar)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Guliston, Yangiyer shahar, Mirzaobod, Sayxunobod tumanlarida jamoatchilik fikri
+                                        asosida shakllantirilgan tadbirlarni moliyalashtirish bo‘yicha ma’lumotlar
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Davlat xaridlari va investitsiya loyihalari doirasida hamda ruxsat etish
+                                        xususiyatiga ega hujjatlarni berish boʻyicha tashkil etiladigan xarid
+                                        komissiyalarining tarkibi toʻgʻrisidagi maʼlumotlar
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Viloyat hokimining hududni ijtimoiy-iqtisodiy rivojlantirish bo‘yicha 2021-yil
+                                        yakunlari hamda 2022-yil dolzarb vazifalar to‘g‘risida murojaati
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="copy-elements mb-0">
+                                <div class="date-view order-0">
+                                    <i class="fas fa-calendar"></i>
+                                    <p>
+                                        <span class="hours">00:00</span> / <span class="date">25.04.2022</span>
+                                    </p>
+                                </div>
+                                <button class="copy-button order-2 order-sm-1">
+                                    <i class="fal fa-clone"></i>
+                                    Nusxa olish
+                                </button>
+                                <div class="date-view order-1 order-sm-2">
+                                    <i class="fas fa-eye"></i>
+                                    <p>
+                                        <span class="view-numbers">4918</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 px-0">
+                        <div class="container">
+                            <table class="fast-connect-parent mb-50">
+                                <tr>
+                                    <td class="fast-connect-box">
+                                        <a href="#" class="box">
+                                            <span class="fast-connect-text">
+                                                Interaktiv xizmatlar
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="fast-connect-box">
+                                        <a href="#" class="box">
+                                            <span class="fast-connect-text">
+                                                Fuqarolar murojaati
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="fast-connect-box">
+                                        <a href="#" class="box">
+                                            <span class="fast-connect-text">
+                                                Shahar transporti
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="fast-connect-box">
+                                        <a href="#" class="box">
+                                            <span class="fast-connect-text">
+                                                Litsenziyalash xizmatlari
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="fast-connect-box">
+                                        <a href="#" class="box">
+                                            <span class="fast-connect-text">
+                                                Ko'p beriladigan savollar
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h2 class="section-title mb-30">Tadbirlar taqvimi</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <div class="oy">
+                                        <div class="calendarBox">
+                                            <div class="calendarBox">
+                                                <div class="calView">
+                                                    <button type="button" class="close closebtn">
+                                                        <span aria-hidden="true">x</span>
+                                                    </button>
+                                                    <ul class="calData">
+                                                    </ul>
+                                                </div>
+                                                <table id="calendar" class="cal" lng="oz">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="prev">
+                                                                <button class="prev-btn">
+                                                                    <i class="fal fa-long-arrow-left"></i>
+                                                                </button>
+                                                            </td>
+                                                            <td colspan="5"></td>
+                                                            <td class="next">
+                                                                <button class="next-btn">
+                                                                    <i class="fal fa-long-arrow-right"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Du</td>
+                                                            <td>Se</td>
+                                                            <td>Cho</td>
+                                                            <td>Pay</td>
+                                                            <td>Ju</td>
+                                                            <td>Sha</td>
+                                                            <td>Yak</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-12 d-none d-md-block">
+                                    <div class="text-start text-md-end">
+                                        <img src="./img/2022.png" alt="year name" class="year-name-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main slider end -->
+    </main>
+    <!-- ========================= -->
+    <!-- ===  Main End  === -->
+    <!-- ========================= -->
+
+
+    <!-- ========================= -->
+    <!-- ===  Footer Start  === -->
+    <!-- ========================= -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <a href="index.html" class="header__top_logo">
+                            <img src="img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
+                            <span class="header__top_logo-text">Boyovut tuman hokimligi</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <img src="./img/2022.png" alt="year name" class="year-name-img">
+                    </div>
+                </div>
+                <div class="row footer-top-menu">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <ul class="menu-list">
+                            <li class="menu-item">Hokimiyat haqida</li>
+                            <li class="menu-item"><a href="./rahbariyat.html" class="menu-link">Rahbariyat</a></li>
+                            <li class="menu-item"><a href="./tuzilma.html" class="menu-link">Tashkiliy tuzilma</a></li>
+                            <li class="menu-item"><a href="./funksiyalar.html" class="menu-link">Viloyat hokimligi
+                                    funktsiyalari, vazifalari, huquqlari va
+                                    majburiyatlari</a></li>
+                            <li class="menu-item"><a href="./qabul.html" class="menu-link">Fuqarolarni qabul qilish
+                                    tartibi</a></li>
+                            <li class="menu-item"><a href="./rekvizit.html" class="menu-link">Rekvizitlar</a></li>
+                            <li class="menu-item"><a href="./hokimga-murojaat.html" class="menu-link">Hokimga
+                                    murojaat</a></li>
+                                    <li class="menu-item"><a class="menu-link" href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+
+                        <ul class="menu-list">
+                            <li class="menu-item">Mahalliy Kengash</li>
+                            <li class="menu-item"><a href="./senat.html" class="menu-link">Sen'at A'zolari</a></li>
+                            <li class="menu-item"><a href="./deputat.html" class="menu-link">Deputatlar tarkibi</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Kotibiyat mudirlari</a></li>
+                            <li class="menu-item"><a href="./qarorlar.html" class="menu-link">Qabul qilingan
+                                    qarorlar</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <ul class="menu-list">
+                            <li class="menu-item">Matbuot xizmati</li>
+                            <li class="menu-item"><a href="media-xizmat.html" class="menu-link">Media xizmati haqida</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Media rejalar</a></li>
+                            <li class="menu-item"><a href="vebsayt-malumotlar.html" class="menu-link">Veb saytda joylashtirilgan
+                                    ma'lumotlar</a></li>
+                            <li class="menu-item"><a href="./axborot-olish.html" class="menu-link">Axborot olish uchun
+                                    so'rovlarni qabul qilish tartibi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="./aloqa.html" class="menu-link">Aloqa</a></li>
+                            <li class="menu-item"><a href="./news.html" class="menu-link">Yangiliklar</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Ochiq ma'lumotlar</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Boshqarma va tashkilotlar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3 mb-sm-5 mb-lg-0">
+                        <div class="contact-box">
+                            <h5 class="contact-title">Aloqa</h5>
+                            <div class="header__top_text">
+                                <i class="fas fa-map-marker-alt header__top_text-icon"></i>
+                                <p class="header__top_text-text">
+                                    Boyovut tumani "Ijodkor" mahallasi Jayxun ko'chasi 5-uy.
+                                </p>
+                            </div>
+
+                            <div class="header__top_text">
+                                <i class="fas fa-clock header__top_text-icon"></i>
+                                <p class="header__top_text-text">
+                                    Dushanba - Juma, 9:00 - 18:00,
+                                    Tushlik 13:00-14:00
+                                </p>
+                            </div>
+
+                            <div class="header__top_connect">
+                                <a href="tel: +998672254090" class="tel_nomer">
+                                    <i class="fas fa-phone-alt tel_nomer-icon"></i>
+                                    +998 (67) 390-13-58
+                                </a>
+                                <div class="messenger__icons">
+                                    <a href="https://www.facebook.com/Boyovut.tumani.hokimligi/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/boyovut_ovozi/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://t.me/Boyovutliklar">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/boyovut_ovozi/">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="map-box">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194548.1579493252!2d68.82140268564972!3d40.368626953275815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssirdaryo%20viloyati%20boyovut%20tuman%20hokimligi!5e0!3m2!1sen!2s!4v1669545239561!5m2!1sen!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container">
+                <p class="end-text">
+                    © <span class="current-year">2022</span> <a href="https://itlive.uz" class="producer">IT-Live</a>.
+                    All
+                    rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= -->
+    <!-- ===  Footer End  === -->
+    <!-- ========================= -->
+
+        <!-- toasts start -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">🔵Foydalanuvchi</strong>
+                    <small>Hozir</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body fw-bold">
+                    🤗
+                </div>
+            </div>
+        </div>
+        <!-- toasts end -->
+
+
+
+
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/calendar.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="./libs/aos.js"></script>
+    <script src="./libs/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

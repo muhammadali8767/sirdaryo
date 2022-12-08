@@ -19,7 +19,7 @@ return [
     "2017-2021 yillar uchun qabul qilingan dasturlar" => "2017-2021 yillar uchun qabul qilingan dasturlar",
     "Davlat dasturlari" => "Davlat dasturlari",
     "Korrupsiyaga qarshi kurashish bo'yicha qabul qilingan hujjatlar" => "Korrupsiyaga qarshi kurashish bo'yicha qabul qilingan hujjatlar",
-    "ALOQALAR" => "ALOQALAR",
+    "ALOQA" => "ALOQA",
     "Rahbariyat bo'limlari" => "Rahbariyat bo'limlari",
     "Hududiy bo'limlar" => "Hududiy bo'limlar",
     "Rahbariyat qabul kunlari" => "Rahbariyat qabul kunlari",

@@ -19,7 +19,7 @@ return [
     "2017-2021 yillar uchun qabul qilingan dasturlar" => "Accepted programs for 2017-2021",
     "Davlat dasturlari" => "State programs",
     "Korrupsiyaga qarshi kurashish bo'yicha qabul qilingan hujjatlar" => "Adopted documents on combating corruption",
-    "ALOQALAR" => "COMMUNICATIONS",
+    "ALOQA" => "CONTACT",
     "Rahbariyat bo'limlari" => "Management departments",
     "Hududiy bo'limlar" => "Regional departments",
     "Rahbariyat qabul kunlari" => "Leadership days",
