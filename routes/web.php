@@ -55,6 +55,8 @@ Route::namespace('App\Http\Controllers')
         Route::get('', 'FrontController@index')->name('main');
         // Route::get('about', 'FrontController@about')->name('about');
         Route::get('news', 'FrontController@news')->name('news');
+        Route::get('directors', 'FrontController@directors')->name('directors');
+        Route::get('senators', 'FrontController@senators')->name('senators');
         Route::get('multimedia', 'FrontController@multimedia')->name('multimedia');
         Route::get('contact', 'FrontController@contact')->name('contact');
         Route::post('contact', 'FrontController@post_contact')->name('post-contact');

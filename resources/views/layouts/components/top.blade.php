@@ -5,21 +5,20 @@
             <div class="header__top_row">
                 <a href="{{ route('main') }}" class="header__top_logo">
                     <img src="/front/img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
-                    <span class="header__top_logo-text">Boyovut tuman hokimligi</span>
+                    <span class="header__top_logo-text">@lang('menu.logo')</span>
                 </a>
 
                 <div class="header__top_text">
                     <i class="fas fa-map-marker-alt header__top_text-icon"></i>
                     <p class="header__top_text-text">
-                        Boyovut tumani "Ijodkor" mahallasi Jayxun ko'chasi 5-uy
+                        @lang('menu.location')
                     </p>
                 </div>
 
                 <div class="header__top_text">
                     <i class="fas fa-clock header__top_text-icon"></i>
                     <p class="header__top_text-text">
-                        Dushanba - Juma, 9:00 - 18:00,
-                        Tushlik 13:00-14:00
+                        @lang('menu.qabul vaqtlari')
                     </p>
                 </div>
 
@@ -80,12 +79,12 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-eye eyebox-icon"></i>
                                 <p class="eyebox-text">
-                                    Ko'zi ojizlar uchun
+                                    @lang('menu.kozi ojizlar')
                                 </p>
                             </button>
                             <ul class="dropdown-menu eye-dropdown-menu">
                                 <li class="eye-item">
-                                    Tashqi ko'rinish
+                                    @lang('menu.Tashqi korinish')
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li class="d-flex align-items-center eye-item">
@@ -94,20 +93,20 @@
                                     <button class="eye-function-btn white-black-theme">A</button>
                                 </li>
                                 <li class="eye-item">
-                                    Shrift hajmi
+                                    @lang('menu.Shrift hajmi')
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li class="eye-item">
                                     <p class="eye-function-info mb-0">
                                         <span>0%</span>
-                                        Kattalashtirish
+                                        @lang('menu.Kattalashtirish')
                                     </p>
                                     <input type="range" class="form-range window-range">
                                 </li>
                                 <li class="eye-item">
                                     <p class="eye-function-info mb-0">
                                         <span>0%</span>
-                                        Kattalashtirish
+                                        @lang('menu.Kattalashtirish')
                                     </p>
                                     <input type="range" class="form-range page-range">
                                 </li>

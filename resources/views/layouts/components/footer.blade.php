@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-6 mb-4 mb-md-0">
                     <a href="index.html" class="header__top_logo">
                         <img src="/front/img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
-                        <span class="header__top_logo-text">Boyovut tuman hokimligi</span>
+                        <span class="header__top_logo-text">@lang('menu.logo')</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-end">
@@ -15,7 +15,7 @@
             <div class="row footer-top-menu">
                 <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
                     <ul class="menu-list">
-                        <li class="menu-item">Hokimiyat haqida</li>
+                        <li class="menu-item">@lang('menu.Hokimiyat haqida')</li>
                         <li class="menu-item"><a href="/front/rahbariyat.html" class="menu-link">Rahbariyat</a></li>
                         <li class="menu-item"><a href="/front/tuzilma.html" class="menu-link">Tashkiliy tuzilma</a></li>
                         <li class="menu-item"><a href="/front/funksiyalar.html" class="menu-link">Viloyat hokimligi
@@ -33,7 +33,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
 
                     <ul class="menu-list">
-                        <li class="menu-item">Mahalliy Kengash</li>
+                        <li class="menu-item">@lang('menu.Mahalliy Kengash')</li>
                         <li class="menu-item"><a href="/front/senat.html" class="menu-link">Sen'at A'zolari</a></li>
                         <li class="menu-item"><a href="/front/deputat.html" class="menu-link">Deputatlar tarkibi</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Kotibiyat mudirlari</a></li>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
                     <ul class="menu-list">
-                        <li class="menu-item">Matbuot xizmati</li>
+                        <li class="menu-item">@lang('menu.Matbuot xizmati')</li>
                         <li class="menu-item"><a href="media-xizmat.html" class="menu-link">Media xizmati haqida</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Media rejalar</a></li>
                         <li class="menu-item"><a href="vebsayt-malumotlar.html" class="menu-link">Veb saytda joylashtirilgan
@@ -54,10 +54,10 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
                     <ul class="menu-list">
-                        <li class="menu-item"><a href="/front/aloqa.html" class="menu-link">Aloqa</a></li>
-                        <li class="menu-item"><a href="/front/news.html" class="menu-link">Yangiliklar</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Ochiq ma'lumotlar</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Boshqarma va tashkilotlar</a></li>
+                        <li class="menu-item"><a href="/front/aloqa.html" class="menu-link">@lang('menu.Aloqa')</a></li>
+                        <li class="menu-item"><a href="/front/news.html" class="menu-link">@lang('menu.Yangiliklar')</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">@lang('menu.Ochiq malumotlar')</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">@lang('menu.Boshqarma va tashkilotlar')</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,19 +65,18 @@
             <div class="row">
                 <div class="col-12 col-lg-6 mb-3 mb-sm-5 mb-lg-0">
                     <div class="contact-box">
-                        <h5 class="contact-title">Aloqa</h5>
+                        <h5 class="contact-title">@lang('menu.Aloqa')</h5>
                         <div class="header__top_text">
                             <i class="fas fa-map-marker-alt header__top_text-icon"></i>
                             <p class="header__top_text-text">
-                                Boyovut tumani "Ijodkor" mahallasi Jayxun ko'chasi 5-uy.
+                                @lang('menu.location')
                             </p>
                         </div>
 
                         <div class="header__top_text">
                             <i class="fas fa-clock header__top_text-icon"></i>
                             <p class="header__top_text-text">
-                                Dushanba - Juma, 9:00 - 18:00,
-                                Tushlik 13:00-14:00
+                                @lang('menu.qabul vaqtlari')
                             </p>
                         </div>
 

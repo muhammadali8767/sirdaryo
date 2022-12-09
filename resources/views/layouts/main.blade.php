@@ -36,7 +36,7 @@
     <!-- ======== Main Start  ======== -->
 
     <main>
-        @if(in_array(Route::current()->getName(), ['main', 'news', 'post', 'category']))
+        @if(in_array(Route::current()->getName(), ['main', 'news', 'post', 'category', 'contact']))
             @yield('content')
         @else
             <!-- main slider start -->

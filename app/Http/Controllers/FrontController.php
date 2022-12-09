@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContacCreateRequest;
 use App\Http\Requests\EventCreateRequest;
 use App\Models\Contact;
+use App\Models\Deputat;
+use App\Models\Director;
 use App\Models\Event;
 use App\Models\Media;
 use App\Models\Post;
+use App\Models\Senator;
 use App\Models\StaticPage;
 use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
@@ -16,10 +19,9 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $about = StaticPage::where('slug', 'biz-haqimizda')->first();
-        $posts = Post::orderBy('created_at', 'DESC')->with('category')->paginate(10);
+        $posts = Post::orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
 
-        return view('front.index', compact('about','posts'));
+        return view('front.index', compact('posts'));
     }
 
     public function about()
@@ -31,8 +33,28 @@ class FrontController extends Controller
     {
         $posts = Post::orderBy('created_at', 'DESC')->with('category')->paginate(9);
 
-        // dd($posts->getOptions());
         return view('front.news', compact('posts'));
+    }
+
+    public function senators()
+    {
+        $senators = Senator::get();
+        $date = $senators?->first()?->created_at;
+        return view('front.senators', compact('senators', 'date'));
+    }
+
+    public function directors()
+    {
+        $directors = Director::get();
+        $date = $directors?->first()?->created_at;
+        return view('front.directors', compact('directors', 'date'));
+    }
+
+    public function deputats()
+    {
+        $deputats = Deputat::get();
+        $date = $deputats?->first()?->created_at;
+        return view('front.deputats', compact('deputats', 'date'));
     }
 
     public function multimedia()

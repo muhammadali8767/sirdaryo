@@ -1,66 +1,77 @@
 @extends('layouts.main')
 
 @section('content')
+        <!-- main slider start -->
+        <section class="contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-9 px-0">
+                        <div class="container">
+                            <h2 class="section-title mb-30">
+                                @lang('menu.Aloqa')
+                            </h2>
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-5 mb-3 mb-sm-5 mb-lg-0">
+                                    <div class="header__top_text">
+                                        <i class="fas fa-map-marker-alt header__top_text-icon"></i>
+                                        <p class="header__top_text-text">
+                                            @lang('menu.location')
+                                        </p>
+                                    </div>
 
-<div class="col-12 order-sm-0 order-lg-0">
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <h2 class="section-title">
-                Biz bilan bog'laning
-            </h2>
-        </div>
-    </div>
-    <div class="row">
-        @include('layouts.components.contact_form')
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-4 news-card">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-8">
-                        <div class="card-body p-0">
-                            <div class="at-vizitka">
-                                <h6>Telefon: <a href="tel: +998712326348"> (67) 235-03-95</a>
-                                </h6>
-                                <h6>Elektron pochta: <a
-                                        href="mailTo:sirdaryo@mineconomy.uz"> sirdaryo@mineconomy.uz</a>
-                                </h6>
-                                <h6>Facebook: <a
-                                        href="https://www.facebook.com/mineconomy.uz">https://www.facebook.com/mineconomy.uz</a>
-                                </h6>
-                                <h6>Telegram: <a
-                                        href="https://t.me/MineconomyUz">https://t.me/MineconomyUz</a>
-                                </h6>
-                                <h6>YouTube: <a
-                                        href="https://www.youtube.com/channel/UCYib8rCrsF7z2MmTPbnwjgg">https://www.youtube.com/channel/UCYib8rCrsF7z2MmTPbnwjgg</a>
-                                </h6>
+                                    <div class="header__top_text">
+                                        <i class="fas fa-clock header__top_text-icon"></i>
+                                        <p class="header__top_text-text">
+                                            @lang('menu.qabul vaqtlari')
+                                        </p>
+                                    </div>
+
+                                    <div class="header__top_connect">
+                                        <a href="tel: +998672254090" class="tel_nomer">
+                                            <i class="fas fa-phone-alt tel_nomer-icon"></i>
+                                            +998 (67) 390-13-58
+                                        </a>
+                                        <div class="messenger__icons">
+                                            <a href="https://www.facebook.com/Boyovut.tumani.hokimligi/">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/boyovut_ovozi/">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a href="https://t.me/Boyovutliklar">
+                                                <i class="fab fa-telegram"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/boyovut_ovozi/">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-7 mb-3 mb-sm-5 mb-lg-0">
+                                    <div class="map-box">
+
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194548.1579493252!2d68.82140268564972!3d40.368626953275815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssirdaryo%20viloyati%20boyovut%20tuman%20hokimligi!5e0!3m2!1sen!2s!4v1669545239561!5m2!1sen!2s"
+                                            style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="card__for__info p-0">
-                            <div class="card__for__info-img">
-                                <img src="/front/img/gerb.png" class="img-fluid" alt="Photo error">
-                            </div>
-                            <a href="#"
-                                class="card__for__info-link card__for__info-link-absolute axborot-xizmati-link">O'zbekiston
-                                Onlayn axborot xizmati
-                            </a>
-                        </div>
+                    <div class="col-12 col-xl-3 px-0">
+                        @include('layouts.components.calendar')
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194504.56780926773!2d68.65654729403833!3d40.383725485089805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssirdaryo%20viloyati%20shahar%20xokimiyat!5e0!3m2!1sen!2s!4v1658837718941!5m2!1sen!2s"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</div>
+        </section>
+        <!-- main slider end -->
+
+
 @endsection
 
 

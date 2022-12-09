@@ -9,10 +9,10 @@
 
             <ul class="primary-menu header__navbar_list">
                 <li class="header__navbar_item">
-                    Hokimiyat haqida
+                    @lang('menu.Hokimiyat haqida')
                     <ul>
-                        <li><a href="rahbariyat.html">Rahbariyat</a></li>
-                        <li><a href="tuzilma.html">Tashkiliy tuzilma</a></li>
+                        <li><a href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
+                        <li><a href="tuzilma.html">@lang('menu.Tashkiliy tuzilma')</a></li>
                         <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari, huquqlari va
                                 majburiyatlari</a></li>
                         <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
@@ -22,21 +22,21 @@
                     </ul>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="news.html" home-link>Yangiliklar</a>
+                    <a href="{{ route('news') }}" home-link>@lang('menu.Yangiliklar')</a>
                 </li>
                 <li class="header__navbar_item">
-                    Boshqarma va tashkilotlar
+                    @lang('menu.Boshqarma va tashkilotlar')
                 </li>
                 <li class="header__navbar_item">
-                    Mahalliy Kengash
+                    @lang('menu.Mahalliy Kengash')
                     <ul>
-                        <li><a href="senat.html">Senat a'zolari</a></li>
+                        <li><a href="{{ route('senators') }}">Senat a'zolari</a></li>
                         <li><a href="./deputat.html">Deputatlar tarkibi</a></li>
                         <li><a href="./kotib-mudirlari.html">Kotibiyat mudirlari</a></li>
                     </ul>
                 </li>
                 <li class="header__navbar_item">
-                    Matbuot xizmati
+                    @lang('menu.Matbuot xizmati')
                     <ul>
                         <li><a href="./media-xizmat.html">Media xizmati haqida</a></li>
                         <li><a href="#">Media rejalar</a></li>
@@ -46,10 +46,10 @@
                     </ul>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="{{ route('contact') }}" home-link>@lang("menu.ALOQA")</a>
+                    <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
+                    <a href="ochiq-malumot.html" home-link>@lang('menu.Ochiq malumotlar')</a>
                 </li>
             </ul>
 
@@ -102,7 +102,7 @@
                             </ul>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="{{ route('contact') }}" home-link>@lang("menu.ALOQA")</a>
+                            <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                         </li>
                         <li class="header__navbar_item">
                             <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
