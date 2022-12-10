@@ -525,7 +525,8 @@ html {
 }
 
 .fast-connect-text {
-    max-width: 205px;
+    /* max-width: 205px; */
+    width: 100%;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -786,7 +787,7 @@ html {
 
 /* links section style */
 .links {
-    padding: 0 0 150px 0;
+    padding: 0 0 100px 0;
 }
 
 .links .section-title {
@@ -803,7 +804,7 @@ html {
 
 .links-table .fast-connect-box {
     width: calc(100% / 3);
-    padding: 55px 30px;
+    padding: 30px 10px;
     border: 1px solid #EAECF0;
 }
 
