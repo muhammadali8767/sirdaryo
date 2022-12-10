@@ -46,7 +46,16 @@ class ContactController extends Controller
      */
     public function destroy(Contact $contact)
     {
-        $contact->delete();
+        if ($contact->seen == 0) {
+            return redirect()->back()->withErrors('Заявка еще не посмотрено!');
+        }
 
-        return redirect()->back()->withSuccess('Заявка была успешно удалена!');
+        if ($contact->seen < 3) {
+            $contact->seen++;
+            $contact->save();
+            return redirect()->back()->withSuccess('Состояние заявка была изменена!');
+        } else {
+            $contact->delete();
+            return redirect()->back()->withSuccess('Заявка была успешно удалена!');
+        }
     }}

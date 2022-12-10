@@ -85,6 +85,7 @@ class FrontController extends Controller
         }
         $contact = Contact::create([
             'familya' => $request->familya,
+            'type' => $request->type,
             'ism' => $request->ism,
             'otasi' => $request->otasi,
             'jinsi' => $request->jinsi,

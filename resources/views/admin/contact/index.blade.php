@@ -38,11 +38,14 @@
                                     Дата получения заявки
                                 </th>
                                 <th>
-                                    Тема
+                                    Тип
                                 </th>
                                 <th>
+                                    Состояние
                                 </th>
                                 <th>
+                                    Посмотреть /
+                                    Изменит состояние
                                 </th>
                             </tr>
                         </thead>
@@ -53,24 +56,35 @@
                                         {{ $contact->id }}
                                     </td>
                                     <td>
-                                        {{ $contact->name }}
+                                        {{ $contact->ism . ' ' . $contact->familya . ' ' . $contact->otasi }}
                                     </td>
                                     <td>
                                         {{ $contact->created_at }}
                                     </td>
-
                                     <td>
-                                        {{ $contact->location }}
-                                    </td>
-
-                                    <td>
-                                        @if ($contact->seen == 1)
-                                            Прочитано
+                                        @if ($contact->type == 1)
+                                            Hokimga murojat
                                         @else
-                                            Не прочитано
+                                            Hokimiyatga xat
                                         @endif
                                     </td>
-
+                                    <td>
+                                        @switch($contact->seen)
+                                            @case(0)
+                                                Не прочитано
+                                            @break
+                                                @case(1)
+                                                Прочитано
+                                                @break
+                                            @case(2)
+                                                В процессе выполнения
+                                                @break
+                                            @case(3)
+                                                Выполнено
+                                                @break
+                                            @default
+                                        @endswitch
+                                    </td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-info btn-sm" href="{{ route('contact.show', $contact->id) }}">
                                             <i class="fas fa-eye"></i>
@@ -79,9 +93,17 @@
                                             style="display: inline-block">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm delete-btn">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
+
+
+                                            @if ($contact->seen < 3)
+                                                <button type="submit" class="btn btn-warning btn-sm">
+                                                    Изменит состояние <i class="fas fa-pen"></i>
+                                                </button>
+                                            @else
+                                                <button type="submit" class="btn btn-danger btn-sm delete-btn">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            @endif
                                         </form>
                                     </td>
                                 </tr>

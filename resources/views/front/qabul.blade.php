@@ -15,6 +15,20 @@
     <form action="{{ route('post-contact') }}" method="post" class="appeal-form" enctype="multipart/form-data">
         @csrf
         <div class="row mb-4">
+            <div class="col-12 mb-3 mb-lg-0">
+                <div class="appeal-form-box">
+                    <label for="gender" class="appeal-form-label">
+                        Murojat turi
+                        <span class="appeal-form-required">*</span>
+                    </label>
+                    <select class="form-select appeal-form-control" name="type" id="gender">
+                        <option value="1">Hokimga murojat</option>
+                        <option value="2">Hokimiyatga xat</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
             <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                 <div class="appeal-form-box">
                     <label for="lastname" class="appeal-form-label">

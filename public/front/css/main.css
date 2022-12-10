@@ -554,7 +554,7 @@ html {
 }
 
 .news-img img {
-    min-width: 100%;
+    width: 100%;
     min-height: 300px;
     object-fit: cover;
 }

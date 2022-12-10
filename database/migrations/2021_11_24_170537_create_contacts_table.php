@@ -24,7 +24,8 @@ class CreateContactsTable extends Migration
             $table->string('email');
             $table->string('text');
             $table->string('file')->nullable();
-            $table->boolean('seen')->default(0);
+            $table->tinyInteger('type')->default(1);
+            $table->tinyInteger('seen')->default(0);
             $table->timestamps();
         });
     }
