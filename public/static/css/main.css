@@ -785,6 +785,20 @@ html {
     object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* links section style */
 .links {
     padding: 0 0 100px 0;
@@ -793,6 +807,7 @@ html {
 .links .section-title {
     margin-bottom: 30px;
 }
+
 
 .links-table {
     width: 100%;
@@ -831,6 +846,10 @@ html {
     letter-spacing: -0.5px;
     color: var(--black-text-color);
 }
+
+
+
+
 
 .progress-box .progress {
     height: 3px;
