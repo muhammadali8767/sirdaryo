@@ -18,12 +18,22 @@
 
 <body>
     @if (session('success'))
-        <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert"
-            style="position: absolute ; width: 30%; left: 69%; top: 2%; z-index:100">
-            <strong>{{ session('success') }}</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+      <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">@lang('front.Xabar')</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <strong>{{ session('success') }}</strong>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">@lang('front.Yopish')</button>
+                </div>
+            </div>
+            </div>
         </div>
     @endif
 
@@ -67,6 +77,12 @@
     <script src="/front/libs/countTo.js"></script>
     <script src="/front/libs/bootstrap.bundle.min.js"></script>
     <script src="/front/js/scripts.js"></script>
+    <script type="text/javascript">
+        window.onload = () => {
+            $('#staticBackdrop').modal('show');
+        }
+    </script>
+
 </body>
 
 </html>

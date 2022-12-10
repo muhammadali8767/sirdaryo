@@ -59,6 +59,7 @@ Route::namespace('App\Http\Controllers')
         Route::get('senators', 'FrontController@senators')->name('senators');
         Route::get('multimedia', 'FrontController@multimedia')->name('multimedia');
         Route::get('contact', 'FrontController@contact')->name('contact');
+        Route::get('qabul', 'FrontController@qabul')->name('qabul');
         Route::post('contact', 'FrontController@post_contact')->name('post-contact');
 
         Route::get('home', 'HomeController@index')->name('home');

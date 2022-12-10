@@ -385,7 +385,7 @@
                     <div class="fast-connect-box">
                         <a href="https://meningfikrim.uz/uz" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">Jamoaviy murojaatlar Portali</span>
                         </a>
@@ -393,7 +393,7 @@
                     <div class="fast-connect-box">
                         <a href="https://president.uz/ru" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">O‘zbekiston Respublikasi Prezidenti rasmiy sayti</span>
                         </a>
@@ -401,7 +401,7 @@
                     <div class="fast-connect-box">
                         <a href="https://parliament.gov.uz/ru/" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">O‘zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi</span>
                         </a>
@@ -409,7 +409,7 @@
                     <div class="fast-connect-box">
                         <a href="https://my.gov.uz/ru" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">
                                 Yagona interaktiv davlat xizmatlari portali
@@ -419,7 +419,7 @@
                     <div class="fast-connect-box">
                         <a href="https://mfa.uz/ru" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">O'zbekiston Respublikasi Tashqi ishlar Vazirligi</span>
                         </a>
@@ -427,7 +427,7 @@
                     <div class="fast-connect-box">
                         <a href="https://huquqiyportal.uz/" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">Milliy huquqiy internet portali</span>
                         </a>
@@ -435,7 +435,7 @@
                     <div class="fast-connect-box">
                         <a href="https://www.senat.uz/ru" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">
                                 O‘zbekiston Respublikasi Oliy Majlisining senati
@@ -445,7 +445,7 @@
                     <div class="fast-connect-box">
                         <a href="https://gov.uz/uz" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">
                                 O'zbekiston Respublikasi Hukumat portali
@@ -455,7 +455,7 @@
                     <div class="fast-connect-box">
                         <a href="https://president.uz/uz" class="box">
                             <div class="fast-connect-img">
-                                <img src="img/fast_connect3.png" alt="">
+                                <img src="/front/img/fast_connect3.png" alt="">
                             </div>
                             <span class="fast-connect-text">O‘zbekiston Respublikasi Prezidenti matbuot xizmati</span>
                         </a>

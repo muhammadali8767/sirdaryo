@@ -70,16 +70,37 @@ class FrontController extends Controller
         return view('front.contact');
     }
 
-    public function post_contact(ContacCreateRequest $request)
+    public function qabul()
     {
-        // dd($request->all());
-        $contact = Contact::create($request->except('_token'));
+        return view('front.qabul');
+    }
+
+    public function post_contact(Request $request)
+    {
+        $file = $request->file('file');
+        $filePath = '';
+        $destinationPath = 'uploads';
+        if ($file && $savedFile = $file->move($destinationPath,time().'-'.$file->getClientOriginalName())) {
+            $filePath = $destinationPath .'/'. $savedFile->getFilename();
+        }
+        $contact = Contact::create([
+            'familya' => $request->familya,
+            'ism' => $request->ism,
+            'otasi' => $request->otasi,
+            'jinsi' => $request->jinsi,
+            'manzil' => $request->manzil,
+            'telefon' => $request->telefon,
+            'email' => $request->email,
+            'text' => $request->text,
+            'file' => $filePath
+        ]);
 
         if ($contact->save()) {
-            return redirect()->back()->withSuccess('Ваша заявка успешно сохранена!');
+            return redirect()->back()->withSuccess(__('front.ariza-success', ['ariza' => $contact->id]));
         } else {
-            return redirect()->back()->withErrors('Ваша заявка не сохранена!');
+            return redirect()->back()->withErrors(__('front.ariza-error'));
         }
+
     }
 
     public function blog()

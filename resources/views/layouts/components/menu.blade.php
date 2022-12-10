@@ -12,12 +12,11 @@
                     @lang('menu.Hokimiyat haqida')
                     <ul>
                         <li><a href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
-                        <li><a href="tuzilma.html">@lang('menu.Tashkiliy tuzilma')</a></li>
-                        <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari, huquqlari va
-                                majburiyatlari</a></li>
-                        <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
-                        <li><a href="rekvizit.html">Rekvizitlar</a></li>
-                        <li><a href="hokimga-murojaat.html">Hokimga murojaat</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(10)->slug) }}">{{ App\Models\StaticPage::find(10)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
+                        <li><a href="{{ route('qabul') }}">Hokimga murojaat</a></li>
                         <li><a href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
                     </ul>
                 </li>
@@ -30,26 +29,25 @@
                 <li class="header__navbar_item">
                     @lang('menu.Mahalliy Kengash')
                     <ul>
-                        <li><a href="{{ route('senators') }}">Senat a'zolari</a></li>
-                        <li><a href="./deputat.html">Deputatlar tarkibi</a></li>
-                        <li><a href="./kotib-mudirlari.html">Kotibiyat mudirlari</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(22)->slug) }}">{{ App\Models\StaticPage::find(22)->title }}</a></li>
                     </ul>
                 </li>
                 <li class="header__navbar_item">
                     @lang('menu.Matbuot xizmati')
                     <ul>
-                        <li><a href="./media-xizmat.html">Media xizmati haqida</a></li>
-                        <li><a href="#">Media rejalar</a></li>
-                        <li><a href="vebsayt-malumotlar.html">Veb saytda joylashtirilgan ma'lumotlar</a></li>
-                        <li><a href="./axborot-olish.html">Axborot olish uchun so'rovlarni qabul qilish tartibi</a>
-                        </li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(13)->slug) }}">{{ App\Models\StaticPage::find(13)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(14)->slug) }}">{{ App\Models\StaticPage::find(14)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(15)->slug) }}">{{ App\Models\StaticPage::find(15)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(16)->slug) }}">{{ App\Models\StaticPage::find(16)->title }}</a></li>
                     </ul>
                 </li>
                 <li class="header__navbar_item">
                     <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="ochiq-malumot.html" home-link>@lang('menu.Ochiq malumotlar')</a>
+                    <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}">{{ App\Models\StaticPage::find(17)->title }}</a>
                 </li>
             </ul>
 
@@ -64,16 +62,14 @@
                     </div>
                     <ul class="header__navbar_list">
                         <li class="header__navbar_item">
-                            Hokimiyat haqida
+                            @lang('menu.Hokimiyat haqida')
                             <ul>
-                                <li><a href="rahbariyat.html">Rahbariyat</a></li>
-                                <li><a href="tuzilma.html">Tashkiliy tuzilma</a></li>
-                                <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari,
-                                        huquqlari va
-                                        majburiyatlari</a></li>
-                                <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
-                                <li><a href="rekvizit.html">Rekvizitlar</a></li>
-                                <li><a href="hokimga-murojaat.html">Hokimga murojaat</a></li>
+                                <li><a href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(10)->slug) }}">{{ App\Models\StaticPage::find(10)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
+                                <li><a href="{{ route('qabul') }}">Hokimga murojaat</a></li>
                                 <li><a href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
                             </ul>
                         </li>
@@ -86,26 +82,25 @@
                         <li class="header__navbar_item">
                             Mahalliy Kengash
                             <ul>
-                                <li><a href="senat.html">Senat a'zolari</a></li>
-                                <li><a href="#">Deputatlar tarkibi</a></li>
-                                <li><a href="#">Kotibiyat mudirlari</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(22)->slug) }}">{{ App\Models\StaticPage::find(22)->title }}</a></li>
                             </ul>
                         </li>
                         <li class="header__navbar_item">
                             Matbuot xizmati
                             <ul>
-                                <li><a href="media-xizmat.html">Media xizmati haqida</a></li>
-                                <li><a href="#">Media rejalar</a></li>
-                                <li><a href="vebsayt-malumotlar.html">Veb saytda joylashtirilgan ma'lumotlar</a></li>
-                                <li><a href="./axborot-olish.html">Axborot olish uchun so'rovlarni qabul qilish tartibi</a>
-                                </li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(13)->slug) }}">{{ App\Models\StaticPage::find(13)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(14)->slug) }}">{{ App\Models\StaticPage::find(14)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(15)->slug) }}">{{ App\Models\StaticPage::find(15)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(16)->slug) }}">{{ App\Models\StaticPage::find(16)->title }}</a></li>
                             </ul>
                         </li>
                         <li class="header__navbar_item">
                             <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
+                            <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}">{{ App\Models\StaticPage::find(17)->title }}</a>
                         </li>
                     </ul>
                 </div>
