@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-12 col-xxl-7">
                             <div class="container">
-                                <h2 class="section-title mb-1">So'nggi yangiliklar</h2>
+                                <h2 class="section-title mb-1">@lang("front.So'nggi yangiliklar")</h2>
                                 @foreach ($posts as $post)
                                     <div class="col-12 border-top mt-3 pt-3">
                                         <div class="news-info-box">

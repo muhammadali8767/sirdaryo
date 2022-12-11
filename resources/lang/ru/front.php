@@ -19,4 +19,5 @@ return [
     'Lavozimi' => 'Позиция',
     'Qabul kunlari' => 'Даты приемки',
     'Qabul vaqtlari' => 'Время приема',
+    'So\'nggi yangiliklar' => 'Последние новости',
 ];

@@ -1,9 +1,10 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ route('homeAdmin') }}" class="brand-link">
+    <a href="{{ route('homeAdmin') }}" class="brand-link ">
         <img src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">{{ config('app.name', 'Админ панель') }}</span>
+        <span class="brand-text font-weight-light">IT Live</span> <br>
+        <span class="brand-text font-weight-light text-end"> +99897 866-50-50</span>
     </a>
 
     <!-- Sidebar -->

@@ -19,4 +19,5 @@ return [
     'Lavozimi' => 'Lavozimi',
     'Qabul kunlari' => 'Qabul kunlari',
     'Qabul vaqtlari' => 'Qabul vaqtlari',
+    'So\'nggi yangiliklar' => 'So\'nggi yangiliklar',
 ];

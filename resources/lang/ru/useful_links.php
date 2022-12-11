@@ -15,9 +15,6 @@ return [
     "Yagona interaktiv davlat xizmatlari portali"  => "Законодательная палата Олий Мажлиса Республики Узбекистан",
     "O'zbekiston Respublikasi Tashqi ishlar Vazirligi" => "Министерство иностранных дел Республики Узбекистан",
 
-
-
-
     "Bo'sh ish o'rinlari" => "Вакансии",
     "Ko\'p so\'raladigan savollar" => "Часто задаваемые вопросы",
     "Mahalliy budjetning daromad va xarajatlari" => "Доходы и расходы местного бюджета",
