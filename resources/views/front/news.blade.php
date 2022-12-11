@@ -4,7 +4,7 @@
 
 <section class="news-page">
     <div class="container">
-        <h2 class="section-title">Yangiliklar @if (isset($category)): {{ $category->title }} @endif</h2>
+        <h2 class="section-title">@if (isset($category)) {{ $category->title }} @else @lang('menu.Yangiliklar') @endif</h2>
         <div class="row news-page-container">
             @foreach ($posts as $post)
                 <div class="col-12 col-md-6 col-xl-4 news-page-box">

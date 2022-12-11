@@ -18,4 +18,7 @@ return [
     'Lavozimi' => 'Position',
     'Qabul kunlari' => 'Acceptance dates',
     'Qabul vaqtlari' => 'Reception Times',
+    'Okrug nomi' => 'District Name',
+    'Ish joyi va lavozimi' => 'Job and position',
+    'Partiyasi' => 'Party',
 ];

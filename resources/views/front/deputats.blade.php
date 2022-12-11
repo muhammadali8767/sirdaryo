@@ -8,36 +8,41 @@
         </ol>
     </nav>
     <h2 class="section-title mb-30">
-        Senat a'zolari
+        Deputatlar tarkibi
     </h2>
-
+    <h4 class="text-center mb-30">
+        Xalq deputatlari viloyat, tuman (shahar) Kengashi deputatlari</h4>
     <table class="info-tabel">
         <thead>
             <tr>
                 <th>№</th>
-                <th>Familiyasi ismi va otasining ismi</th>
-                <th>Ish joyi va lavozimi</th>
-                <th>Partiyasi</th>
+                <th>@lang('front.Okrug nomi')</th>
+                <th>@lang('front.fio')</th>
+                <th>@lang('front.Ish joyi va lavozimi')</th>
+                <th>@lang('front.Partiyasi')</th>
             </tr>
         </thead>
-        @foreach ($senators as $key => $senator)
+        @php
+            $i = 1;
+        @endphp
+        @foreach ($deputats as $deputat)
+
         <tr>
-            <td>{{ $key }}</td>
-            <td>{{ $senator->fullname }}</td>
-            <td>{{ $senator->job_and_position }}</td>
-            <td>{{ $senator->party }}</td>
+            <td>{{ $i++ }}</td>
+            <td>{{ $deputat->okrug }}</td>
+            <td>{{ $deputat->fullname }}</td>
+            <td>{{ $deputat->job_and_position }}</td>
+            <td>{{ $deputat->party }}</td>
         </tr>
         @endforeach
     </table>
 
     <div class="copy-elements">
         <div class="date-view order-0">
-            @if (isset($date))
-            <i class="fas fa-calendar"></i>
+            {{-- <i class="fas fa-calendar"></i>
             <p>
-                <span class="hours">{{ $date->fromat('H:i') }}</span> / <span class="date">{{ $date->fromat('d.m.Y') }}</span>
-            </p>
-            @endif
+                <span class="hours">00:00</span> / <span class="date">25.04.2022</span>
+            </p> --}}
         </div>
         <button class="copy-button order-2 order-sm-1">
             <i class="fal fa-clone"></i>
@@ -51,4 +56,5 @@
         </div>
     </div>
 </div>
+
 @endsection

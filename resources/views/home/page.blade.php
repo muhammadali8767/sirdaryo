@@ -7,7 +7,7 @@
         <div class="col-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="{{ route('main') }}" class="breadcrumb-link">@lang('menu.main')</a></li>
+                  <li class="breadcrumb-item"><a href="{{ route('main') }}" class="breadcrumb-link">@lang('menu.Bosh sahifa')</a></li>
                   <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">{{ $page->title }}</a></li>
                 </ol>
               </nav>
