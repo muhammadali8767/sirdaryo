@@ -78,7 +78,7 @@
                                 <li><a href="{{ route('category', ['slug' => 'korrupsiyaga-qarshi-kurashish']) }}">@lang('menu.Korupsiya')</a></li>
                             </ul>
                         </li>
-                 
+
                         <li class="header__navbar_item">
                             @lang('menu.Mahalliy Kengash')
                             <ul>

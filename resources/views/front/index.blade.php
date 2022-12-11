@@ -90,7 +90,7 @@
                         <table class="fast-connect-parent mb-50">
                             <tr>
                                 <td class="fast-connect-box">
-                                    <a href="#" class="box">
+                                    <a href="https://regulation.gov.uz/uz/document/index?GlobalSearch%5Btitle%5D=&GlobalSearch%5Bid%5D=&GlobalSearch%5Bauthority_id%5D=7580&GlobalSearch%5Bdocument_type_id%5D=&GlobalSearch%5Bpublication_at_range%5D=&GlobalSearch%5Bdiscussing_status_id%5D=2" class="box">
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect1.png" alt="">
                                         </div>
@@ -98,7 +98,7 @@
                                     </a>
                                 </td>
                                 <td class="fast-connect-box">
-                                    <a href="#" class="box">
+                                    <a href="{{ route('qabul') }}" class="box">
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect2.png" alt="">
                                         </div>
@@ -106,7 +106,7 @@
                                     </a>
                                 </td>
                                 <td class="fast-connect-box">
-                                    <a href="#" class="box">
+                                    <a href="{{ route('qabul') }}" class="box">
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect3.png" alt="">
                                         </div>
@@ -339,7 +339,7 @@
     <!-- media section start -->
     <section class="media">
         <div class="container">
-            <h2 class="section-title">Mediateka</h2>
+            <h2 class="section-title">@lang("front.Mediatika")</h2>
             <div class="media-image-list">
                 <div>
                     <a href="#" class="media-box">
@@ -385,7 +385,7 @@
                 </div>
             </div>
             <div class="all-btn-container mt-3">
-                <a href="#" class="news-all-btn">Barcha videolar va rasmlar</a>
+                <a href="#" class="news-all-btn">@lang("front.Barcha videolar va rasmlar")</a>
             </div>
         </div>
     </section>
@@ -479,7 +479,7 @@
                     </a>
                 </div>
             </div>
-            <h2 class="section-title">Murojaatlar statistikasi</h2>
+            <h2 class="section-title">@lang("front.Murojaatlar statistikasi")</h2>
             <div class="row appeal-statistic">
                 <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="progress-box">

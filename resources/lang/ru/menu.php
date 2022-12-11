@@ -25,6 +25,7 @@ return [
     'Senat azolari' => 'Члены Сената',
     'Deputatlar tarkibi' => 'Состав депутатов',
     'Kotibiyat mudirlari' => 'Менеджеры секретариата',
+    'Ochiq ma\'lumotlar' => 'Открытые данные',
 ];
 
 

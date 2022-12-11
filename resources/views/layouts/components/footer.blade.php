@@ -15,7 +15,8 @@
             <div class="row footer-top-menu">
                 <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
                     <ul class="menu-list">
-                        <li class="menu-item"><a class="menu-link" href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
+                        <li class="menu-item">@lang('menu.Hokimiyat haqida')</li>
+                        <li class="menu-item"><a class="menu-link" href="{{ route('directors') }}" >@lang('menu.Rahbariyat')</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(10)->slug) }}">{{ App\Models\StaticPage::find(10)->title }}</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>

@@ -25,4 +25,5 @@ return [
     'Senat azolari' => 'Members of the Senate',
     'Deputatlar tarkibi' => 'Composition of Deputies',
     'Kotibiyat mudirlari' => 'Secretariat Managers',
+    'Ochiq ma\'lumotlar' => 'Open data',
 ];
