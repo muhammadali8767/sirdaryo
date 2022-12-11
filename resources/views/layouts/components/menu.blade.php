@@ -16,8 +16,8 @@
                         <li><a href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
                         <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
                         <li><a href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
-                        <li><a href="{{ route('qabul') }}">Hokimga murojaat</a></li>
-                        <li><a href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
+                        <li><a href="{{ route('qabul') }}">@lang('menu.Hokimga murojaat')</a></li>
+                        <li><a href="korrupsiyaga-qarshi-kurashish.html">@lang('menu.Korupsiya')</a></li>
                     </ul>
                 </li>
                 <li class="header__navbar_item">
@@ -69,18 +69,18 @@
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
-                                <li><a href="{{ route('qabul') }}">Hokimga murojaat</a></li>
-                                <li><a href="korrupsiyaga-qarshi-kurashish.html">Korrupsiyaga qarshi kurashish</a></li>
+                                <li><a href="{{ route('qabul') }}">@lang('menu.Hokimga murojaat')</a></li>
+                                <li><a href="korrupsiyaga-qarshi-kurashish.html">@lang('menu.Korupsiya')</a></li>
                             </ul>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="news.html" home-link>Yangiliklar</a>
+                            <a href="news.html" home-link>@lang('menu.Yangiliklar')</a>
                         </li>
                         <li class="header__navbar_item">
-                            Boshqarma va tashkilotlar
+                            @lang('menu.Boshqarma va tashkilotlar')
                         </li>
                         <li class="header__navbar_item">
-                            Mahalliy Kengash
+                            @lang('menu.Mahalliy Kengash')
                             <ul>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
@@ -88,7 +88,7 @@
                             </ul>
                         </li>
                         <li class="header__navbar_item">
-                            Matbuot xizmati
+                          @lang('menu.Matbuot xizmati')
                             <ul>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(13)->slug) }}">{{ App\Models\StaticPage::find(13)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(14)->slug) }}">{{ App\Models\StaticPage::find(14)->title }}</a></li>

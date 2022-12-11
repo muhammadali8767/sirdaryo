@@ -525,10 +525,16 @@ html {
 }
 
 .fast-connect-text {
-    max-width: 205px;
+    /* max-width: 205px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
+    color: var(--black-text-color); */
+    display: block;
+    max-width: 100%;
+    width: calc(100% - 47px);
+    max-height: 60px;
+    overflow: hidden;
     color: var(--black-text-color);
 }
 

@@ -18,8 +18,8 @@ return [
     'Ochiq malumotlar' => 'Ochiq ma\'lumotlar',
     'Rahbariyat' => 'Rahbariyat',
     'Hokimga murojaat' => 'Hokimga murojaat',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
+    'Korupsiya' => 'Korupsiyaga qarshi',
+    // 'Aloqa' => 'Aloqa',
+    // 'Aloqa' => 'Aloqa',
+    // 'Aloqa' => 'Aloqa',
 ];

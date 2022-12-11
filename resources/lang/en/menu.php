@@ -18,8 +18,8 @@ return [
     'Ochiq malumotlar' => 'Open data',
     'Rahbariyat' => 'Management',
     'Hokimga murojaat' => 'Send an appeal to the mayor',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
+    'Korupsiya' => 'Fight against corruption',
+    'Fuqorolarni qabul qilish' => 'Reception of citizens',
+    // 'Aloqa' => 'Aloqa',
+    // 'Aloqa' => 'Aloqa',
 ];

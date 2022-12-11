@@ -18,10 +18,10 @@ return [
     'Ochiq malumotlar' => 'Открытые данные',
     'Rahbariyat' => 'Руководство',
     'Hokimga murojaat' => 'Отправить обращение мэру',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
+    'Korupsiya' => 'Борьба с коррупцией',
+    'Fuqorolarni qabul qilish' => 'Прием граждан',
+    // 'Aloqa' => 'Aloqa',
+    // 'Aloqa' => 'Aloqa',
 ];
 
 
