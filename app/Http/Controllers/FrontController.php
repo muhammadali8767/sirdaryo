@@ -126,11 +126,15 @@ class FrontController extends Controller
     {
         $month = request()->month ? request()->month : date('m');
         $year = request()->year ? request()->year : date('Y');
-        $events = Event::where('is_active', true)
-            ->whereMonth('event_time', $month)
-            ->whereYear('event_time', $year)
-            ->select('id', 'event_time', 'title_uz', 'title_ru', 'title_en', 'id as link')
-            ->get();
+        $events = Post::where('id', '>', 0)
+            ->whereMonth('created_at', $month)
+            ->whereYear('created_at', $year)
+            ->select(
+                'id',
+                'title_'. app()->getLocale() . ' as post_title' ,
+                'created_at as date',
+                'slug as link'
+            )->get();
         return response()->json($events);
     }
 }
