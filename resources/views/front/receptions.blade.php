@@ -35,15 +35,15 @@
                     </tr>
                 </thead>
                 <tr>
-                    <td>Lavozimi:</td>
+                    <td>@lang('front.Lavozimi')</td>
                     <td>{{ $reception->job_title }}</td>
                 </tr>
                 <tr>
-                    <td>Qabul kunlari:</td>
+                    <td>@lang('front.Qabul kunlari')</td>
                     <td>{{ $reception->reception_day }}</td>
                 </tr>
                 <tr>
-                    <td>Qabul vaqtlari:</td>
+                    <td>@lang('front.Qabul vaqtlari')</td>
                     <td>{{ $reception->reception_time }}</td>
                 </tr>
             </table>
@@ -58,7 +58,7 @@
         </div>
         <button class="copy-button order-2 order-sm-1">
             <i class="fal fa-clone"></i>
-            Nusxa olish
+            @lang('front.Nusxa olish')
         </button>
         <div class="date-view order-1 order-sm-2">
             {{-- <i class="fas fa-eye"></i>

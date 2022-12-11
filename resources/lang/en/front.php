@@ -11,4 +11,11 @@ return [
     'ariza-error' => 'Your application was not accepted! Please try sending again',
     'Yuborish' => 'Send',
     'Barcha yangiliklar' => 'All news',
+    'Xalq deputatlari' => 'Heads of the Secretariat of People\'s Deputies of Sirdarya Regional, District (City) Councils',
+    'fio' => 'Last name and middle name',
+    'Hududi' => 'Territory',
+    'Nusxa olish' => 'Get a copy',
+    'Lavozimi' => 'Position',
+    'Qabul kunlari' => 'Acceptance dates',
+    'Qabul vaqtlari' => 'Reception Times',
 ];

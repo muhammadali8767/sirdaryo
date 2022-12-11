@@ -22,4 +22,7 @@ return [
     'Fuqarolarni qabul qilish tartibi' => 'Procedure for receiving citizens',
     'Korupsiya' => 'Fight against corruption',
     'Fuqorolarni qabul qilish' => 'Reception of citizens',
+    'Senat azolari' => 'Members of the Senate',
+    'Deputatlar tarkibi' => 'Composition of Deputies',
+    'Kotibiyat mudirlari' => 'Secretariat Managers',
 ];
