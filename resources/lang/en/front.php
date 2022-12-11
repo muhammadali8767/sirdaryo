@@ -19,4 +19,7 @@ return [
     'Qabul kunlari' => 'Acceptance dates',
     'Qabul vaqtlari' => 'Reception Times',
     'So\'nggi yangiliklar' => 'Latest news',
+    'Okrug nomi' => 'District Name',
+    'Ish joyi va lavozimi' => 'Job and position',
+    'Partiyasi' => 'Party',
 ];

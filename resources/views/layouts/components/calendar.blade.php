@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="section-title mb-30">Tadbirlar taqvimi</h2>
+    <h2 class="section-title mb-30">@lang('sidebar.Tadbirlar taqvimi')</h2>
     <div class="row">
         <div class="col-12 col-md-6 col-xl-12">
             <div class="oy">
@@ -28,13 +28,13 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Du</td>
-                                    <td>Se</td>
-                                    <td>Cho</td>
-                                    <td>Pay</td>
-                                    <td>Ju</td>
-                                    <td>Sha</td>
-                                    <td>Yak</td>
+                                    <td>@lang('sidebar.Du')</td>
+                                    <td>@lang('sidebar.Se')</td>
+                                    <td>@lang('sidebar.Cho')</td>
+                                    <td>@lang('sidebar.Pay')</td>
+                                    <td>@lang('sidebar.Ju')</td>
+                                    <td>@lang('sidebar.Sha')</td>
+                                    <td>@lang('sidebar.Yak')</td>
                                 </tr>
                             </thead>
                             <tbody>

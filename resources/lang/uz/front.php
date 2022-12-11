@@ -20,4 +20,7 @@ return [
     'Qabul kunlari' => 'Qabul kunlari',
     'Qabul vaqtlari' => 'Qabul vaqtlari',
     'So\'nggi yangiliklar' => 'So\'nggi yangiliklar',
+    'Okrug nomi' => 'Okrug nomi',
+    'Ish joyi va lavozimi' => 'Ish joyi va lavozimi',
+    'Partiyasi' => 'Partiyasi',
 ];

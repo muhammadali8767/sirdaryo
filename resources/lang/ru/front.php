@@ -20,4 +20,7 @@ return [
     'Qabul kunlari' => 'Даты приемки',
     'Qabul vaqtlari' => 'Время приема',
     'So\'nggi yangiliklar' => 'Последние новости',
+    'Okrug nomi' => 'Название района',
+    'Ish joyi va lavozimi' => 'Работа и должность',
+    'Partiyasi' => 'Партия',
 ];
