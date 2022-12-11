@@ -8,12 +8,15 @@ use App\Models\Contact;
 use App\Models\Deputat;
 use App\Models\Director;
 use App\Models\Event;
+use App\Models\HeadOfSecretariat;
 use App\Models\Media;
 use App\Models\Post;
+use App\Models\Reception;
 use App\Models\Senator;
 use App\Models\StaticPage;
 use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class FrontController extends Controller
 {
@@ -55,6 +58,20 @@ class FrontController extends Controller
         $deputats = Deputat::get();
         $date = $deputats?->first()?->created_at;
         return view('front.deputats', compact('deputats', 'date'));
+    }
+
+    public function receptions()
+    {
+        $receptions = Reception::get();
+        $date = $receptions?->first()?->created_at;
+        return view('front.receptions', compact('receptions', 'date'));
+    }
+
+    public function kotibs()
+    {
+        $kotibs = HeadOfSecretariat::get();
+        $date = $kotibs?->first()?->created_at;
+        return view('front.kotibs', compact('kotibs', 'date'));
     }
 
     public function multimedia()

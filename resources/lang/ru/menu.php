@@ -2,6 +2,7 @@
 
 return [
     'logo' => 'БОЕВУТСКАЯ РАЙОННАЯ АДМИНИСТРАЦИЯ',
+    'Bosh sahifa' => 'Домашняя страница',
     'location' => 'Бойовутский район, ул. Джайхун, 5 дом, микрорайон "Ижитов"',
     'qabul vaqtlari' => 'Понедельник - Пятница, 9:00 - 18:00, Обед 13:00 - 14:00',
     'kozi ojizlar' => 'Для слепых',
@@ -18,10 +19,7 @@ return [
     'Ochiq malumotlar' => 'Открытые данные',
     'Rahbariyat' => 'Руководство',
     'Hokimga murojaat' => 'Отправить обращение мэру',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
-    'Aloqa' => 'Aloqa',
+    'Fuqarolarni qabul qilish tartibi' => 'Порядок приема граждан',
 ];
 
 
