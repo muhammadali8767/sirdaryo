@@ -79,7 +79,7 @@
                                 @endforeach
 
                                 <div class="all-btn-container pb-4 text-end">
-                                    <a href="./news.html" class="news-all-btn">Barcha yangiliklar</a>
+                                    <a href="./news.html" class="news-all-btn">@lang('front.Barcha yangiliklar')</a>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">Muammolar haqida xabar bering</span>
+                            <span class="fast-connect-text">Кўп сўраладиган саволлар</span>
                         </a>
                     </div>
                 </div>
