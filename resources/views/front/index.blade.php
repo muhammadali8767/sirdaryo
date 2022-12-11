@@ -122,6 +122,7 @@
     </section>
     <!-- main slider end -->
 
+
     <!-- news section start -->
     <section class="py-5">
         <div class="container">
@@ -129,11 +130,31 @@
             <div class="news-slider">
                 <div class="news-slider-item">
                     <div class="fast-connect-box">
-                        <a href="#" class="box">
+                        <a href="http://sirdaryo.uz/uz/category/savol-zhavob" class="box">
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">Кўп сўраладиган саволлар</span>
+                            <span class="fast-connect-text">@lang("useful_links.Ko\'p so\'raladigan savollar")</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-slider-item">
+                    <div class="fast-connect-box">
+                        <a href="https://ish2.mehnat.uz/vacancies" class="box">
+                            <div class="fast-connect-img">
+                                <img src="/front/img/fast_connect3.png" alt="">
+                            </div>
+                            <span class="fast-connect-text">@lang("useful_links.Bo'sh ish o'rinlari")</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-slider-item">
+                    <div class="fast-connect-box">
+                        <a href="https://e-auksion.uz/lots?1&index=1&page=1&order=1&region=5&lt=0&at=0" class="box">
+                            <div class="fast-connect-img">
+                                <img src="/front/img/fast_connect3.png" alt="">
+                            </div>
+                            <span class="fast-connect-text">@lang("useful_links.Elektron online-auksion")</span>
                         </a>
                     </div>
                 </div>
@@ -143,37 +164,27 @@
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">Muammolar haqida xabar bering</span>
+                            <span class="fast-connect-text">@lang("useful_links.Korupsiyaga qarshi")</span>
                         </a>
                     </div>
                 </div>
                 <div class="news-slider-item">
                     <div class="fast-connect-box">
-                        <a href="#" class="box">
+                        <a href="http://sirdaryo.uz/uz/docs/sirdaryo-viloyati-mahallij-budzhetning-asosij-parametrlari" class="box">
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">Muammolar haqida xabar bering</span>
+                            <span class="fast-connect-text">@lang("useful_links.Mahalliy budjetning daromad va xarajatlari")</span>
                         </a>
                     </div>
                 </div>
                 <div class="news-slider-item">
                     <div class="fast-connect-box">
-                        <a href="#" class="box">
+                        <a href="https://e-qaror.gov.uz/uz/site/list?DocumentSearch%5Btitle%5D=&DocumentSearch%5Bdocument_type_id%5D=&DocumentSearch%5Bdecision_type_id%5D=&DocumentSearch%5Bauthority_id%5D=7580&DocumentSearch%5Bdecision_number%5D=&DocumentSearch%5Bvisitation_end%5D=&page=" class="box">
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">Muammolar haqida xabar bering</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="news-slider-item">
-                    <div class="fast-connect-box">
-                        <a href="#" class="box">
-                            <div class="fast-connect-img">
-                                <img src="/front/img/fast_connect3.png" alt="">
-                            </div>
-                            <span class="fast-connect-text">Muammolar haqida xabar bering</span>
+                            <span class="fast-connect-text">@lang("useful_links.Viloyat hokimining qaror va faroyishlari")</span>
                         </a>
                     </div>
                 </div>
@@ -383,14 +394,14 @@
     <!-- links section start -->
     <section class="links">
         <div class="container">
-            <h2 class="section-title">Foydali havolalar</h2>
+            <h2 class="section-title">@lang("useful_links.foydali_havola")</h2>
             <div class="links-table">
                 <div class="fast-connect-box">
                     <a href="https://meningfikrim.uz/uz" class="box">
                         <div class="fast-connect-img">
                             <img src="/img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">Jamoaviy murojaatlar Portali</span>
+                        <span class="fast-connect-text">@lang("useful_links.Jamoaviy murojaatlar Portali")</span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -398,7 +409,7 @@
                         <div class="fast-connect-img">
                             <img src="img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">O‘zbekiston Respublikasi Prezidenti rasmiy sayti</span>
+                        <span class="fast-connect-text">@lang("useful_links.prezident")</span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -406,8 +417,9 @@
                         <div class="fast-connect-img">
                             <img src="img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">O‘zbekiston Respublikasi Oliy Majlisi Qonunchilik
-                            palatasi</span>
+                        <span class="fast-connect-text">
+                            @lang("useful_links.senat")
+                            </span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -416,7 +428,7 @@
                             <img src="img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                            Yagona interaktiv davlat xizmatlari portali
+                            @lang("useful_links.Yagona interaktiv davlat xizmatlari portali")
                         </span>
                     </a>
                 </div>
@@ -425,7 +437,9 @@
                         <div class="fast-connect-img">
                             <img src="img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">O'zbekiston Respublikasi Tashqi ishlar Vazirligi</span>
+                        <span class="fast-connect-text">
+                            @lang("useful_links.milliy")
+                        </span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -433,7 +447,7 @@
                         <div class="fast-connect-img">
                             <img src="img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">Milliy huquqiy internet portali</span>
+                        <span class="fast-connect-text">@lang("useful_links.O'zbekiston Respublikasi Tashqi ishlar Vazirligi")</span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -442,8 +456,7 @@
                             <img src="img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                            O‘zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi O‘zbekiston Respublikasi Oliy
-                            Majlisi Qonunchilik palatasi
+                           @lang("useful_links.qonunchilik")
                         </span>
                     </a>
                 </div>
@@ -453,7 +466,7 @@
                             <img src="img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                            O'zbekiston Respublikasi Hukumat portali
+                           @lang("useful_links.hukumat")
                         </span>
                     </a>
                 </div>
@@ -462,7 +475,7 @@
                         <div class="fast-connect-img">
                             <img src="img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">O‘zbekiston Respublikasi Prezidenti matbuot xizmati</span>
+                        <span class="fast-connect-text">@lang("useful_links.matbuot")</span>
                     </a>
                 </div>
             </div>

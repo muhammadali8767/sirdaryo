@@ -11,6 +11,20 @@ return [
     'milliy' => "Национальный правовой интернет-портал Республики Узбекистан",
     'prezident' => "Официальный веб-сайт Президента Республики Узбекистан",
     'milliy_baza' => "Национальная база данных законодательства Республики Узбекистан",
-    'iqtisodiy' => "Министерство экономического развития Республики Узбекистан",
+    'Jamoaviy murojaatlar Portali' => "Портал коллективных обращений ",
+    "Yagona interaktiv davlat xizmatlari portali"  => "Законодательная палата Олий Мажлиса Республики Узбекистан",
+    "O'zbekiston Respublikasi Tashqi ishlar Vazirligi" => "Министерство иностранных дел Республики Узбекистан",
+
+
+
+
+    "Bo'sh ish o'rinlari" => "Вакансии",
+    "Ko\'p so\'raladigan savollar" => "Часто задаваемые вопросы",
+    "Mahalliy budjetning daromad va xarajatlari" => "Доходы и расходы местного бюджета",
+    "Viloyat hokimining qaror va faroyishlari"  => "Государственные программы",
+    "Elektron online-auksion" => "Стратегия действий",
+    "Korupsiyaga qarshi" => "Заявление руководства",
+
+
 ];
 ?>
