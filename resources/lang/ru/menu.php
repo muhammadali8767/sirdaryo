@@ -20,6 +20,8 @@ return [
     'Rahbariyat' => 'Руководство',
     'Hokimga murojaat' => 'Отправить обращение мэру',
     'Fuqarolarni qabul qilish tartibi' => 'Порядок приема граждан',
+    'Korupsiya' => 'Борьба с коррупцией',
+    'Fuqorolarni qabul qilish' => 'Прием граждан',
 ];
 
 

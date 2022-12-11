@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 col-lg-8 col-xl-9 px-0">
                     <div class="row">
-                        <div class="col-12 col-xxl-6 news-big-box">
+                        <div class="col-12 col-xxl-5 news-big-box">
                             <div class="container ps-xl-0">
                                 <div class="example-slider">
                                     @foreach ($posts as $post)
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-xxl-6">
+                        <div class="col-12 col-xxl-7">
                             <div class="container">
                                 <h2 class="section-title mb-1">So'nggi yangiliklar</h2>
                                 @foreach ($posts as $post)
@@ -388,7 +388,7 @@
                 <div class="fast-connect-box">
                     <a href="https://meningfikrim.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">Jamoaviy murojaatlar Portali</span>
                     </a>
@@ -478,8 +478,8 @@
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 81%"
-                                aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
@@ -493,8 +493,8 @@
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 81%"
-                                aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
@@ -508,8 +508,8 @@
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 81%"
-                                aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
@@ -523,8 +523,8 @@
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 81%"
-                                aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>

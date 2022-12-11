@@ -501,6 +501,8 @@ html {
     height: calc(100% / 3);
     border-bottom: 1px solid #EAECF0;
     padding: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .fast-connect-box .box {
@@ -525,8 +527,7 @@ html {
 }
 
 .fast-connect-text {
-    /* max-width: 205px; */
-    width: 100%;
+    max-width: 205px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -551,12 +552,14 @@ html {
 }
 
 .news-img {
+    width: 100%;
+    aspect-ratio: 1;
     overflow: hidden;
 }
 
 .news-img img {
-    min-width: 100%;
-    min-height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -785,17 +788,14 @@ html {
     object-fit: cover;
 }
 
-
-
 /* links section style */
 .links {
-    padding: 0 0 100px 0;
+    padding: 0 0 150px 0;
 }
 
 .links .section-title {
     margin-bottom: 30px;
 }
-
 
 .links-table {
     width: 100%;
@@ -820,9 +820,6 @@ html {
     overflow: hidden;
 }
 
-
-
-
 .progress-part {
     display: flex;
     align-items: center;
@@ -846,10 +843,6 @@ html {
     letter-spacing: -0.5px;
     color: var(--black-text-color);
 }
-
-
-
-
 
 .progress-box .progress {
     height: 3px;

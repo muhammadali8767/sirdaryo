@@ -20,4 +20,6 @@ return [
     'Rahbariyat' => 'Management',
     'Hokimga murojaat' => 'Send an appeal to the mayor',
     'Fuqarolarni qabul qilish tartibi' => 'Procedure for receiving citizens',
+    'Korupsiya' => 'Fight against corruption',
+    'Fuqorolarni qabul qilish' => 'Reception of citizens',
 ];

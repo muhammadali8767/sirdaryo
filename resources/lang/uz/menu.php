@@ -20,4 +20,5 @@ return [
     'Rahbariyat' => 'Rahbariyat',
     'Hokimga murojaat' => 'Hokimga murojaat',
     'Fuqarolarni qabul qilish tartibi' => 'Fuqarolarni qabul qilish tartibi',
+    'Korupsiya' => 'Korupsiyaga qarshi',
 ];
