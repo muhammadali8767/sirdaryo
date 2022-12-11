@@ -22,7 +22,7 @@
             </div>
             <button class="copy-button order-2 order-sm-1">
                 <i class="fal fa-clone"></i>
-                @lang('Nusxa olish')
+                @lang('front.Nusxa olish')
             </button>
             <div class="date-view order-1 order-sm-2">
                 <i class="fas fa-eye"></i>

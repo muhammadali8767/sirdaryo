@@ -32,9 +32,13 @@
                 <li class="header__navbar_item">
                     @lang('menu.Mahalliy Kengash')
                     <ul>
-                        <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
+                        <a href="{{ route('senators') }}" home-link>@lang('menu.Senat azolari')</a>
+                        <a href="{{ route('deputats') }}" home-link>@lang('menu.Deputatlar tarkibi')</a>
+                        <a href="{{ route('kotibs') }}" home-link>@lang('menu.Kotibiyat mudirlari')</a>
+
+                        {{-- <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
                         <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
-                        <li><a href="{{ route('page', App\Models\StaticPage::find(22)->slug) }}">{{ App\Models\StaticPage::find(22)->title }}</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(22)->slug) }}">{{ App\Models\StaticPage::find(22)->title }}</a></li> --}}
                     </ul>
                 </li>
                 <li class="header__navbar_item">
@@ -77,7 +81,7 @@
                             </ul>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="news.html" home-link>@lang('menu.Yangiliklar')</a>
+                            <a href="{{ route('news') }}" home-link>@lang('menu.Yangiliklar')</a>
                         </li>
                         <li class="header__navbar_item">
                             @lang('menu.Boshqarma va tashkilotlar')
@@ -85,9 +89,13 @@
                         <li class="header__navbar_item">
                             @lang('menu.Mahalliy Kengash')
                             <ul>
-                                <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
+                                <a href="{{ route('senators') }}" home-link>@lang('menu.Senat azolari')</a>
+                                <a href="{{ route('deputats') }}" home-link>@lang('menu.Deputatlar tarkibi')</a>
+                                <a href="{{ route('kotibs') }}" home-link>@lang('menu.Kotibiyat mudirlari')</a>
+
+                                {{-- <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
-                                <li><a href="{{ route('page', App\Models\StaticPage::find(22)->slug) }}">{{ App\Models\StaticPage::find(22)->title }}</a></li>
+                                <li><a href="{{ route('page', App\Models\StaticPage::find(22)->slug) }}">{{ App\Models\StaticPage::find(22)->title }}</a></li> --}}
                             </ul>
                         </li>
                         <li class="header__navbar_item">
