@@ -53,16 +53,20 @@ Route::namespace('App\Http\Controllers')
     ->middleware(['setLocale'])
     ->group(function () {
         Route::get('', 'FrontController@index')->name('main');
-        // Route::get('about', 'FrontController@about')->name('about');
-        Route::get('news', 'FrontController@news')->name('news');
+
         Route::get('directors', 'FrontController@directors')->name('directors');
         Route::get('senators', 'FrontController@senators')->name('senators');
+        Route::get('deputats', 'FrontController@deputats')->name('deputats');
+        Route::get('receptions', 'FrontController@receptions')->name('receptions');
+        Route::get('kotibs', 'FrontController@kotibs')->name('kotibs');
+
+        Route::get('news', 'FrontController@news')->name('news');
         Route::get('multimedia', 'FrontController@multimedia')->name('multimedia');
         Route::get('contact', 'FrontController@contact')->name('contact');
         Route::get('qabul', 'FrontController@qabul')->name('qabul');
         Route::post('contact', 'FrontController@post_contact')->name('post-contact');
 
-        Route::get('home', 'HomeController@index')->name('home');
+        // Route::get('home', 'HomeController@index')->name('home');
         Route::get('page/{slug}', 'HomeController@page')->name('page');
         Route::get('/{slug}', 'HomeController@category')->name('category');
         Route::get('post/{slug}', 'HomeController@post')->name('post'); // route('post', $post->slug)

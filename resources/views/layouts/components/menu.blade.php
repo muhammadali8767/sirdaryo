@@ -14,7 +14,10 @@
                         <li><a href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
                         <li><a href="{{ route('page', App\Models\StaticPage::find(10)->slug) }}">{{ App\Models\StaticPage::find(10)->title }}</a></li>
                         <li><a href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
-                        <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
+
+                        <li><a href="{{ route('receptions') }}">@lang('menu.Fuqarolarni qabul qilish tartibi')</a></li>
+                        {{-- <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li> --}}
+
                         <li><a href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
                         <li><a href="{{ route('qabul') }}">@lang('menu.Hokimga murojaat')</a></li>
                         <li><a href="korrupsiyaga-qarshi-kurashish.html">@lang('menu.Korupsiya')</a></li>

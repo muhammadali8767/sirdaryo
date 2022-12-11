@@ -94,7 +94,7 @@
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect1.png" alt="">
                                         </div>
-                                        <span class="fast-connect-text">O‘z fikrlaringizni yuboring</span>
+                                        <span class="fast-connect-text">@lang('sidebar.O‘z fikrlaringizni yuboring')</span>
                                     </a>
                                 </td>
                                 <td class="fast-connect-box">
@@ -102,7 +102,7 @@
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect2.png" alt="">
                                         </div>
-                                        <span class="fast-connect-text">Hokimga murojaat</span>
+                                        <span class="fast-connect-text">@lang('sidebar.Hokimga murojaat')</span>
                                     </a>
                                 </td>
                                 <td class="fast-connect-box">
@@ -110,7 +110,7 @@
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect3.png" alt="">
                                         </div>
-                                        <span class="fast-connect-text">Muammolar haqida xabar bering</span>
+                                        <span class="fast-connect-text">@lang('sidebar.Muammolar haqida xabar bering')</span>
                                     </a>
                                 </td>
                             </tr>
@@ -186,7 +186,7 @@
     <!-- statistic numbers section start -->
     <section class="numbers">
         <div class="container">
-            <h2 class="section-title">Boyovut tumani raqamlarda</h2>
+            <h2 class="section-title">@lang('front.raqamlarda')</h2>
             <div class="row">
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="numbers-box">
