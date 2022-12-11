@@ -26,9 +26,7 @@
                 <li class="header__navbar_item">
                     <a href="{{ route('news') }}" home-link>@lang('menu.Yangiliklar')</a>
                 </li>
-                <li class="header__navbar_item">
-                    @lang('menu.Boshqarma va tashkilotlar')
-                </li>
+
                 <li class="header__navbar_item">
                     @lang('menu.Mahalliy Kengash')
                     <ul>
@@ -54,7 +52,7 @@
                     <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}">{{ App\Models\StaticPage::find(17)->title }}</a>
+                    <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}" home-link>{{ App\Models\StaticPage::find(17)->title }}</a>
                 </li>
             </ul>
 
@@ -80,12 +78,7 @@
                                 <li><a href="{{ route('category', ['slug' => 'korrupsiyaga-qarshi-kurashish']) }}">@lang('menu.Korupsiya')</a></li>
                             </ul>
                         </li>
-                        <li class="header__navbar_item">
-                            <a href="{{ route('news') }}" home-link>@lang('menu.Yangiliklar')</a>
-                        </li>
-                        <li class="header__navbar_item">
-                            @lang('menu.Boshqarma va tashkilotlar')
-                        </li>
+                 
                         <li class="header__navbar_item">
                             @lang('menu.Mahalliy Kengash')
                             <ul>
@@ -108,10 +101,13 @@
                             </ul>
                         </li>
                         <li class="header__navbar_item">
+                            <a href="{{ route('news') }}" home-link>@lang('menu.Yangiliklar')</a>
+                        </li>
+                        <li class="header__navbar_item">
                             <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}">{{ App\Models\StaticPage::find(17)->title }}</a>
+                            <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}" home-link>{{ App\Models\StaticPage::find(17)->title }}</a>
                         </li>
                     </ul>
                 </div>
