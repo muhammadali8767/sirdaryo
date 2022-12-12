@@ -12,9 +12,11 @@
         @lang('front.Nusxa olish')
     </button>
     <div class="date-view order-1 order-sm-2">
+        @if (isset($seen))
         <i class="fas fa-eye"></i>
         <p>
-            <span class="view-numbers">4918</span>
+            <span class="view-numbers">{{ $seen }}</span>
         </p>
+        @endif
     </div>
 </div>
