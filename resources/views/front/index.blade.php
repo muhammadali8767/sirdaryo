@@ -484,7 +484,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="progress-box">
                         <div class="progress-part">
-                            <p>Uploading Resume</p>
+                            <p>Yuborildi</p>
                             <div>
                                 <span class="progress-part-count" data-count="81">0</span>
                                 %
@@ -499,7 +499,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="progress-box">
                         <div class="progress-part">
-                            <p>Uploading Resume</p>
+                            <p>Korildi</p>
                             <div>
                                 <span class="progress-part-count" data-count="81">0</span>
                                 %
@@ -514,7 +514,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="progress-box">
                         <div class="progress-part">
-                            <p>Uploading Resume</p>
+                            <p>Bajarilish jarayonda</p>
                             <div>
                                 <span class="progress-part-count" data-count="81">0</span>
                                 %
@@ -529,7 +529,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="progress-box">
                         <div class="progress-part">
-                            <p>Uploading Resume</p>
+                            <p>Bajarildi</p>
                             <div>
                                 <span class="progress-part-count" data-count="81">0</span>
                                 %
