@@ -18,6 +18,7 @@ use App\Models\StaticPage;
 use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
 
 class FrontController extends Controller
 {
@@ -27,8 +28,16 @@ class FrontController extends Controller
         $latestPosts = Post::orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
         $photos = Media::where('type', 'photo')->limit(9)->get();
         $videos = Media::where('type', 'video')->limit(9)->get();
+        $contacts = Contact::get();
+        $statistics = [
+            'all' => $contacts->count(),
+            'seen' => $contacts->where('seen', 1)->count(),
+            'proces' => $contacts->where('seen', 2)->count(),
+            'completed' => $contacts->where('seen', 3)->count(),
+        ];
 
-        return view('front.index', compact('latestPosts', 'carousels', 'photos', 'videos'));
+        dd($statistics);
+        return view('front.index', compact('latestPosts', 'carousels', 'photos', 'videos', 'statistics'));
     }
 
     public function news()
