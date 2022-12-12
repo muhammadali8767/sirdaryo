@@ -25,7 +25,7 @@ class FrontController extends Controller
     public function index()
     {
         $carousels = Post::where('is_carousel', 1)->orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
-        $latestPosts = Post::orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
+        $latestPosts = Post::orderBy('created_at', 'DESC')->with('category')->limit(2)->get();
         $photos = Media::where('type', 'photo')->limit(9)->get();
         $videos = Media::where('type', 'video')->limit(9)->get();
         $contacts = Contact::get();
