@@ -79,7 +79,7 @@
                                 @endforeach
 
                                 <div class="all-btn-container pb-4 text-end">
-                                    <a href="./news.html" class="news-all-btn">@lang('front.Barcha yangiliklar')</a>
+                                    <a href="{{ route('news') }}" class="news-all-btn">@lang('front.Barcha yangiliklar')</a>
                                 </div>
                             </div>
                         </div>
@@ -486,13 +486,13 @@
                         <div class="progress-part">
                             <p>Yuborildi</p>
                             <div>
-                                <span class="progress-part-count" data-count="81">0</span>
-                                %
+                                <span class="progress-part-count" data-count="{{$statistics['all']}}">0</span>
+
                             </div>
                         </div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                                style="width: 100%" aria-valuenow="{{$statistics['all']}}" aria-valuemin="0" aria-valuemax="{{$statistics['all']}}"></div>
                         </div>
                     </div>
                 </div>
@@ -501,13 +501,13 @@
                         <div class="progress-part">
                             <p>Korildi</p>
                             <div>
-                                <span class="progress-part-count" data-count="81">0</span>
-                                %
+                                <span class="progress-part-count" data-count="{{ $statistics['seen'] }}">0</span>
+
                             </div>
                         </div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                                style="width: {{100 * $statistics['seen'] / $statistics['all']}}%" aria-valuenow="{{$statistics['seen']}}" aria-valuemin="0" aria-valuemax="{{$statistics['seen']}}"></div>
                         </div>
                     </div>
                 </div>
@@ -516,13 +516,13 @@
                         <div class="progress-part">
                             <p>Bajarilish jarayonda</p>
                             <div>
-                                <span class="progress-part-count" data-count="81">0</span>
-                                %
+                                <span class="progress-part-count" data-count="{{ $statistics['proces'] }}">0</span>
+
                             </div>
                         </div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                                style="width: {{100 * $statistics['proces'] / $statistics['all']}}%" aria-valuenow="{{$statistics['proces']}}" aria-valuemin="0" aria-valuemax="{{$statistics['proces']}}"></div>
                         </div>
                     </div>
                 </div>
@@ -531,13 +531,13 @@
                         <div class="progress-part">
                             <p>Bajarildi</p>
                             <div>
-                                <span class="progress-part-count" data-count="81">0</span>
-                                %
+                                <span class="progress-part-count" data-count="{{ $statistics['completed'] }}">0</span>
+
                             </div>
                         </div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                                style="width: {{100 * $statistics['completed'] / $statistics['all']}}%" aria-valuenow="{{$statistics['completed']}}" aria-valuemin="0" aria-valuemax="{{$statistics['completed']}}"></div>
                         </div>
                     </div>
                 </div>
