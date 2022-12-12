@@ -26,5 +26,5 @@ return [
     'Deputatlar tarkibi' => 'Composition of Deputies',
     'Kotibiyat mudirlari' => 'Secretariat Managers',
     'Qabul qilingan qarorlar' => 'Decisions made',
-
+    'Ochiq ma\'lumotlar' => 'Open data',
 ];

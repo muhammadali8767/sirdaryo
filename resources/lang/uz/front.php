@@ -23,4 +23,7 @@ return [
     'Okrug nomi' => 'Okrug nomi',
     'Ish joyi va lavozimi' => 'Ish joyi va lavozimi',
     'Partiyasi' => 'Partiyasi',
+    'Mediatika' => 'Mediatika',
+    'Murojaatlar statistikasi' => 'Murojaatlar statistikasi',
+    'Barcha videolar va rasmlar' => 'Barcha videolar va rasmlar'
 ];

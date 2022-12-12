@@ -22,4 +22,7 @@ return [
     'Okrug nomi' => 'District Name',
     'Ish joyi va lavozimi' => 'Job and position',
     'Partiyasi' => 'Party',
+    'Mediatika' => 'Media library',
+    'Murojaatlar statistikasi' => 'General statistics',
+    'Barcha videolar va rasmlar' => 'All videos and pictures'
 ];

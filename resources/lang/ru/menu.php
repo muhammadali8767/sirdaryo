@@ -26,7 +26,7 @@ return [
     'Deputatlar tarkibi' => 'Состав депутатов',
     'Kotibiyat mudirlari' => 'Менеджеры секретариата',
     'Qabul qilingan qarorlar' => 'Принятые решения',
-
+    'Ochiq ma\'lumotlar' => 'Открытые данные',
 ];
 
 

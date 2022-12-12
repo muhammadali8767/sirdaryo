@@ -79,7 +79,7 @@ html {
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum'on, 'lnum'on;
     color: #667085;
 }
 
@@ -90,7 +90,7 @@ html {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum'on, 'lnum'on;
     color: #667085;
     margin-bottom: 5px;
 }
@@ -317,7 +317,7 @@ html {
 .header__navbar_item a[home-link] {
     position: relative;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 15px;
     color: var(--color-white);
     cursor: pointer;
@@ -365,6 +365,7 @@ html {
     color: var(--color-white);
     text-decoration: none;
     position: relative;
+
 }
 
 .header__navbar_item a:after {
@@ -523,18 +524,12 @@ html {
     max-width: 100%;
     width: auto;
 }
-
+/* shu menu k k emas ekanda ob tashasam style buzilyapti */
 .fast-connect-text {
-    /* max-width: 205px;
+    max-width: 205px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: var(--black-text-color); */
-    display: block;
-    max-width: 100%;
-    width: calc(100% - 47px);
-    max-height: 60px;
-    overflow: hidden;
     color: var(--black-text-color);
 }
 
@@ -811,7 +806,16 @@ html {
 .links-table .fast-connect-box {
     width: calc(100% / 3);
     padding: 55px 30px;
+    height: 170px;
     border: 1px solid #EAECF0;
+}
+
+.links-table .fast-connect-text {
+    display: block;
+    max-width: 100%;
+    width: calc(100% - 47px);
+    max-height: 56px;
+    overflow: hidden;
 }
 
 .progress-part {
@@ -1529,6 +1533,7 @@ textarea.appeal-form-control {
 .senat-page {
     padding: 50px 0 150px;
 }
+
 .rules {
     display: flex;
     flex-direction: column;

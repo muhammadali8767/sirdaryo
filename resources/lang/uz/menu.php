@@ -25,4 +25,5 @@ return [
     'Deputatlar tarkibi' => 'Deputatlar tarkibi',
     'Kotibiyat mudirlari' => 'Kotibiyat mudirlari',
     'Qabul qilingan qarorlar' => 'Qabul qilingan qarorlar',
+    'Ochiq ma\'lumotlar' => 'Ochiq ma\'lumotlar',
 ];
