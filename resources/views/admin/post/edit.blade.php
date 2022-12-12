@@ -136,37 +136,51 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <!-- select -->
-                                    <div class="form-group">
-                                        <label>Выберите категорию</label>
-                                        <select name="category_id" class="form-control" required>
-                                            @foreach ($categories as $category)
-                                                <option value="{{ $category->id }}"
-                                                    @if ($category->id == $post->category_id) selected @endif>
-                                                   {{ $category->title }}
-                                                 </option>
-                                            @endforeach
-                                        </select>
-                                        @error('category_id')
-                                            <p class="text-danger small">{{ $message }}</p>
-                                        @enderror
-
+                                <div class="row">
+                                    <div class="col-1">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Показат в каруселе</label>
+                                            <input type="checkbox" name="is_carousel"
+                                                class="form-control @error('is_carousel') is-invalid @enderror"
+                                                @if($post->is_carousel) checked value="1" @endif>
+                                            @error('is_carousel')
+                                                <p class="text-danger small">{{ $message }}</p>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="feature_image">Изображение статьи</label>
-                                    <img src="{{ $post->img }}" alt="" class="img-uploaded"
-                                        style="display: block; width: 300px">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Выберите категорию</label>
+                                            <select name="category_id" class="form-control" required>
+                                                @foreach ($categories as $category)
+                                                    <option value="{{ $category->id }}"
+                                                        @if ($category->id == $post->category_id) selected @endif>
+                                                       {{ $category->title }}
+                                                     </option>
+                                                @endforeach
+                                            </select>
+                                            @error('category_id')
+                                                <p class="text-danger small">{{ $message }}</p>
+                                            @enderror
+
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <label for="feature_image">Изображение статьи</label>
                                     <input type="text" value="{{ $post->img }}" name="img"
                                         class="form-control" id="feature_image" name="feature_image" value=""
                                         readonly>
-                                    @error('img')
-                                        <p class="text-danger small">{{ $message }}</p>
-                                    @enderror
-
-                                    <a href="" class="popup_selector" data-inputid="feature_image">Выбрать
-                                        изображение</a>
+                                            <div class="invalid-feedback">
+                                                Please fill a valid data.
+                                            </div>
+                                            @error('img')
+                                                <p class="text-danger small">{{ $message }}</p>
+                                            @enderror
+                                            <a href="" class="popup_selector" data-inputid="feature_image">Выбрать изображение</a>
+                                        </div>
+                                        <img src="{{ $post->img }}" alt="" class="img-uploaded" style="display: block; width: 300px">
+                                    </div>
                                 </div>
                             </div>
                             <!-- /.card-body -->

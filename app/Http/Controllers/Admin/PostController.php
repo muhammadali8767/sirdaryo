@@ -85,8 +85,12 @@ class PostController extends Controller
      */
     public function update(PostCreateRequest $request, Post $post)
     {
+        $data = $request->validated();
+        if (!array_key_exists('is_carousel', $data)) {
+            $data['is_carousel'] = 0;
+        }
         // dd($post->getObservableEvents());
-        $post->update($request->except('_token'));
+        $post->update($data);
 
         if ($post->save()) {
             return redirect()->back()->withSuccess('Страница была успешно обновлена!');
