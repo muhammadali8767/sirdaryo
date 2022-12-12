@@ -10,6 +10,7 @@ use App\Models\Director;
 use App\Models\Event;
 use App\Models\HeadOfSecretariat;
 use App\Models\Media;
+use App\Models\OpenData;
 use App\Models\Post;
 use App\Models\Reception;
 use App\Models\Senator;
@@ -22,14 +23,12 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
+        $carousels = Post::where('is_carousel', 1)->orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
+        $latestPosts = Post::orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
+        $photos = Media::where('type', 'photo')->limit(9)->get();
+        $videos = Media::where('type', 'video')->limit(9)->get();
 
-        return view('front.index', compact('posts'));
-    }
-
-    public function about()
-    {
-        return view('front.about');
+        return view('front.index', compact('latestPosts', 'carousels', 'photos', 'videos'));
     }
 
     public function news()
@@ -72,6 +71,18 @@ class FrontController extends Controller
         $kotibs = HeadOfSecretariat::get();
         $date = $kotibs?->first()?->created_at;
         return view('front.kotibs', compact('kotibs', 'date'));
+    }
+
+    public function openDatas()
+    {
+        $openDatas = OpenData::get();
+        return view('front.openDatas', compact('openDatas'));
+    }
+
+    public function decrees()
+    {
+        $decrees = OpenData::get();
+        return view('front.decrees', compact('decrees'));
     }
 
     public function multimedia()

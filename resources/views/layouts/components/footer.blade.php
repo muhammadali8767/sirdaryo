@@ -18,7 +18,7 @@
                         <li class="menu-item"><a class="menu-link" href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(10)->slug) }}">{{ App\Models\StaticPage::find(10)->title }}</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
-                        <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
+                        {{-- <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li> --}}
                         <li class="menu-item"><a class="menu-link" href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('qabul') }}">@lang('menu.Hokimga murojaat')</a></li>
                         <li class="menu-item"><a class="menu-link" href="{{ route('category', ['slug' => 'korrupsiyaga-qarshi-kurashish']) }}">@lang('menu.Korupsiya')</a></li>
@@ -32,7 +32,7 @@
                         <li class="menu-item"><a href="{{ route('senators') }}" class="menu-link">@lang('menu.Senat azolari')</a></li>
                         <li class="menu-item"><a href="{{ route('deputats') }}" class="menu-link">@lang('menu.Deputatlar tarkibi')</a></li>
                         <li class="menu-item"><a href="{{ route('kotibs') }}" class="menu-link">@lang('menu.Kotibiyat mudirlari')</a></li>
-                        <li class="menu-item"><a href="/front/qarorlar.html" class="menu-link">Qabul qilingan qarorlar</a></li>
+                        <li class="menu-item"><a href="{{ route('decrees') }}" class="menu-link">@lang('menu.Qabul qilingan qarorlar')</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">

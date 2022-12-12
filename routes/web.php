@@ -23,18 +23,16 @@ Route::namespace('App\Http\Controllers\Admin')
     ->prefix('admin')
     ->middleware(['auth', 'role:admin'])
     ->group(function () {
-        Route::get('dashboard', 'HomeController@index')->name('homeAdmin');
-
-        Route::resource('category', 'CategoryController')->except('show');
-
         Route::resource('director', 'DirectorController')->except('show');
         Route::resource('senator', 'SenatorController')->except('show');
         Route::resource('deputat', 'DeputatController')->except('show');
         Route::resource('headOfSecretariat', 'HeadOfSecretariatController')->except('show');
         Route::resource('reception', 'ReceptionController')->except('show');
-        Route::resource('event', 'EventController')->except('show');
+        Route::resource('decree', 'DecreeController')->except('show');
+        Route::resource('openData', 'OpenDataController')->except('show');
 
-
+        Route::get('dashboard', 'HomeController@index')->name('homeAdmin');
+        Route::resource('category', 'CategoryController')->except('show');
         Route::resource('post', 'PostController')->except('show');
         Route::resource('pages', 'StaticPageController')->except('show');
         Route::resource('users', 'UserController');
@@ -59,6 +57,8 @@ Route::namespace('App\Http\Controllers')
         Route::get('deputats', 'FrontController@deputats')->name('deputats');
         Route::get('receptions', 'FrontController@receptions')->name('receptions');
         Route::get('kotibs', 'FrontController@kotibs')->name('kotibs');
+        Route::get('openDatas', 'FrontController@openDatas')->name('openDatas');
+        Route::get('decrees', 'FrontController@decrees')->name('decrees');
 
         Route::get('news', 'FrontController@news')->name('news');
         Route::get('multimedia', 'FrontController@multimedia')->name('multimedia');

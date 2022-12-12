@@ -10,12 +10,12 @@
                         <div class="col-12 col-xxl-5 news-big-box">
                             <div class="container ps-xl-0">
                                 <div class="example-slider">
-                                    @foreach ($posts as $post)
+                                    @foreach ($carousels as $carousel)
                                         <div class="example-slider-item">
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="news-img">
-                                                        <img src="{{ $post->img }}" class="" alt="Images">
+                                                        <img src="{{ $carousel->img }}" class="" alt="Images">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
@@ -24,22 +24,22 @@
                                                             <div class="date-view">
                                                                 <i class="fas fa-calendar"></i>
                                                                 <span
-                                                                    class="hours">{{ $post->created_at->format('H:i') }}</span>
+                                                                    class="hours">{{ $carousel->created_at->format('H:i') }}</span>
                                                                 / <span
-                                                                    class="date">{{ $post->created_at->format('d.m.Y') }}</span>
+                                                                    class="date">{{ $carousel->created_at->format('d.m.Y') }}</span>
                                                             </div>
                                                             <div class="date-view">
                                                                 <i class="fas fa-eye"></i>
                                                                 <span class="view-numbers">
-                                                                    {{ $post->seen }}
+                                                                    {{ $carousel->seen }}
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <a href="#" class="news-short-title marked-links">
-                                                            {{ $post->title }}
+                                                            {{ $carousel->title }}
                                                         </a>
                                                         <p class="news-description">
-                                                            {{ $post->short }}
+                                                            {{ $carousel->short }}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -52,7 +52,7 @@
                         <div class="col-12 col-xxl-7">
                             <div class="container">
                                 <h2 class="section-title mb-1">@lang("front.So'nggi yangiliklar")</h2>
-                                @foreach ($posts as $post)
+                                @foreach ($latestPosts as $post)
                                     <div class="col-12 border-top mt-3 pt-3">
                                         <div class="news-info-box">
                                             <div class="d-flex align-items-center mb-3">

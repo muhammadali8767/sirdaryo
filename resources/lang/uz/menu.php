@@ -24,4 +24,5 @@ return [
     'Senat azolari' => 'Senat a\'zolari',
     'Deputatlar tarkibi' => 'Deputatlar tarkibi',
     'Kotibiyat mudirlari' => 'Kotibiyat mudirlari',
+    'Qabul qilingan qarorlar' => 'Qabul qilingan qarorlar',
 ];

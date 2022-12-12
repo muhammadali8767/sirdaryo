@@ -25,4 +25,6 @@ return [
     'Senat azolari' => 'Members of the Senate',
     'Deputatlar tarkibi' => 'Composition of Deputies',
     'Kotibiyat mudirlari' => 'Secretariat Managers',
+    'Qabul qilingan qarorlar' => 'Decisions made',
+
 ];

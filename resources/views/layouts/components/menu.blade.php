@@ -35,6 +35,7 @@
                         <li><a href="{{ route('senators') }}">@lang('menu.Senat azolari')</a></li>
                         <li><a href="{{ route('deputats') }}">@lang('menu.Deputatlar tarkibi')</a></li>
                         <li><a href="{{ route('kotibs') }}">@lang('menu.Kotibiyat mudirlari')</a></li>
+                        <li><a href="{{ route('decrees') }}">@lang('menu.Qabul qilingan qarorlar')</a></li>
 
                         {{-- <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
                         <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
@@ -54,7 +55,7 @@
                     <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}">{{ App\Models\StaticPage::find(17)->title }}</a>
+                    <a href="{{ route('openDatas') }}">@lang('menu.Ochiq malumotlar')</a>
                 </li>
             </ul>
 
@@ -74,7 +75,7 @@
                                 <li><a href="{{ route('directors') }}">@lang('menu.Rahbariyat')</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(10)->slug) }}">{{ App\Models\StaticPage::find(10)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(11)->slug) }}">{{ App\Models\StaticPage::find(11)->title }}</a></li>
-                                <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li>
+                                {{-- <li><a href="{{ route('page', App\Models\StaticPage::find(18)->slug) }}">{{ App\Models\StaticPage::find(18)->title }}</a></li> --}}
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(19)->slug) }}">{{ App\Models\StaticPage::find(19)->title }}</a></li>
                                 <li><a href="{{ route('qabul') }}">@lang('menu.Hokimga murojaat')</a></li>
                                 <li><a href="{{ route('category', ['slug' => 'korrupsiyaga-qarshi-kurashish']) }}">@lang('menu.Korupsiya')</a></li>
@@ -92,6 +93,7 @@
                                 <li><a href="{{ route('senators') }}">@lang('menu.Senat azolari')</a></li>
                                 <li><a href="{{ route('deputats') }}">@lang('menu.Deputatlar tarkibi')</a></li>
                                 <li><a href="{{ route('kotibs') }}">@lang('menu.Kotibiyat mudirlari')</a></li>
+                                <li><a href="{{ route('decrees') }}">@lang('menu.Qabul qilingan qarorlar')</a></li>
 
                                 {{-- <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
                                 <li><a href="{{ route('page', App\Models\StaticPage::find(21)->slug) }}">{{ App\Models\StaticPage::find(21)->title }}</a></li>
@@ -111,7 +113,7 @@
                             <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="{{ route('page', App\Models\StaticPage::find(17)->slug) }}">{{ App\Models\StaticPage::find(17)->title }}</a>
+                            <a href="{{ route('openDatas') }}">@lang('menu.Ochiq malumotlar')</a>
                         </li>
                     </ul>
                 </div>

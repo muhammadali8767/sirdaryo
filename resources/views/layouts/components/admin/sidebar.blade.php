@@ -10,14 +10,14 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="{{ route('users.show', Auth::user()) }}" class="d-block">{{ Auth::user()->name }}</a>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -204,17 +204,35 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
-                        <p>Событие<i class="right fas fa-angle-left"></i></p>
+                        <p>Открытая информация<i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('event.index') }}" class="nav-link">
-                                <p>Все Событие</p>
+                            <a href="{{ route('openData.index') }}" class="nav-link">
+                                <p>Все открытая информация</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('event.create') }}" class="nav-link">
-                                <p>Добавить Событие</p>
+                            <a href="{{ route('openData.create') }}" class="nav-link">
+                                <p>Добавить открытую информацию</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Решение мэра<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('decree.index') }}" class="nav-link">
+                                <p>Все решение мэра</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('decree.create') }}" class="nav-link">
+                                <p>Добавить решение мэра</p>
                             </a>
                         </li>
                     </ul>

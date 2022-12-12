@@ -30,6 +30,7 @@ class CreatePostsTable extends Migration
 
             $table->string('slug');
             $table->integer('seen')->default(0);
+            $table->integer('is_carousel')->default(0);
             $table->string('img')->nullable();
 
             $table->foreignId('user_id')->nullable()->constrained();
