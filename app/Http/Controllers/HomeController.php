@@ -23,6 +23,8 @@ class HomeController extends Controller
     {
         $post = Post::where('slug', $slug)->firstOrFail();
 
+        $post->update(['seen' => $post->seen + 1]);
+        $post->save();
         return view('home.post', compact('post'));
     }
 
