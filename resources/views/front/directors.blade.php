@@ -99,23 +99,6 @@
     </div>
     @endforeach
 
-    {{-- <div class="copy-elements">
-        <div class="date-view order-0">
-            <i class="fas fa-calendar"></i>
-            <p>
-                <span class="hours">00:00</span> / <span class="date">25.04.2022</span>
-            </p>
-        </div>
-        <button class="copy-button order-2 order-sm-1">
-            <i class="fal fa-clone"></i>
-            @lang('front.Nusxa olish')
-        </button>
-        <div class="date-view order-1 order-sm-2">
-            <i class="fas fa-eye"></i>
-            <p>
-                <span class="view-numbers">4918</span>
-            </p>
-        </div>
-    </div> --}}
+       
 </div>
 @endsection
