@@ -71,7 +71,7 @@
         <tr>
             <td>
                 Mansabdor shaxslarning xizmat safarlari va xorijdan tashrif buyurgan mehmonlarni
-                kutib olish xarajatlari (xizmat safarining yoki tashrifning maqsadi, sutkalik
+                kutib olish xarajatlari xizmat safarining yoki tashrifning maqsadi, sutkalik
                 pul, transport va yashash bilan bog‘liq xarajatlar
             </td>
         </tr>
@@ -102,7 +102,10 @@
             </td>
         </tr>
     </table>
-    <div class="copy-elements mb-0">
+
+
+    @include('layouts.components.copy')
+    {{-- <div class="copy-elements mb-0">
         <div class="date-view order-0">
             <i class="fas fa-calendar"></i>
             <p>
@@ -119,7 +122,7 @@
                 <span class="view-numbers">4918</span>
             </p>
         </div>
-    </div>
+    </div> --}}
 </div>
 @endsection
 
