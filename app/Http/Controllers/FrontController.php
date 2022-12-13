@@ -16,6 +16,7 @@ use App\Models\Reception;
 use App\Models\Senator;
 use App\Models\StaticPage;
 use App\Repositories\PostRepository;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
@@ -36,7 +37,6 @@ class FrontController extends Controller
             'completed' => $contacts->where('seen', 3)->count(),
         ];
 
-        dd($statistics);
         return view('front.index', compact('latestPosts', 'carousels', 'photos', 'videos', 'statistics'));
     }
 
@@ -50,48 +50,50 @@ class FrontController extends Controller
     public function senators()
     {
         $senators = Senator::get();
-        $date = $senators?->first()?->created_at;
+        $date = ($senators->count() > 0) ? $senators->first()->created_at : Carbon::now();
         return view('front.senators', compact('senators', 'date'));
     }
 
     public function directors()
     {
         $directors = Director::get();
-        $date = $directors?->first()?->created_at;
+        $date = ($directors->count() > 0) ? $directors->first()->created_at : Carbon::now();
         return view('front.directors', compact('directors', 'date'));
     }
 
     public function deputats()
     {
         $deputats = Deputat::get();
-        $date = $deputats?->first()?->created_at;
+        $date = ($deputats->count() > 0) ? $deputats->first()->created_at : Carbon::now();
         return view('front.deputats', compact('deputats', 'date'));
     }
 
     public function receptions()
     {
         $receptions = Reception::get();
-        $date = $receptions?->first()?->created_at;
+        $date = ($receptions->count() > 0) ? $receptions->first()->created_at : Carbon::now();
         return view('front.receptions', compact('receptions', 'date'));
     }
 
     public function kotibs()
     {
         $kotibs = HeadOfSecretariat::get();
-        $date = $kotibs?->first()?->created_at;
+        $date = ($kotibs->count() > 0) ? $kotibs->first()->created_at : Carbon::now();
         return view('front.kotibs', compact('kotibs', 'date'));
     }
 
     public function openDatas()
     {
         $openDatas = OpenData::get();
-        return view('front.openDatas', compact('openDatas'));
+        $date = ($openDatas->count() > 0) ? $openDatas->first()->created_at : Carbon::now();
+        return view('front.openDatas', compact('openDatas', 'date'));
     }
 
     public function decrees()
     {
         $decrees = OpenData::get();
-        return view('front.decrees', compact('decrees'));
+        $date = ($decrees->count() > 0) ? $decrees->first()->created_at : Carbon::now();
+        return view('front.decrees', compact('decrees', 'date'));
     }
 
     public function multimedia()

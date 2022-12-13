@@ -37,4 +37,6 @@
     </div>
 </div>
 
+
+@include('layouts.components.copy')
 @endsection

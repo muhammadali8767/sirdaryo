@@ -3,7 +3,17 @@
         @if (isset($date))
         <i class="fas fa-calendar"></i>
         <p>
-            <span class="hours">{{ $date->fromat('H:i') }}</span> / <span class="date">{{ $date->fromat('d.m.Y') }}</span>
+
+            @php
+            if(get_class($date) != "Illuminate\Support\Carbon")
+                $date = Illuminate\Support\Carbon::parse($date)
+            @endphp
+            <span class="hours">{{ $date->format('H:i') }}</span> / <span class="date">{{ $date->format('Y.m.d') }}</span>
+        </p>
+        @elseif (isset($page))
+        <i class="fas fa-calendar"></i>
+        <p>
+            <span class="hours">{{ $page->created_at->format('H:i') }}</span> / <span class="date">{{ $page->created_at->format('Y.m.d') }}</span>
         </p>
         @endif
     </div>
@@ -17,6 +27,12 @@
         <p>
             <span class="view-numbers">{{ $seen }}</span>
         </p>
+        @elseif (isset($page))
+        <i class="fas fa-eye"></i>
+        <p>
+            <span class="view-numbers">{{ $page->seen }}</span>
+        </p>
         @endif
+
     </div>
 </div>

@@ -15,7 +15,8 @@
     <table class="info-tabel">
         @foreach ($openDatas as $openData)
         <tr>
-            <td>{{ $openData->title }}</td>
+
+            <td><a download href="/{{ $openData->file }}">{{ $openData->title }}</a></td>
         </tr>
 
         @endforeach

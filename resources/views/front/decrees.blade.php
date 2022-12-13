@@ -15,7 +15,7 @@
 
     <ol class="rules">
         @foreach ($decrees as $decree)
-            <li><a href="/{{ $decree->file }}">{{ $decree->title }}</a></li>
+            <li><a download href="/{{ $decree->file }}">{{ $decree->title }}</a></li>
         @endforeach
     </ol>
 
