@@ -90,7 +90,8 @@
                         <table class="fast-connect-parent mb-50">
                             <tr>
                                 <td class="fast-connect-box">
-                                    <a href="https://regulation.gov.uz/uz/document/index?GlobalSearch%5Btitle%5D=&GlobalSearch%5Bid%5D=&GlobalSearch%5Bauthority_id%5D=7580&GlobalSearch%5Bdocument_type_id%5D=&GlobalSearch%5Bpublication_at_range%5D=&GlobalSearch%5Bdiscussing_status_id%5D=2" class="box">
+                                    <a href="https://regulation.gov.uz/uz/document/index?GlobalSearch%5Btitle%5D=&GlobalSearch%5Bid%5D=&GlobalSearch%5Bauthority_id%5D=7580&GlobalSearch%5Bdocument_type_id%5D=&GlobalSearch%5Bpublication_at_range%5D=&GlobalSearch%5Bdiscussing_status_id%5D=2"
+                                        class="box">
                                         <div class="fast-connect-img">
                                             <img src="/front/img/fast_connect1.png" alt="">
                                         </div>
@@ -154,7 +155,7 @@
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">@lang("useful_links.Elektron online-auksion")</span>
+                            <span class="fast-connect-text">@lang('useful_links.Elektron online-auksion')</span>
                         </a>
                     </div>
                 </div>
@@ -164,27 +165,29 @@
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">@lang("useful_links.Korupsiyaga qarshi")</span>
+                            <span class="fast-connect-text">@lang('useful_links.Korupsiyaga qarshi')</span>
                         </a>
                     </div>
                 </div>
                 <div class="news-slider-item">
                     <div class="fast-connect-box">
-                        <a href="http://sirdaryo.uz/uz/docs/sirdaryo-viloyati-mahallij-budzhetning-asosij-parametrlari" class="box">
+                        <a href="http://sirdaryo.uz/uz/docs/sirdaryo-viloyati-mahallij-budzhetning-asosij-parametrlari"
+                            class="box">
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">@lang("useful_links.Mahalliy budjetning daromad va xarajatlari")</span>
+                            <span class="fast-connect-text">@lang('useful_links.Mahalliy budjetning daromad va xarajatlari')</span>
                         </a>
                     </div>
                 </div>
                 <div class="news-slider-item">
                     <div class="fast-connect-box">
-                        <a href="https://e-qaror.gov.uz/uz/site/list?DocumentSearch%5Btitle%5D=&DocumentSearch%5Bdocument_type_id%5D=&DocumentSearch%5Bdecision_type_id%5D=&DocumentSearch%5Bauthority_id%5D=7580&DocumentSearch%5Bdecision_number%5D=&DocumentSearch%5Bvisitation_end%5D=&page=" class="box">
+                        <a href="https://e-qaror.gov.uz/uz/site/list?DocumentSearch%5Btitle%5D=&DocumentSearch%5Bdocument_type_id%5D=&DocumentSearch%5Bdecision_type_id%5D=&DocumentSearch%5Bauthority_id%5D=7580&DocumentSearch%5Bdecision_number%5D=&DocumentSearch%5Bvisitation_end%5D=&page="
+                            class="box">
                             <div class="fast-connect-img">
                                 <img src="/front/img/fast_connect3.png" alt="">
                             </div>
-                            <span class="fast-connect-text">@lang("useful_links.Viloyat hokimining qaror va faroyishlari")</span>
+                            <span class="fast-connect-text">@lang('useful_links.Viloyat hokimining qaror va faroyishlari')</span>
                         </a>
                     </div>
                 </div>
@@ -339,7 +342,7 @@
     <!-- media section start -->
     <section class="media">
         <div class="container">
-            <h2 class="section-title">@lang("front.Mediatika")</h2>
+            <h2 class="section-title">@lang('front.Mediatika')</h2>
             <div class="media-image-list">
                 @foreach ($photos as $photo)
                 <div>
@@ -360,7 +363,7 @@
                 @endforeach
             </div>
             <div class="all-btn-container mt-3">
-                <a href="#" class="news-all-btn">@lang("front.Barcha videolar va rasmlar")</a>
+                <a href="#" class="news-all-btn">@lang('front.Barcha videolar va rasmlar')</a>
             </div>
         </div>
     </section>
@@ -369,14 +372,14 @@
     <!-- links section start -->
     <section class="links">
         <div class="container">
-            <h2 class="section-title">@lang("useful_links.foydali_havola")</h2>
+            <h2 class="section-title">@lang('useful_links.foydali_havola')</h2>
             <div class="links-table">
                 <div class="fast-connect-box">
                     <a href="https://meningfikrim.uz/uz" class="box">
                         <div class="fast-connect-img">
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">@lang("useful_links.Jamoaviy murojaatlar Portali")</span>
+                        <span class="fast-connect-text">@lang('useful_links.Jamoaviy murojaatlar Portali')</span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -384,7 +387,7 @@
                         <div class="fast-connect-img">
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">@lang("useful_links.prezident")</span>
+                        <span class="fast-connect-text">@lang('useful_links.prezident')</span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -393,8 +396,8 @@
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                            @lang("useful_links.senat")
-                            </span>
+                            @lang('useful_links.senat')
+                        </span>
                     </a>
                 </div>
                 <div class="fast-connect-box">
@@ -403,7 +406,7 @@
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                            @lang("useful_links.Yagona interaktiv davlat xizmatlari portali")
+                            @lang('useful_links.Yagona interaktiv davlat xizmatlari portali')
                         </span>
                     </a>
                 </div>
@@ -413,7 +416,7 @@
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                            @lang("useful_links.milliy")
+                            @lang('useful_links.milliy')
                         </span>
                     </a>
                 </div>
@@ -431,7 +434,7 @@
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                           @lang("useful_links.qonunchilik")
+                            @lang('useful_links.qonunchilik')
                         </span>
                     </a>
                 </div>
@@ -441,7 +444,7 @@
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
-                           @lang("useful_links.hukumat")
+                            @lang('useful_links.hukumat')
                         </span>
                     </a>
                 </div>
@@ -450,73 +453,83 @@
                         <div class="fast-connect-img">
                             <img src="/front/img/fast_connect3.png" alt="">
                         </div>
-                        <span class="fast-connect-text">@lang("useful_links.matbuot")</span>
+                        <span class="fast-connect-text">@lang('useful_links.matbuot')</span>
                     </a>
                 </div>
             </div>
-            <h2 class="section-title">@lang("front.Murojaatlar statistikasi")</h2>
-            <div class="row appeal-statistic">
-                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="progress-box">
-                        <div class="progress-part">
-                            <p>Yuborildi</p>
-                            <div>
-                                <span class="progress-part-count" data-count="{{$statistics['all']}}">0</span>
+            @if ($statistics['all'] > 0)
+                <h2 class="section-title">@lang('front.Murojaatlar statistikasi')</h2>
+                <div class="row appeal-statistic">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="progress-box">
+                            <div class="progress-part">
+                                <p>Yuborildi</p>
+                                <div>
+                                    <span class="progress-part-count" data-count="{{ $statistics['all'] }}">0</span>
 
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                    style="width: 100%" aria-valuenow="{{ $statistics['all'] }}" aria-valuemin="0"
+                                    aria-valuemax="{{ $statistics['all'] }}"></div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: 100%" aria-valuenow="{{$statistics['all']}}" aria-valuemin="0" aria-valuemax="{{$statistics['all']}}"></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="progress-box">
+                            <div class="progress-part">
+                                <p>Korildi</p>
+                                <div>
+                                    <span class="progress-part-count" data-count="{{ $statistics['seen'] }}">0</span>
+
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                    style="width: {{ (100 * $statistics['seen']) / $statistics['all'] }}%"
+                                    aria-valuenow="{{ $statistics['seen'] }}" aria-valuemin="0"
+                                    aria-valuemax="{{ $statistics['seen'] }}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="progress-box">
+                            <div class="progress-part">
+                                <p>Bajarilish jarayonda</p>
+                                <div>
+                                    <span class="progress-part-count" data-count="{{ $statistics['proces'] }}">0</span>
+
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                    style="width: {{ (100 * $statistics['proces']) / $statistics['all'] }}%"
+                                    aria-valuenow="{{ $statistics['proces'] }}" aria-valuemin="0"
+                                    aria-valuemax="{{ $statistics['proces'] }}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="progress-box">
+                            <div class="progress-part">
+                                <p>Bajarildi</p>
+                                <div>
+                                    <span class="progress-part-count"
+                                        data-count="{{ $statistics['completed'] }}">0</span>
+
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                                    style="width: {{ (100 * $statistics['completed']) / $statistics['all'] }}%"
+                                    aria-valuenow="{{ $statistics['completed'] }}" aria-valuemin="0"
+                                    aria-valuemax="{{ $statistics['completed'] }}"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="progress-box">
-                        <div class="progress-part">
-                            <p>Korildi</p>
-                            <div>
-                                <span class="progress-part-count" data-count="{{ $statistics['seen'] }}">0</span>
-
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: {{100 * $statistics['seen'] / $statistics['all']}}%" aria-valuenow="{{$statistics['seen']}}" aria-valuemin="0" aria-valuemax="{{$statistics['seen']}}"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="progress-box">
-                        <div class="progress-part">
-                            <p>Bajarilish jarayonda</p>
-                            <div>
-                                <span class="progress-part-count" data-count="{{ $statistics['proces'] }}">0</span>
-
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: {{100 * $statistics['proces'] / $statistics['all']}}%" aria-valuenow="{{$statistics['proces']}}" aria-valuemin="0" aria-valuemax="{{$statistics['proces']}}"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="progress-box">
-                        <div class="progress-part">
-                            <p>Bajarildi</p>
-                            <div>
-                                <span class="progress-part-count" data-count="{{ $statistics['completed'] }}">0</span>
-
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                style="width: {{100 * $statistics['completed'] / $statistics['all']}}%" aria-valuenow="{{$statistics['completed']}}" aria-valuemin="0" aria-valuemax="{{$statistics['completed']}}"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endif
         </div>
     </section>
     <!-- links section end -->
