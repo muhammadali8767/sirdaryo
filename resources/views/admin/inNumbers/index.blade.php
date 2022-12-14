@@ -34,44 +34,48 @@
                                     ID
                                 </th>
                                 <th>
-                                    Ключ
+                                    Заголовок
                                 </th>
                                 <th>
-                                    Значение уз
+                                    Подзаголовок
                                 </th>
                                 <th>
-                                    Значение ру
+                                    Значение
                                 </th>
                                 <th>
-                                    Значение эн
+                                    Активно
                                 </th>
                                 <th>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($settings as $setting)
+                            @foreach ($inNumbers as $inNumber)
                                 <tr>
                                     <td>
-                                        {{ $setting->id }}
+                                        {{ $inNumber->id }}
                                     </td>
                                     <td>
-                                        {{ $setting->key }}
+                                        {{ $inNumber->title }}
                                     </td>
                                     <td>
-                                        {{ $setting->value_uz }}
+                                        {{ $inNumber->subTitle }}
                                     </td>
                                     <td>
-                                        {{ $setting->value_ru }}
+                                        {{ $inNumber->value }}
                                     </td>
                                     <td>
-                                        {{ $setting->value_en }}
+                                        @if ($inNumber->is_active)
+                                            Активно
+                                        @else
+                                            Не активно
+                                        @endif
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="{{ route('setting.edit', $setting->id) }}">
+                                        <a class="btn btn-info btn-sm" href="{{ route('inNumbers.edit', $inNumber->id) }}">
                                             <i class="fas fa-pencil-alt"></i>
                                         </a>
-                                        <form action="{{ route('setting.destroy', $setting->id) }}" method="POST"
+                                        <form action="{{ route('inNumbers.destroy', $inNumber->id) }}" method="POST"
                                             style="display: inline-block">
                                             @csrf
                                             @method('DELETE')
@@ -90,7 +94,7 @@
                 <!-- /.card-body -->
             </div>
             <div class="row justify-content-center align-items-center">
-                {{ $settings->links() }}
+                {{ $inNumbers->links() }}
             </div>
         </div><!-- /.container-fluid -->
     </section>

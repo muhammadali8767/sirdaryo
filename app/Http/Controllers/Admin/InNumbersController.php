@@ -15,9 +15,9 @@ class InNumbersController extends Controller
      */
     public function index()
     {
-        $inNumberss = InNumbers::orderBy('created_at', 'desc')->paginate(10);
+        $inNumbers = InNumbers::orderBy('created_at', 'desc')->paginate(10);
 
-        return view('admin.inNumbers.index', compact('inNumberss'));
+        return view('admin.inNumbers.index', compact('inNumbers'));
     }
 
     /**
@@ -38,7 +38,11 @@ class InNumbersController extends Controller
      */
     public function store(InNumbersCreateRequest $request)
     {
-        $InNumbers = InNumbers::create($request->validated());
+        $data = $request->validated();
+        if(!array_key_exists('is_active', $data))
+            $data['is_active'] = false;
+
+        $InNumbers = InNumbers::create($data);
 
         if ($InNumbers->save()) {
             return redirect()->back()->withSuccess('В цифрах была успешно добавлена!');
@@ -53,7 +57,7 @@ class InNumbersController extends Controller
      * @param  \App\Models\InNumbers  $InNumbers
      * @return \Illuminate\Http\Response
      */
-    public function show(InNumbers $inNumberss)
+    public function show(InNumbers $inNumbers)
     {
         //
     }
@@ -61,12 +65,12 @@ class InNumbersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\InNumbers  $inNumberss
+     * @param  \App\Models\InNumbers  $inNumbers
      * @return \Illuminate\Http\Response
      */
-    public function edit(InNumbers $inNumberss)
+    public function edit(InNumbers $inNumber)
     {
-        return view('admin.inNumbers.edit', compact('inNumberss'));
+        return view('admin.inNumbers.edit', compact('inNumber'));
     }
 
     /**
@@ -76,11 +80,14 @@ class InNumbersController extends Controller
      * @param  \App\Models\InNumbers  $InNumbers
      * @return \Illuminate\Http\Response
      */
-    public function update(InNumbersCreateRequest $request, InNumbers $inNumberss)
+    public function update(InNumbersCreateRequest $request, InNumbers $inNumber)
     {
-        $inNumberss->update($request->validated());
+        $data = $request->validated();
+        if(!array_key_exists('is_active', $data))
+            $data['is_active'] = false;
+        $inNumber->update($data);
 
-        if ($inNumberss->save()) {
+        if ($inNumber->save()) {
             return redirect()->back()->withSuccess('В цифрах была успешно обновлена!');
         } else {
             return redirect()->back()->withErrors('В цифрах не была обновлена!');
@@ -90,12 +97,12 @@ class InNumbersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\InNumbers  $inNumberss
+     * @param  \App\Models\InNumbers  $inNumbers
      * @return \Illuminate\Http\Response
      */
-    public function destroy(InNumbers $inNumberss)
+    public function destroy(InNumbers $inNumbers)
     {
-        $inNumberss->delete();
+        $inNumbers->delete();
 
         return redirect()->back()->withSuccess('В цифрах была успешно удалена!');
     }

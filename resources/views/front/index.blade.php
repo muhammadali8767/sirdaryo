@@ -202,138 +202,30 @@
         <div class="container">
             <h2 class="section-title">@lang('front.raqamlarda')</h2>
             <div class="row">
+                @foreach ($inNumbers as $inNumber)
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="numbers-box">
                         <div class="numbers-info">
                             <div class="numbers-img">
-                                <img src="/front/img/small_news.png" alt="">
+                                <img src="{{ $inNumber->image }}" alt="">
                             </div>
                             <div class="numbers-protsent">
 
                                 <h6 class="protsent">
-                                    <span class="counter-value" data-count="38.7">0</span>
+                                    <span class="counter-value" data-count="{{ $inNumber->value }}">0</span>
                                     %
                                 </h6>
                                 <p class="protsent-desc">
-                                    2021 йилнинг январ-март ойига нисбатан фоизи
+                                    {{ $inNumber->subTitle }}
                                 </p>
                             </div>
                         </div>
                         <h5 class="numbers-title">
-                            Ташкил этилган кичик бизнес субеъктлари сони
+                            {{ $inNumber->title }}
                         </h5>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="numbers-box">
-                        <div class="numbers-info">
-                            <div class="numbers-img">
-                                <img src="/front/img/small_news.png" alt="">
-                            </div>
-                            <div class="numbers-protsent">
-
-                                <h6 class="protsent">
-                                    <span class="counter-value" data-count="38.7">0</span>
-                                    %
-                                </h6>
-                                <p class="protsent-desc">
-                                    2021 йилнинг январ-март ойига нисбатан фоизи
-                                </p>
-                            </div>
-                        </div>
-                        <h5 class="numbers-title">
-                            Ташкил этилган кичик бизнес субеъктлари сони
-                        </h5>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="numbers-box">
-                        <div class="numbers-info">
-                            <div class="numbers-img">
-                                <img src="/front/img/small_news.png" alt="">
-                            </div>
-                            <div class="numbers-protsent">
-
-                                <h6 class="protsent">
-                                    <span class="counter-value" data-count="38.7">0</span>
-                                    %
-                                </h6>
-                                <p class="protsent-desc">
-                                    2021 йилнинг январ-март ойига нисбатан фоизи
-                                </p>
-                            </div>
-                        </div>
-                        <h5 class="numbers-title">
-                            Ташкил этилган кичик бизнес субеъктлари сони
-                        </h5>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="numbers-box">
-                        <div class="numbers-info">
-                            <div class="numbers-img">
-                                <img src="/front/img/small_news.png" alt="">
-                            </div>
-                            <div class="numbers-protsent">
-
-                                <h6 class="protsent">
-                                    <span class="counter-value" data-count="38.7">0</span>
-                                    %
-                                </h6>
-                                <p class="protsent-desc">
-                                    2021 йилнинг январ-март ойига нисбатан фоизи
-                                </p>
-                            </div>
-                        </div>
-                        <h5 class="numbers-title">
-                            Ташкил этилган кичик бизнес субеъктлари сони
-                        </h5>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="numbers-box">
-                        <div class="numbers-info">
-                            <div class="numbers-img">
-                                <img src="/front/img/small_news.png" alt="">
-                            </div>
-                            <div class="numbers-protsent">
-
-                                <h6 class="protsent">
-                                    <span class="counter-value" data-count="38.7">0</span>
-                                    %
-                                </h6>
-                                <p class="protsent-desc">
-                                    2021 йилнинг январ-март ойига нисбатан фоизи
-                                </p>
-                            </div>
-                        </div>
-                        <h5 class="numbers-title">
-                            Ташкил этилган кичик бизнес субеъктлари сони
-                        </h5>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="numbers-box">
-                        <div class="numbers-info">
-                            <div class="numbers-img">
-                                <img src="/front/img/small_news.png" alt="">
-                            </div>
-                            <div class="numbers-protsent">
-
-                                <h6 class="protsent">
-                                    <span class="counter-value" data-count="38.7">0</span>
-                                    %
-                                </h6>
-                                <p class="protsent-desc">
-                                    2021 йилнинг январ-март ойига нисбатан фоизи
-                                </p>
-                            </div>
-                        </div>
-                        <h5 class="numbers-title">
-                            Ташкил этилган кичик бизнес субеъктлари сони
-                        </h5>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

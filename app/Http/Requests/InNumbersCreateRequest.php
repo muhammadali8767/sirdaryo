@@ -32,11 +32,9 @@ class InNumbersCreateRequest extends FormRequest
             'sub_title_ru'=> 'string|nullable|max:255',
             'sub_title_en'=> 'string|nullable|max:255',
 
-            'value_uz'=> 'required|string|max:255',
-            'value_ru'=> 'string|nullable|max:255',
-            'value_en'=> 'string|nullable|max:255',
+            'value'=> 'required|numeric|between:0.01,100.00',
 
-            'image' => 'required|file',
+            'image' => 'required|string',
             'is_active' => 'boolean',
         ];
     }

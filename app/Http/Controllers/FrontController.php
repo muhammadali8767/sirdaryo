@@ -9,6 +9,7 @@ use App\Models\Deputat;
 use App\Models\Director;
 use App\Models\Event;
 use App\Models\HeadOfSecretariat;
+use App\Models\InNumbers;
 use App\Models\Media;
 use App\Models\OpenData;
 use App\Models\Post;
@@ -30,6 +31,9 @@ class FrontController extends Controller
         $photos = Media::where('type', 'photo')->limit(9)->get();
         $videos = Media::where('type', 'video')->limit(9)->get();
         $contacts = Contact::get();
+
+        $inNumbers = InNumbers::where('is_active', true)->get();
+
         $statistics = [
             'all' => $contacts->count(),
             'seen' => $contacts->where('seen', 1)->count(),
@@ -37,7 +41,7 @@ class FrontController extends Controller
             'completed' => $contacts->where('seen', 3)->count(),
         ];
 
-        return view('front.index', compact('latestPosts', 'carousels', 'photos', 'videos', 'statistics'));
+        return view('front.index', compact('latestPosts', 'carousels', 'photos', 'videos', 'statistics', 'inNumbers'));
     }
 
     public function news()

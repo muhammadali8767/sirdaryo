@@ -43,7 +43,11 @@ class PostController extends Controller
      */
     public function store(PostCreateRequest $request)
     {
-        $post = Post::create($request->except('_token'));
+        $data = $request->validated();
+        if (!array_key_exists('is_carousel', $data))
+            $data['is_carousel'] = 0;
+
+        $post = Post::create($data);
 
         if ($post->save()) {
             return redirect()->back()->withSuccess('Статья была успешно добавлена!');

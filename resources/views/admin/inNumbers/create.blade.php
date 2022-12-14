@@ -31,7 +31,7 @@
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <!-- form start -->
-                        <form action="{{ route('inNumbers.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('inNumbers.store') }}" method="POST">
                             @csrf
                             <div class="card card-primary card-outline card-outline-tabs">
                                 <div class="card-header p-0 border-bottom-0">
@@ -76,15 +76,6 @@
                                                     <p class="text-danger small">{{ $message }}</p>
                                                 @enderror
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Qiymati</label>
-                                                <input type="text" name="value_uz"
-                                                    class="form-control @error('value_uz') is-invalid @enderror"
-                                                    required value="{{ old('value_uz') }}">
-                                                @error('value_uz')
-                                                    <p class="text-danger small">{{ $message }}</p>
-                                                @enderror
-                                            </div>
                                         </div>
 
                                         <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel"
@@ -105,15 +96,6 @@
                                                     class="form-control @error('sub_title_ru') is-invalid @enderror"
                                                     value="{{ old('sub_title_ru') }}">
                                                 @error('sub_title_ru')
-                                                    <p class="text-danger small">{{ $message }}</p>
-                                                @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Значение</label>
-                                                <input type="text" name="value_ru"
-                                                    class="form-control @error('value_ru') is-invalid @enderror"
-                                                    value="{{ old('value_ru') }}">
-                                                @error('value_ru')
                                                     <p class="text-danger small">{{ $message }}</p>
                                                 @enderror
                                             </div>
@@ -140,15 +122,6 @@
                                                     <p class="text-danger small">{{ $message }}</p>
                                                 @enderror
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Value</label>
-                                                <input type="text" name="value_en"
-                                                    class="form-control @error('value_en') is-invalid @enderror"
-                                                    value="{{ old('value_en') }}">
-                                                @error('value_en')
-                                                    <p class="text-danger small">{{ $message }}</p>
-                                                @enderror
-                                            </div>
                                         </div>
                                     </div>
 
@@ -157,6 +130,17 @@
                                 <div class="container-fluid">
                                     <h2>Дополнителные</h2>
                                     <div class="row">
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Qiymati</label>
+                                                <input type="number" step="0.01" name="value" max="100" min="0"
+                                                    class="form-control @error('value') is-invalid @enderror"
+                                                    required value="{{ old('value') }}">
+                                                @error('value')
+                                                    <p class="text-danger small">{{ $message }}</p>
+                                                @enderror
+                                            </div>
+                                        </div>
                                         <div class="col-1">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Активно</label>

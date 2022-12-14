@@ -21,11 +21,9 @@ class CreateInNumbersTable extends Migration
             $table->string('sub_title_uz');
             $table->string('sub_title_ru')->nullable();
             $table->string('sub_title_en')->nullable();
-            $table->string('value_uz');
-            $table->string('value_ru')->nullable();
-            $table->string('value_en')->nullable();
+            $table->float('value');
             $table->string('image');
-            $table->boolean('is_active')->default(1);
+            $table->boolean('is_active')->default(0);
             $table->timestamps();
         });
     }
