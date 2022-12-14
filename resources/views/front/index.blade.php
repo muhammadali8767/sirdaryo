@@ -341,48 +341,23 @@
         <div class="container">
             <h2 class="section-title">@lang("front.Mediatika")</h2>
             <div class="media-image-list">
+                @foreach ($photos as $photo)
                 <div>
                     <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
+                        <img src="{{ $photo->media }}" alt="{{ $photo->title }}" title="{{ $photo->title }}">
                     </a>
                 </div>
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
-                    </a>
-                </div>
+                @endforeach
             </div>
             <div class="media-video-list">
+                @foreach ($videos as $video)
                 <div>
                     <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
+                        <video src="{{ $video->media }}" controls title="{{ $video->title }}"></video>
+                        {{-- <img src="{{ $video->media }}" alt=""> --}}
                     </a>
                 </div>
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="/front/img/small_news.png" alt="">
-                    </a>
-                </div>
+                @endforeach
             </div>
             <div class="all-btn-container mt-3">
                 <a href="#" class="news-all-btn">@lang("front.Barcha videolar va rasmlar")</a>

@@ -30,6 +30,7 @@ Route::namespace('App\Http\Controllers\Admin')
         Route::resource('reception', 'ReceptionController')->except('show');
         Route::resource('decree', 'DecreeController')->except('show');
         Route::resource('openData', 'OpenDataController')->except('show');
+        Route::resource('inNumbers', 'InNumbersController')->except('show');
 
         Route::get('dashboard', 'HomeController@index')->name('homeAdmin');
         Route::resource('category', 'CategoryController')->except('show');

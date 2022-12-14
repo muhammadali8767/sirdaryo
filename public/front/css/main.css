@@ -786,6 +786,12 @@ html {
     object-fit: cover;
 }
 
+.media-box>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* links section style */
 .links {
     padding: 0 0 150px 0;

@@ -35,6 +35,24 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-align-left"></i>
+                        <p>Район в цифрах<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('inNumbers.index') }}" class="nav-link">
+                                <p>Все район в цифрах</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('inNumbers.create') }}" class="nav-link">
+                                <p>Добавить район в цифрах</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-align-left"></i>
                         <p>Категории<i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
