@@ -399,7 +399,7 @@
                 <div class="fast-connect-box">
                     <a href="https://meningfikrim.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="/img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang("useful_links.Jamoaviy murojaatlar Portali")</span>
                     </a>
@@ -407,7 +407,7 @@
                 <div class="fast-connect-box">
                     <a href="https://president.uz/ru" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang("useful_links.prezident")</span>
                     </a>
@@ -415,7 +415,7 @@
                 <div class="fast-connect-box">
                     <a href="https://parliament.gov.uz/ru/" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang("useful_links.senat")
@@ -425,7 +425,7 @@
                 <div class="fast-connect-box">
                     <a href="https://my.gov.uz/ru" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang("useful_links.Yagona interaktiv davlat xizmatlari portali")
@@ -435,7 +435,7 @@
                 <div class="fast-connect-box">
                     <a href="https://mfa.uz/ru" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang("useful_links.milliy")
@@ -445,7 +445,7 @@
                 <div class="fast-connect-box">
                     <a href="https://huquqiyportal.uz/" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang("useful_links.O'zbekiston Respublikasi Tashqi ishlar Vazirligi")</span>
                     </a>
@@ -453,7 +453,7 @@
                 <div class="fast-connect-box">
                     <a href="https://parliament.gov.uz/ru/" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                            @lang("useful_links.qonunchilik")
@@ -463,7 +463,7 @@
                 <div class="fast-connect-box">
                     <a href="https://gov.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                            @lang("useful_links.hukumat")
@@ -473,7 +473,7 @@
                 <div class="fast-connect-box">
                     <a href="https://president.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="img/fast_connect3.png" alt="">
+                            <img src="/front/img/fast_connect3.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang("useful_links.matbuot")</span>
                     </a>
