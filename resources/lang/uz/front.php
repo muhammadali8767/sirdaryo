@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'raqamlarda' => 'Boyovut tumani raqamlarda',
+    'raqamlarda' => 'Sardoba tuman hokimligi',
+
     'batafsil' => 'Batafsil',
     'Biografiya' => 'Biografiya',
     'Majburiyatlar' => 'Majburiyatlar',

@@ -7,45 +7,7 @@
                     <img src="/front/img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
                     <span class="header__top_logo-text">@lang('menu.logo')</span>
                 </a>
-
-                <div class="header__top_text">
-                    <i class="fas fa-map-marker-alt header__top_text-icon"></i>
-                    <p class="header__top_text-text">
-                        @lang('menu.location')
-                    </p>
-                </div>
-
-                <div class="header__top_text">
-                    <i class="fas fa-clock header__top_text-icon"></i>
-                    <p class="header__top_text-text">
-                        @lang('menu.qabul vaqtlari')
-                    </p>
-                </div>
-
-                <div class="header__top_connect">
-                    <a href="tel: +998672254090" class="tel_nomer">
-                        <i class="fas fa-phone-alt tel_nomer-icon"></i>
-                        +998 (67) 390-13-58
-                    </a>
-                    <div class="messenger__icons">
-                        <a href="https://www.facebook.com/Boyovut.tumani.hokimligi/">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.instagram.com/boyovut_ovozi/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://t.me/Boyovutliklar">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@boyovuttumani">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-
+                @include('layouts.components.aloqa')
                 <div class="header__top_translatebox">
                     <div class="translatebox">
                         <div class="dropdown">

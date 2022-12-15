@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'raqamlarda' => 'Boyovut district in numbers',
+    'raqamlarda' => 'Sardoba district administration',
+
     'batafsil' => 'More',
     'Biografiya' => 'Biography',
     'Majburiyatlar' => 'Obligations',
