@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'raqamlarda' => 'Sardoba tuman hokimligi',
+    'raqamlarda' => 'Mirzaobod tumani raqamlarda',
 
     'batafsil' => 'Batafsil',
     'Biografiya' => 'Biografiya',
