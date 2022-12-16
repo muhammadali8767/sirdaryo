@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'raqamlarda' => 'Mirzaabad district in numbers',
+    'raqamlarda' => 'Yangiyer city in numbers',
 
     'batafsil' => 'More',
     'Biografiya' => 'Biography',

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'logo' => 'Mirzaobod tuman hokimligi',
-    'location' => 'Mirzaobod tumani Navro\'z mahallasi Do\'stlik ko\'chasi 22-uy',
+    'logo' => 'Yangiyer shahri hokimligi',
+    'location' => 'Yangiyer shahri Navro\'z mahallasi Do\'stlik ko\'chasi 22-uy',
 
     'Bosh sahifa' => 'Bosh sahifa',
     'qabul vaqtlari' => 'Dushanba - Juma, 9:00 - 18:00, Tushlik 13:00-14:00',

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'raqamlarda' => 'Мирзаабадский район в цифрах',
+    'raqamlarda' => 'Город Янгон в цифрах',
 
     'batafsil' => 'Подробно',
     'Biografiya' => 'Биография',

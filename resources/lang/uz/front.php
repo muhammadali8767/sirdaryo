@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'raqamlarda' => 'Mirzaobod tumani raqamlarda',
+    'raqamlarda' => 'Yangiyer shahri raqamlarda',
 
     'batafsil' => 'Batafsil',
     'Biografiya' => 'Biografiya',
