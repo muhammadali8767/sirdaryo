@@ -99,6 +99,8 @@
     </div>
     @endforeach
 
-       
+    @include('layouts.components.copy')
+
+
 </div>
 @endsection
