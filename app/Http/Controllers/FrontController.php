@@ -115,7 +115,8 @@ class FrontController extends Controller
 
     public function qabul()
     {
-        return view('front.qabul');
+        $type = request()->type ? request()->type : 1;
+        return view('front.qabul', compact('type'));
     }
 
     public function post_contact(Request $request)
