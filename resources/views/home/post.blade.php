@@ -12,12 +12,15 @@
             </ol>
         </nav>
         <h2 class="section-title">{{ $post->title }}</h2>
-        <img src="{{ $post->img }}" alt="No image" style="width: 100%">
+        <div class="row">
+            <div class="col-12 offset-0">
+                <img src="{{ $post->img }}" alt="" width="100%">
+            </div>
+        </div>
         <hr>
         {!! $post->text !!}
 
         @include('layouts.components.copy')
-    </div>
     </div>
 </section>
 
