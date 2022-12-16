@@ -5,16 +5,26 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Asosiy</a></li>
-            <li class="breadcrumb-item active" aria-current="page">@lang('menu.Hokimga murojaat')</li>
+            @if ($type == 1)
+                <li class="breadcrumb-item active" aria-current="page">@lang('menu.Hokimga murojaat')</li>
+            @else
+                <li class="breadcrumb-item active" aria-current="page">@lang('sidebar.Muammolar haqida xabar bering')</li>
+            @endif
+
         </ol>
     </nav>
     <h2 class="section-title mb-30">
-        @lang('menu.Hokimga murojaat')
+        @if ($type == 1)
+            @lang('menu.Hokimga murojaat')
+        @else
+            @lang('sidebar.Muammolar haqida xabar bering')
+        @endif
     </h2>
 
     <form action="{{ route('post-contact') }}" method="post" class="appeal-form" enctype="multipart/form-data">
         @csrf
-        <div class="row mb-4">
+        <input type="hidden" name="type" value="{{ $type }}">
+        {{--  <div class="row mb-4">
             <div class="col-12 mb-3 mb-lg-0">
                 <div class="appeal-form-box">
                     <label for="gender" class="appeal-form-label">
@@ -27,7 +37,7 @@
                     </select>
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <div class="row mb-4">
             <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                 <div class="appeal-form-box">
