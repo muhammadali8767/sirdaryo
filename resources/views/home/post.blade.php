@@ -13,17 +13,14 @@
         </nav>
         <h2 class="section-title">{{ $post->title }}</h2>
         <div class="row">
-            <div class="col-10 offset-1">
+            <div class="col-12 offset-0">
                 <img src="{{ $post->img }}" alt="" width="100%">
             </div>
         </div>
-        <br>
-        <img src="{{ $post->img }}" alt="No image" style="width: 100%">
         <hr>
         {!! $post->text !!}
 
         @include('layouts.components.copy')
-    </div>
     </div>
 </section>
 
