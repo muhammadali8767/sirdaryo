@@ -35,7 +35,7 @@
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a href="#" class="news-short-title marked-links">
+                                                        <a href="{{ route('category_post', [$carousel->category->slug, $carousel->slug]) }}" class="news-short-title marked-links">
                                                             {{ $carousel->title }}
                                                         </a>
                                                         <p class="news-description">
@@ -68,7 +68,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <a href="#" class="news-short-title">
+                                            <a href="{{ route('category_post', [$post->category->slug, $post->slug]) }}" class="news-short-title">
                                                 {{ $post->title }}
                                             </a>
                                             <p class="news-description">

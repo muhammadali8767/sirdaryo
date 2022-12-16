@@ -15,6 +15,11 @@
         <p>
             <span class="hours">{{ $page->created_at->format('H:i') }}</span> / <span class="date">{{ $page->created_at->format('Y.m.d') }}</span>
         </p>
+        @elseif (isset($post))
+        <i class="fas fa-calendar"></i>
+        <p>
+            <span class="hours">{{ $post->created_at->format('H:i') }}</span> / <span class="date">{{ $post->created_at->format('Y.m.d') }}</span>
+        </p>
         @endif
     </div>
     <button class="copy-button order-2 order-sm-1">
@@ -31,6 +36,11 @@
         <i class="fas fa-eye"></i>
         <p>
             <span class="view-numbers">{{ $page->seen }}</span>
+        </p>
+        @elseif (isset($post))
+        <i class="fas fa-eye"></i>
+        <p>
+            <span class="view-numbers">{{ $post->seen }}</span>
         </p>
         @endif
 

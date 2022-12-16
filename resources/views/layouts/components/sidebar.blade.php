@@ -11,7 +11,7 @@
                 </a>
             </td>
             <td class="fast-connect-box">
-                <a href="{{ route('qabul') }}" class="box">
+                <a href="{{ route('qabul', ['type' => 1]) }}" class="box">
                     <div class="fast-connect-img">
                         <img src="/front/img/fast_connect2.png" alt="">
                     </div>
@@ -19,7 +19,7 @@
                 </a>
             </td>
             <td class="fast-connect-box">
-                <a href="{{ route('qabul') }}" class="box">
+                <a href="{{ route('qabul', ['type' => 2]) }}" class="box">
                     <div class="fast-connect-img">
                         <img src="/front/img/fast_connect3.png" alt="">
                     </div>

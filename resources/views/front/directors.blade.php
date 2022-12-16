@@ -101,6 +101,5 @@
 
     @include('layouts.components.copy')
 
-
 </div>
 @endsection
