@@ -13,7 +13,7 @@
 </div>
 
 <div class="header__top_connect">
-    <a href="tel: +998672254090" class="tel_nomer">
+    <a href="tel: +998673441351" class="tel_nomer">
         <i class="fas fa-phone-alt tel_nomer-icon"></i>
         +998 (67) 344-13-51
     </a>
