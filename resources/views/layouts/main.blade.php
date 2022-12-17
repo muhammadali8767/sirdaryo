@@ -81,7 +81,7 @@
             $('#staticBackdrop').modal('show');
         }
     </script>
-    
+    {{-- https://app.jivo.ru/join.html?token=a93ed0adb46d44ae0f5d502157f60aa3.2128415 --}}
     <script src="//code.jivo.ru/widget/F9psNy5J1j" async></script>
 </body>
 
