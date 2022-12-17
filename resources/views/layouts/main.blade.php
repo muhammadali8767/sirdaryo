@@ -82,6 +82,9 @@
         }
     </script>
 
+    {{-- https://app.jivo.ru/join.html?token=ac21bedb769f950367609086b1359102.2128417 --}}
+    <script src="//code.jivo.ru/widget/38MdbNvTdx" async></script>
+
 </body>
 
 </html>
