@@ -107,7 +107,7 @@ class MediaController extends Controller
      */
     public function destroy(Media $media)
     {
-        $post->delete();
+        $media->delete();
 
         return redirect()->back()->withSuccess('Медиа была успешно удалена!');
     }
