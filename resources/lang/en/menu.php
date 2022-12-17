@@ -2,7 +2,7 @@
 
 return [
     'logo' => 'Mirzaobod district administration',
-    'location' => 'Dostlik street 22, Navroz neighborhood, Mirzaobod district',
+    'location' => 'Mirzaabad District, "Navroz" Mahalla, 1 Mustaqililik St',
 
     'Bosh sahifa' => 'Homepage',
     'qabul vaqtlari' => 'Monday - Friday, 9:00 - 18:00, Lunch 13:00 - 14:00',

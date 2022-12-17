@@ -13,24 +13,24 @@
 </div>
 
 <div class="header__top_connect">
-    <a href="tel: +998672254090" class="tel_nomer">
+    <a href="tel: +9989673101404" class="tel_nomer">
         <i class="fas fa-phone-alt tel_nomer-icon"></i>
-        +998 (67) 344-13-51
+        +998 (67) 310-14-04
     </a>
     <div class="messenger__icons">
-        <a href="https://www.facebook.com/sardobatumani.uz">
+        <a href="https://www.facebook.com/Mirzaobod.yangiliklari/">
             <i class="fab fa-facebook-f"></i>
         </a>
         <a href="">
             <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://www.instagram.com/sardobatumani.uz/">
+        <a href="">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://t.me/sardobatumani_uz">
+        <a href="https://t.me/Mirzaobod_yangiliklari/">
             <i class="fab fa-telegram"></i>
         </a>
-        <a href="https://www.youtube.com/channel/UCy-MUKGPuqsdl9Xff8n7jQw/featured">
+        <a href="https://www.youtube.com/channel/UCODSax5LIRC77F2V9LXchIw/">
             <i class="fab fa-youtube"></i>
         </a>
     </div>
