@@ -29,7 +29,7 @@ Route::namespace('App\Http\Controllers\Admin')
         Route::resource('headOfSecretariat', 'HeadOfSecretariatController')->except('show');
         Route::resource('reception', 'ReceptionController')->except('show');
         Route::resource('decree', 'DecreeController')->except('show');
-        Route::resource('openData', 'OpenDataController')->except('show');
+        Route::resource('opendatas', 'OpenDataController')->except('show')->names('opendatas');
         Route::resource('inNumbers', 'InNumbersController')->except('show');
 
         Route::get('dashboard', 'HomeController@index')->name('homeAdmin');

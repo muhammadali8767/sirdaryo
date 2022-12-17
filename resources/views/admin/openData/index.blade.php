@@ -41,21 +41,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($openDatas as $openData)
+                            @foreach ($opendatas as $opendata)
                                 <tr>
                                     <td>
-                                        {{ $openData->id }}
+                                        {{ $opendata->id }}
                                     </td>
                                     <td>
-                                        {{ $openData->title }}
+                                        {{ $opendata->title }}
                                     </td>
 
                                     <td class="project-actions text-right">
-                                        <a href="/{{ $openData->file }}" class="btn btn-success btn-sm" download=""><i class="fas fa-download"></i></a>
-                                        <a class="btn btn-info btn-sm" href="{{ route('openData.edit', $openData->id) }}">
+                                        <a href="/{{ $opendata->file }}" class="btn btn-success btn-sm" download=""><i class="fas fa-download"></i></a>
+                                        <a class="btn btn-info btn-sm" href="{{ route('opendatas.edit', $opendata->id) }}">
                                             <i class="fas fa-pencil-alt"></i>
                                         </a>
-                                        <form action="{{ route('openData.destroy', $openData->id) }}" method="POST"
+                                        <form action="{{ route('opendatas.destroy', $opendata->id) }}" method="POST"
                                             style="display: inline-block">
                                             @csrf
                                             @method('DELETE')
@@ -74,7 +74,7 @@
                 <!-- /.card-body -->
             </div>
             <div class="row justify-content-center align-items-center">
-                {{ $openDatas->links() }}
+                {{ $opendatas->links() }}
             </div>
         </div><!-- /.container-fluid -->
     </section>
