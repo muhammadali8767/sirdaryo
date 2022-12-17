@@ -81,7 +81,8 @@
             $('#staticBackdrop').modal('show');
         }
     </script>
-
+    
+    <script src="//code.jivo.ru/widget/F9psNy5J1j" async></script>
 </body>
 
 </html>
