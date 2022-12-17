@@ -2,7 +2,7 @@
 
 return [
     'logo' => 'Yangiyer shahri hokimligi',
-    'location' => 'Yangiyer shahri Navro\'z mahallasi Do\'stlik ko\'chasi 22-uy',
+    'location' => 'Yangiyer shahar Yangi asr ko\'chasi 16-uy, indeks:121000',
 
     'Bosh sahifa' => 'Bosh sahifa',
     'qabul vaqtlari' => 'Dushanba - Juma, 9:00 - 18:00, Tushlik 13:00-14:00',

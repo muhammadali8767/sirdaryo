@@ -13,25 +13,28 @@
 </div>
 
 <div class="header__top_connect">
-    <a href="tel: +998672254090" class="tel_nomer">
+    <a href="tel: +998673503116" class="tel_nomer">
         <i class="fas fa-phone-alt tel_nomer-icon"></i>
-        +998 (67) 344-13-51
+        +998 (67) 350-31-16; +998 (67) 350-32-19
     </a>
     <div class="messenger__icons">
-        <a href="https://www.facebook.com/sardobatumani.uz">
+        <a href="https://fb.me/hokimlik">
             <i class="fab fa-facebook-f"></i>
         </a>
         <a href="">
             <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://www.instagram.com/sardobatumani.uz/">
+        <a href="https://instagram.com/hokimlik">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://t.me/sardobatumani_uz">
+        <a href="https://t.me/yan_pressa">
             <i class="fab fa-telegram"></i>
         </a>
-        <a href="https://www.youtube.com/channel/UCy-MUKGPuqsdl9Xff8n7jQw/featured">
-            <i class="fab fa-youtube"></i>
+        <a href="https://t.me/yan_hokim_bot">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://t.me/YangiyerUzbot">
+            <i class="fab fa-telegram"></i>
         </a>
     </div>
 </div>

@@ -2,7 +2,7 @@
 
 return [
     'logo' => 'Yangiyer city administration',
-    'location' => 'Dostlik street 22, Navroz neighborhood, Yangiyer city',
+    'location' => '16, Yangi Asr Street, Yangiyer City, index: 121000',
 
     'Bosh sahifa' => 'Homepage',
     'qabul vaqtlari' => 'Monday - Friday, 9:00 - 18:00, Lunch 13:00 - 14:00',
