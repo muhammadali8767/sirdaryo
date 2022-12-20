@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('homeAdmin') }}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('openData.index') }}">Решение мэра</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('decree.index') }}">Решение мэра</a></li>
                         <li class="breadcrumb-item active">Добавить решению мэра</li>
                     </ol>
                 </div>
