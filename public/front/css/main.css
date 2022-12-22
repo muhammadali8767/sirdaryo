@@ -697,17 +697,17 @@ html {
 
 /* numbers section style */
 .numbers {
-    padding: 70px 0 50px 0;
+    padding: 45px 0 45px 0;
     background: linear-gradient(0deg, rgba(0, 76, 147, 0.9), rgba(0, 76, 147, 0.9)), url(../img/footer_bg.png) no-repeat center center / cover ;
 }
 
 .numbers .section-title {
     color: var(--color-white);
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .numbers-box {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .numbers-title {
