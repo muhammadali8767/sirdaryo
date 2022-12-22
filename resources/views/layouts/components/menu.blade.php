@@ -53,7 +53,7 @@
                     <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="{{ route('openDatas') }}">@lang('menu.Ochiq malumotlar')</a>
+                    <a href="{{ route('openDatas') }}" home-link>@lang('menu.Ochiq malumotlar')</a>
                 </li>
             </ul>
 
@@ -109,7 +109,7 @@
                             <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="{{ route('openDatas') }}">@lang('menu.Ochiq malumotlar')</a>
+                            <a href="{{ route('openDatas') }}" home-link>@lang('menu.Ochiq malumotlar')</a>
                         </li>
                     </ul>
                 </div>

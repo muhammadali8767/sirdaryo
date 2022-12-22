@@ -68,7 +68,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <a href="#" class="news-short-title">
+                                            <a href="{{ route('post', $post->slug) }}" class="news-short-title">
                                                 {{ $post->title }}
                                             </a>
                                             <p class="news-description">
