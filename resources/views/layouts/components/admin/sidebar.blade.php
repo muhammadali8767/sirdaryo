@@ -33,6 +33,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('contact.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>Заявки</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-align-left"></i>
                         <p>Район в цифрах<i class="right fas fa-angle-left"></i></p>
@@ -226,12 +232,12 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('openData.index') }}" class="nav-link">
+                            <a href="{{ route('opendatas.index') }}" class="nav-link">
                                 <p>Все открытая информация</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('openData.create') }}" class="nav-link">
+                            <a href="{{ route('opendatas.create') }}" class="nav-link">
                                 <p>Добавить открытую информацию</p>
                             </a>
                         </li>
@@ -273,13 +279,6 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('contact.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>Заявки</p>
-                    </a>
-                </li>
-
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

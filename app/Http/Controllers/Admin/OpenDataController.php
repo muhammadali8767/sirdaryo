@@ -17,9 +17,9 @@ class OpenDataController extends Controller
      */
     public function index()
     {
-        $openDatas = OpenData::paginate(10);
+        $opendatas = OpenData::paginate(10);
 
-        return view('admin.openData.index', compact('openDatas'));
+        return view('admin.openData.index', compact('opendatas'));
     }
 
     /**
@@ -46,14 +46,14 @@ class OpenDataController extends Controller
         if ($file && $savedFile = $file->move($destinationPath,time().'-'.$file->getClientOriginalName())) {
             $filePath = $destinationPath .'/'. $savedFile->getFilename();
         }
-        $openData = OpenData::create([
+        $opendata = OpenData::create([
             'title_uz' => $request->title_uz,
             'title_ru' => $request->title_ru,
             'title_en' => $request->title_en,
             'file' => $filePath
         ]);
 
-        if ($openData->save()) {
+        if ($opendata->save()) {
             return redirect()->back()->withSuccess('Открытая информация была успешно добавлена!');
         } else {
             return redirect()->back()->withErrors('Открытая информация не была добавлена!');
@@ -63,10 +63,10 @@ class OpenDataController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\OpenData  $openData
+     * @param  \App\Models\OpenData  $opendata
      * @return \Illuminate\Http\Response
      */
-    public function show(OpenData $openData)
+    public function show(OpenData $opendata)
     {
         //
     }
@@ -74,35 +74,35 @@ class OpenDataController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\OpenData  $openData
+     * @param  \App\Models\OpenData  $opendata
      * @return \Illuminate\Http\Response
      */
-    public function edit(OpenData $openData)
+    public function edit(OpenData $opendata)
     {
-        return view('admin.openData.edit', compact('openData'));
+        return view('admin.openData.edit', compact('opendata'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\OpenData  $openData
+     * @param  \App\Models\OpenData  $opendata
      * @return \Illuminate\Http\Response
      */
-    public function update(OpenDataUpdateRequest $request, OpenData $openData)
+    public function update(OpenDataUpdateRequest $request, OpenData $opendata)
     {
         $file = $request->file('file');
         $filePath = '';
         $destinationPath = 'uploads';
         if ($file && $savedFile = $file->move($destinationPath,time().'-'.$file->getClientOriginalName())) {
             $filePath = $destinationPath .'/'. $savedFile->getFilename();
-            $openData->file = $filePath;
+            $opendata->file = $filePath;
         }
-        $openData->title_uz = $request->title_uz;
-        $openData->title_ru = $request->title_ru;
-        $openData->title_en = $request->title_en;
+        $opendata->title_uz = $request->title_uz;
+        $opendata->title_ru = $request->title_ru;
+        $opendata->title_en = $request->title_en;
 
-        if ($openData->save()) {
+        if ($opendata->save()) {
             return redirect()->back()->withSuccess('Открытая информация была успешно обновлена!');
         } else {
             return redirect()->back()->withErrors('Открытая информация не была обновлена!');
@@ -113,12 +113,12 @@ class OpenDataController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\OpenData  $openData
+     * @param  \App\Models\OpenData  $opendata
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OpenData $openData)
+    public function destroy(OpenData $opendata)
     {
-        $openData->delete();
+        $opendata->delete();
 
         return redirect()->back()->withSuccess('Открытая информация была успешно удалена!');
     }

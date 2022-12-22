@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContacCreateRequest;
 use App\Http\Requests\EventCreateRequest;
 use App\Models\Contact;
+use App\Models\Decree;
 use App\Models\Deputat;
 use App\Models\Director;
 use App\Models\Event;
@@ -95,7 +96,7 @@ class FrontController extends Controller
 
     public function decrees()
     {
-        $decrees = OpenData::get();
+        $decrees = Decree::get();
         $date = ($decrees->count() > 0) ? $decrees->first()->created_at : Carbon::now();
         return view('front.decrees', compact('decrees', 'date'));
     }
@@ -115,7 +116,8 @@ class FrontController extends Controller
 
     public function qabul()
     {
-        return view('front.qabul');
+        $type = request()->type ? request()->type : 1;
+        return view('front.qabul', compact('type'));
     }
 
     public function post_contact(Request $request)

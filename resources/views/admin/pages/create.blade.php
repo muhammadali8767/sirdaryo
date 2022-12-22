@@ -53,7 +53,7 @@
                                 </ul>
                             </div>
                             <div class="card-body">
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <!-- select -->
                                     <div class="form-group">
                                         <label>Выберите тип страницы</label>
@@ -66,7 +66,7 @@
                                             <p class="text-danger small">{{ $message }}</p>
                                         @enderror
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="tab-content" id="custom-tabs-four-tabContent">
                                     <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel"

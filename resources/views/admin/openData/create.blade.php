@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('homeAdmin') }}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('openData.index') }}">Открытая информация</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('opendatas.index') }}">Открытая информация</a></li>
                         <li class="breadcrumb-item active">Добавить Открытую информацию</li>
                     </ol>
                 </div>
@@ -31,7 +31,7 @@
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <!-- form start -->
-                        <form action="{{ route('openData.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('opendatas.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">

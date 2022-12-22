@@ -37,7 +37,8 @@ class PostCreateRequest extends FormRequest
             'text_en' => 'string',
 
             'img' => 'required|string',
-            'category_id' => 'required|exists:categories,id'
+            'category_id' => 'required|exists:categories,id',
+            'is_carousel' => 'boolean',
         ];
     }
 }
