@@ -61,10 +61,10 @@
                                         </a>
                                     </td> --}}
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="{{ route('media.edit', $media->id) }}">
+                                        <a class="btn btn-info btn-sm" href="{{ route('medias.edit', $media->id) }}">
                                             <i class="fas fa-pencil-alt"></i>
                                         </a>
-                                        <form action="{{ route('media.destroy', $media->id) }}" method="POST"
+                                        <form action="{{ route('medias.destroy', $media->id) }}" method="POST"
                                             style="display: inline-block">
                                             @csrf
                                             @method('DELETE')

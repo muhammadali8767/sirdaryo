@@ -110,7 +110,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('media.create') }}" class="nav-link">
+                            <a href="{{ route('medias.create') }}" class="nav-link">
                                 <p>Добавить медиа</p>
                             </a>
                         </li>

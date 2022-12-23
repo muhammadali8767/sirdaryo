@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('homeAdmin') }}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('media.index') }}">медиа</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('medias.index') }}">медиа</a></li>
                         <li class="breadcrumb-item active">Редактирование медиа</li>
                     </ol>
                 </div>
@@ -31,7 +31,7 @@
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <!-- form start -->
-                        <form action="{{ route('media.update', $media->id) }}" method="POST">
+                        <form action="{{ route('medias.update', $media->id) }}" method="POST">
                             @csrf
                             @method('PUT')
                             <div class="card-body">
@@ -42,11 +42,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Тип</label>
-                                    <select name="type" class="form-control" disabled>
+                                    <select class="form-control" disabled>
                                         <option value="photo" @if ($media->type == 'photo') selected @endif>Фото</option>
                                         <option value="video" @if ($media->type == 'video') selected @endif>Видео</option>
                                     </select>
                                 </div>
+                                <input type="hidden" name="type" value="{{ $media->type }}">
                                 <div class="form-group">
                                     <label>Медиа</label>
                                     @if ($media->type == 'photo')
