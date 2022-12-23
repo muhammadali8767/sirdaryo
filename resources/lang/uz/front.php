@@ -25,5 +25,11 @@ return [
     'Partiyasi' => 'Partiyasi',
     'Mediatika' => 'Mediatika',
     'Murojaatlar statistikasi' => 'Murojaatlar statistikasi',
-    'Barcha videolar va rasmlar' => 'Barcha videolar va rasmlar'
+    'Barcha videolar va rasmlar' => 'Barcha videolar va rasmlar',
+
+    'Mahalliy kengash' => 'Mahalliy kengash',
+    'Doimiy komissiya azolari' => 'Doimiy komissiya azolari',
+    'Familiyasi ismi va otasining ismi' => 'Familiyasi ismi va otasining ismi',
+    'Ish joyi va lavozimi' => 'Ish joyi va lavozimi',
+    'Partiyasi' => 'Partiyasi',
 ];
