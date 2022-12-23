@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'raqamlarda' => 'Sardoba district administration',
+    'raqamlarda' => 'Okoltin district in numbers',
 
     'batafsil' => 'More',
     'Biografiya' => 'Biography',

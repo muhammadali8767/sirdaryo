@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'raqamlarda' => 'Sardoba tuman hokimligi',
+    'raqamlarda' => 'Oqoltin tumani raqamlarda',
 
     'batafsil' => 'Batafsil',
     'Biografiya' => 'Biografiya',

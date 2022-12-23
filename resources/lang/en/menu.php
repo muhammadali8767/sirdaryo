@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'logo' => 'Sardoba district administration',
-    'location' => 'Dostlik street 22, Navroz neighborhood, Sardoba district',
+    'logo' => 'Oqoltin district administration',
+    'location' => 'Oqoltin District New Era MFY. 2 houses on Begubor Street',
 
     'Bosh sahifa' => 'Homepage',
     'qabul vaqtlari' => 'Monday - Friday, 9:00 - 18:00, Lunch 13:00 - 14:00',
