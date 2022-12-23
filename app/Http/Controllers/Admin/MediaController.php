@@ -47,7 +47,7 @@ class MediaController extends Controller
      */
     public function store(MediaCreateRequest $request)
     {
-        $media = Media::create($request->except('_token'));
+        $media = Media::create($request->validated());
 
         if ($media->save()) {
             return redirect()->back()->withSuccess('Медиа была успешно добавлена!');
@@ -90,7 +90,7 @@ class MediaController extends Controller
      */
     public function update(MediaCreateRequest $request, Media $media)
     {
-        $media->update($request->except('_token'));
+        $media->update($request->validated());
 
         if ($media->save()) {
             return redirect()->back()->withSuccess('Медиа была успешно обновлена!');
