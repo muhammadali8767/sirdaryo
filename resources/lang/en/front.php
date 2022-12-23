@@ -25,5 +25,11 @@ return [
     'Partiyasi' => 'Party',
     'Mediatika' => 'Media library',
     'Murojaatlar statistikasi' => 'General statistics',
-    'Barcha videolar va rasmlar' => 'All videos and pictures'
+    'Barcha videolar va rasmlar' => 'All videos and pictures',
+
+    'Mahalliy kengash' => 'Local Council',
+    'Doimiy komissiya azolari' => 'Standing Commission Members',
+    'Familiyasi ismi va otasining ismi' => 'Last name and middle name',
+    'Ish joyi va lavozimi' => 'Job and position',
+    'Partiyasi' => 'Partisanship',
 ];
