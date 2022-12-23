@@ -38,7 +38,7 @@ Route::namespace('App\Http\Controllers\Admin')
         Route::resource('pages', 'StaticPageController')->except('show');
         Route::resource('users', 'UserController');
         Route::resource('contact', 'ContactController')->except('create', 'store', 'edit');
-        Route::resource('media', 'MediaController')->except('show');
+        Route::resource('medias', 'MediaController')->except('show');
 
         Route::post('users/change-password/{user}', 'UserController@change_password')->name('change-password');
         Route::get('media/photoList', 'MediaController@photoList')->name('photoList');

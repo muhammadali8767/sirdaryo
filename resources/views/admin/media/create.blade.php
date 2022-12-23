@@ -31,7 +31,7 @@
                 <div class="col-lg-12">
                     <div class="card card-primary">
                         <!-- form start -->
-                        <form action="{{ route('media.store') }}" method="POST">
+                        <form action="{{ route('medias.store') }}" method="POST">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
@@ -45,6 +45,15 @@
                                         <option value="photo">Фото</option>
                                         <option value="video">Видео</option>
                                     </select>
+                                    <div class="invalid-feedback">
+                                        Please fill a valid data.
+                                    </div>
+
+                                    @error('type')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                                 <div class="form-group">
                                     <label>Медиа</label>
