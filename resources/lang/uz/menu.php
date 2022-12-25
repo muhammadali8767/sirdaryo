@@ -1,9 +1,6 @@
 <?php
 
 return [
-    'logo' => 'Sardoba tuman hokimligi',
-    'location' => 'Sardoba tumani Navro\'z mahallasi Do\'stlik ko\'chasi 22-uy',
-
     'Bosh sahifa' => 'Bosh sahifa',
     'qabul vaqtlari' => 'Dushanba - Juma, 9:00 - 18:00, Tushlik 13:00-14:00',
     'kozi ojizlar' => 'Ko\'zi ojizlar uchun',

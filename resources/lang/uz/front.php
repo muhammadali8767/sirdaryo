@@ -1,8 +1,6 @@
 <?php
 
 return [
-    'raqamlarda' => 'Sardoba tuman hokimligi',
-
     'batafsil' => 'Batafsil',
     'Biografiya' => 'Biografiya',
     'Majburiyatlar' => 'Majburiyatlar',

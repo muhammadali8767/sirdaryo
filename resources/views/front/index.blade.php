@@ -173,7 +173,7 @@
     <!-- statistic numbers section start -->
     <section class="numbers">
         <div class="container">
-            <h2 class="section-title">@lang('front.raqamlarda')</h2>
+            <h2 class="section-title">@lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_raqamlarda")</h2>
             <div class="row">
                 @foreach ($inNumbers as $inNumber)
                 <div class="col-12 col-md-6 col-xl-4">

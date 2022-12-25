@@ -5,7 +5,7 @@
             <div class="header__top_row">
                 <a href="{{ route('main') }}" class="header__top_logo">
                     <img src="/front/img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
-                    <span class="header__top_logo-text">@lang('menu.logo')</span>
+                    <span class="header__top_logo-text">@lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_logo")</span>
                 </a>
                 @include('layouts.components.aloqa')
                 <div class="header__top_translatebox">

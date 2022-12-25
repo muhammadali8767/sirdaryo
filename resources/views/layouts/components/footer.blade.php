@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-6 mb-4 mb-md-0">
                     <a href="index.html" class="header__top_logo">
                         <img src="/front/img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
-                        <span class="header__top_logo-text">@lang('menu.logo')</span>
+                        <span class="header__top_logo-text">@lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_logo")</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-end">
