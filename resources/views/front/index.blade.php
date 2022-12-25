@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 col-lg-8 col-xl-9 px-0">
                     <div class="row">
-                        <div class="col-12 col-xxl-5 news-big-box">
+                        <div class="col-12 col-xxl-6 news-big-box">
                             <div class="container ps-xl-0">
                                 <div class="example-slider">
                                     @foreach ($carousels as $carousel)
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-xxl-7">
+                        <div class="col-12 col-xxl-6">
                             <div class="container">
                                 <h2 class="section-title mb-1">@lang("front.So'nggi yangiliklar")</h2>
                                 @foreach ($latestPosts as $post)
@@ -184,20 +184,20 @@
                             </div>
                             <div class="numbers-protsent">
 
-                                <h6 class="protsent">
-                                    <span class="counter-value" data-count="{{ $inNumber->value }}">0</span>
-                                    %
-                                </h6>
-                                <p class="protsent-desc">
-                                    {{ $inNumber->subTitle }}
-                                </p>
+                                    <h6 class="protsent">
+                                        <span class="counter-value" data-count="{{ $inNumber->value }}">0</span>
+                                        %
+                                    </h6>
+                                    <p class="protsent-desc">
+                                        {{ $inNumber->subTitle }}
+                                    </p>
+                                </div>
                             </div>
+                            <h5 class="numbers-title">
+                                {{ $inNumber->title }}
+                            </h5>
                         </div>
-                        <h5 class="numbers-title">
-                            {{ $inNumber->title }}
-                        </h5>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -210,21 +210,21 @@
             <h2 class="section-title">@lang('front.Mediatika')</h2>
             <div class="media-image-list">
                 @foreach ($photos as $photo)
-                <div>
-                    <a href="#" class="media-box">
-                        <img src="{{ $photo->media }}" alt="{{ $photo->title }}" title="{{ $photo->title }}">
-                    </a>
-                </div>
+                    <div>
+                        <a href="#" class="media-box">
+                            <img src="{{ $photo->media }}" alt="{{ $photo->title }}" title="{{ $photo->title }}">
+                        </a>
+                    </div>
                 @endforeach
             </div>
             <div class="media-video-list">
                 @foreach ($videos as $video)
-                <div>
-                    <a href="#" class="media-box">
-                        <video src="{{ $video->media }}" controls title="{{ $video->title }}"></video>
-                        {{-- <img src="{{ $video->media }}" alt=""> --}}
-                    </a>
-                </div>
+                    <div>
+                        <a href="#" class="media-box">
+                            <video src="{{ $video->media }}" controls title="{{ $video->title }}"></video>
+                            {{-- <img src="{{ $video->media }}" alt=""> --}}
+                        </a>
+                    </div>
                 @endforeach
             </div>
             <div class="all-btn-container mt-3">
@@ -242,7 +242,7 @@
                 <div class="fast-connect-box">
                     <a href="https://meningfikrim.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/jamoa-portal.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang('useful_links.Jamoaviy murojaatlar Portali')</span>
                     </a>
@@ -250,7 +250,7 @@
                 <div class="fast-connect-box">
                     <a href="https://president.uz/ru" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/prezident-logo.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang('useful_links.prezident')</span>
                     </a>
@@ -258,7 +258,7 @@
                 <div class="fast-connect-box">
                     <a href="https://parliament.gov.uz/ru/" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/senat.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang('useful_links.senat')
@@ -268,7 +268,7 @@
                 <div class="fast-connect-box">
                     <a href="https://my.gov.uz/ru" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/yagona.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang('useful_links.Yagona interaktiv davlat xizmatlari portali')
@@ -278,7 +278,7 @@
                 <div class="fast-connect-box">
                     <a href="https://mfa.uz/ru" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/milliy-logo.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang('useful_links.milliy')
@@ -288,7 +288,7 @@
                 <div class="fast-connect-box">
                     <a href="https://huquqiyportal.uz/" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/tashqiishlar-logo.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang("useful_links.O'zbekiston Respublikasi Tashqi ishlar Vazirligi")</span>
                     </a>
@@ -296,7 +296,7 @@
                 <div class="fast-connect-box">
                     <a href="https://parliament.gov.uz/ru/" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/icon-2.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang('useful_links.qonunchilik')
@@ -306,7 +306,7 @@
                 <div class="fast-connect-box">
                     <a href="https://gov.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/icon-2.png" alt="">
                         </div>
                         <span class="fast-connect-text">
                             @lang('useful_links.hukumat')
@@ -316,7 +316,7 @@
                 <div class="fast-connect-box">
                     <a href="https://president.uz/uz" class="box">
                         <div class="fast-connect-img">
-                            <img src="/front/img/fast_connect3.png" alt="">
+                            <img src="/front/img/icon-2.png" alt="">
                         </div>
                         <span class="fast-connect-text">@lang('useful_links.matbuot')</span>
                     </a>

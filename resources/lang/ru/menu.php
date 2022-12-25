@@ -20,7 +20,7 @@ return [
     'Fuqarolarni qabul qilish tartibi' => 'Порядок приема граждан',
     'Korupsiya' => 'Борьба с коррупцией',
     'Fuqorolarni qabul qilish' => 'Прием граждан',
-    'Senat azolari' => 'Члены Сената',
+    'Doimiy komissiya a’zolari' => 'Члены постоянной комиссии',
     'Deputatlar tarkibi' => 'Состав депутатов',
     'Kotibiyat mudirlari' => 'Менеджеры секретариата',
     'Qabul qilingan qarorlar' => 'Принятые решения',

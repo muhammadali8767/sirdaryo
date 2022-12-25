@@ -75,6 +75,8 @@
             <p class="end-text">
                 © <span class="current-year">@php date('Y') @endphp</span> <a href="https://itlive.uz" class="producer">IT-Live</a>.
                 @lang('footer.rights')
+                © <span class="current-year">@php date('Y') @endphp</span>
+                    @lang('footer.sayt', ['site' => '<a href="https://itlive.uz" class="producer">ITLIVE.UZ</a>'])
             </p>
         </div>
     </div>
