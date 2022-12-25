@@ -73,9 +73,10 @@
     <div class="footer-end">
         <div class="container">
             <p class="end-text">
-                © <span class="current-year">2022</span> <a href="https://itlive.uz" class="producer">IT-Live</a>.
-                All
-                rights reserved.
+                © <span class="current-year">2022</span> <a href="https://itlive.uz" class="producer">
+                    @lang('footer.sayt')
+                    </a>.
+
             </p>
         </div>
     </div>

@@ -30,7 +30,7 @@
                 <li class="header__navbar_item">
                     @lang('menu.Mahalliy Kengash')
                     <ul>
-                        <li><a href="{{ route('senators') }}">@lang('menu.Senat azolari')</a></li>
+                        <li><a href="{{ route('senators') }}">@lang('menu.Doimiy komissiya a’zolari')</a></li>
                         <li><a href="{{ route('deputats') }}">@lang('menu.Deputatlar tarkibi')</a></li>
                         <li><a href="{{ route('kotibs') }}">@lang('menu.Kotibiyat mudirlari')</a></li>
                         <li><a href="{{ route('decrees') }}">@lang('menu.Qabul qilingan qarorlar')</a></li>
@@ -53,7 +53,7 @@
                     <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                 </li>
                 <li class="header__navbar_item">
-                    <a href="{{ route('openDatas') }}">@lang('menu.Ochiq malumotlar')</a>
+                    <a href="{{ route('openDatas') }}" home-link>@lang('menu.Ochiq malumotlar')</a>
                 </li>
             </ul>
 
@@ -83,7 +83,7 @@
                         <li class="header__navbar_item">
                             @lang('menu.Mahalliy Kengash')
                             <ul>
-                                <li><a href="{{ route('senators') }}">@lang('menu.Senat azolari')</a></li>
+                                <li><a href="{{ route('senators') }}">@lang('menu.Doimiy komissiya a’zolari')</a></li>
                                 <li><a href="{{ route('deputats') }}">@lang('menu.Deputatlar tarkibi')</a></li>
                                 <li><a href="{{ route('kotibs') }}">@lang('menu.Kotibiyat mudirlari')</a></li>
                                 <li><a href="{{ route('decrees') }}">@lang('menu.Qabul qilingan qarorlar')</a></li>
@@ -109,7 +109,7 @@
                             <a href="{{ route('contact') }}" home-link>@lang("menu.Aloqa")</a>
                         </li>
                         <li class="header__navbar_item">
-                            <a href="{{ route('openDatas') }}">@lang('menu.Ochiq malumotlar')</a>
+                            <a href="{{ route('openDatas') }}" home-link>@lang('menu.Ochiq malumotlar')</a>
                         </li>
                     </ul>
                 </div>

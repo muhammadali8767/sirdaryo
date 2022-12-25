@@ -19,7 +19,7 @@ return [
     'Hokimga murojaat' => 'Hokimga murojaat',
     'Fuqarolarni qabul qilish tartibi' => 'Fuqarolarni qabul qilish tartibi',
     'Korupsiya' => 'Korupsiyaga qarshi',
-    'Senat azolari' => 'Senat a\'zolari',
+    'Doimiy komissiya a’zolari' => 'Doimiy komissiya a’zolari',
     'Deputatlar tarkibi' => 'Deputatlar tarkibi',
     'Kotibiyat mudirlari' => 'Kotibiyat mudirlari',
     'Qabul qilingan qarorlar' => 'Qabul qilingan qarorlar',

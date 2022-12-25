@@ -37,7 +37,8 @@
         @endforeach
     </table>
 
-   
+    @include('layouts.components.copy')
+
 </div>
 
 @endsection
