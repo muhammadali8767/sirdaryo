@@ -1,8 +1,6 @@
 <?php
 
 return [
-    'raqamlarda' => 'Сардобинский район в цифрах',
-
     'batafsil' => 'Подробно',
     'Biografiya' => 'Биография',
     'Majburiyatlar' => 'Обязательства',

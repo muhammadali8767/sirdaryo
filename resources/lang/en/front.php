@@ -1,8 +1,6 @@
 <?php
 
 return [
-    'raqamlarda' => 'Sardoba district administration',
-
     'batafsil' => 'More',
     'Biografiya' => 'Biography',
     'Majburiyatlar' => 'Obligations',
