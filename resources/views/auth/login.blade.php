@@ -1,7 +1,7 @@
 @extends('layouts.loginlayout')
 
 @section('content')
-<p class="login-box-msg"> {{ __('Войдите, чтобы начать сеанс') }}</p>
+<p class="login-box-msg"> <a href="https://itlive.uz" target="_blank">IT Live</a> ADMIN</p>
 
 <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -56,7 +56,7 @@
 </a>
 @endif
 
-<p class="mb-0">
+{{-- <p class="mb-0">
     <a href="{{ route('register') }}" class="text-center">Зарегистрируйтесь</a>
-</p>
+</p> --}}
 @endsection
