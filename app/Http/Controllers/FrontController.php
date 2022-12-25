@@ -29,12 +29,11 @@ class FrontController extends Controller
     {
         $carousels = Post::where('is_carousel', 1)->orderBy('created_at', 'DESC')->with('category')->limit(3)->get();
         $latestPosts = Post::orderBy('created_at', 'DESC')->with('category')->limit(2)->get();
-        $photos = Media::where('type', 'photo')->limit(9)->get();
-        $videos = Media::where('type', 'video')->limit(9)->get();
-        $contacts = Contact::get();
-
+        $photos = Media::where('type', 'photo')->limit(9)->orderBy('id', 'desc')->get();
+        $videos = Media::where('type', 'video')->limit(9)->orderBy('id', 'desc')->get();
         $inNumbers = InNumbers::where('is_active', true)->get();
 
+        $contacts = Contact::select('seen')->get();
         $statistics = [
             'all' => $contacts->count(),
             'seen' => $contacts->where('seen', 1)->count(),
@@ -103,8 +102,8 @@ class FrontController extends Controller
 
     public function multimedia()
     {
-        $photos = Media::where('type', 'photo')->limit(9)->get();
-        $videos = Media::where('type', 'video')->limit(9)->get();
+        $photos = Media::where('type', 'photo')->get();
+        $videos = Media::where('type', 'video')->get();
 
         return view('front.multimedia', compact('photos', 'videos'));
     }

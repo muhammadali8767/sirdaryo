@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/front/libs/slick/slick-theme.css">
     <link rel="stylesheet" href="/front/libs/slick/slick.css">
     <link rel="stylesheet" href="/front/libs/bootstrap.min.css">
-    <title>Boyovut tuman hokimligi</title>
+    <title>@lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_logo")</title>
     <link rel="stylesheet" href="/front/css/all.min.css">
     <link rel="stylesheet" href="/front/css/main.css">
     <link rel="stylesheet" href="/front/css/media.css">
@@ -39,7 +39,6 @@
 
     <!-- ======== Header Start  ======== -->
     @include('layouts.components.top')
-    {{-- @include('layouts.components.carousel') --}}
     @include('layouts.components.menu')
     <!-- ======== Header End    ======== -->
 
@@ -83,7 +82,7 @@
         }
     </script>
 
-    <script src="//code.jivo.ru/widget/Lq0o5m5DZ1" async></script>
+    @lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_jivo")
 </body>
 
 </html>

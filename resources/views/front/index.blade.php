@@ -35,8 +35,7 @@
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a href="{{ route('category_post', [$carousel->category->slug, $carousel->slug]) }}"
-                                                            class="news-short-title marked-links">
+                                                        <a href="{{ route('category_post', [$carousel->category->slug, $carousel->slug]) }}" class="news-short-title marked-links">
                                                             {{ $carousel->title }}
                                                         </a>
                                                         <p class="news-description">
@@ -69,8 +68,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <a href="{{ route('category_post', [$post->category->slug, $post->slug]) }}"
-                                                class="news-short-title">
+                                            <a href="{{ route('category_post', [$post->category->slug, $post->slug]) }}" class="news-short-title">
                                                 {{ $post->title }}
                                             </a>
                                             <p class="news-description">
@@ -175,7 +173,7 @@
     <!-- statistic numbers section start -->
     <section class="numbers">
         <div class="container">
-            <h2 class="section-title">@lang('front.raqamlarda')</h2>
+            <h2 class="section-title">@lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_raqamlarda")</h2>
             <div class="row">
                 @foreach ($inNumbers as $inNumber)
                     <div class="col-6 col-md-6 col-xl-2">

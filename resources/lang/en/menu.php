@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'logo' => 'BOYOVUT DISTRICT GOVERNMENT',
     'Bosh sahifa' => 'Homepage',
-    'location' => '5th house, Jaykhun street, "Izhytov" neighborhood, Boyovut district',
     'qabul vaqtlari' => 'Monday - Friday, 9:00 - 18:00, Lunch 13:00 - 14:00',
     'kozi ojizlar' => 'For the blind',
     'Tashqi korinish' => 'Appearance',

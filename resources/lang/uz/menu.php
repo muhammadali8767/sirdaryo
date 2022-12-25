@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'logo' => 'Boyovut tumani hokimligi',
     'Bosh sahifa' => 'Bosh sahifa',
-    'location' => 'Boyovut tumani "Ijodkor" mahallasi Jayxun ko\'chasi 5-uy',
     'qabul vaqtlari' => 'Dushanba - Juma, 9:00 - 18:00, Tushlik 13:00-14:00',
     'kozi ojizlar' => 'Ko\'zi ojizlar uchun',
     'Tashqi korinish' => 'вид',
