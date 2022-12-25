@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Contact;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\StaticPage;
@@ -16,17 +17,16 @@ class HomeController extends Controller
         $posts_count = Post::all()->count();
         $categories_count = Category::all()->count();
         $users_count = User::all()->count();
-        $pages_count = StaticPage::all()->count();
-
-        $last_posts = Post::orderBy('id')->limit(5)->get();
-        $last_pages = StaticPage::orderBy('id')->limit(5)->get();
+        $contact_count = Contact::where('seen', 0)->count();
+        $last_posts = Post::orderBy('id', 'desc')->limit(5)->get();
+        $last_pages = StaticPage::orderBy('id', 'desc')->limit(5)->get();
 
         return view('admin.home.index',
             compact(
                 'posts_count',
                 'categories_count',
                 'users_count',
-                'pages_count',
+                'contact_count',
                 'last_posts',
                 'last_pages',
             )

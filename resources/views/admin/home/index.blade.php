@@ -79,14 +79,14 @@
                     <!-- small box -->
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <h3>{{ $pages_count }}</h3>
+                            <h3>{{ $contact_count }}</h3>
 
-                            <p>Статические страницы</p>
+                            <p>Непрочитанные заявки</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-document-text"></i>
                         </div>
-                        <a href="{{ route('pages.index') }}" class="small-box-footer">Все страницы <i
+                        <a href="{{ route('contact.index') }}" class="small-box-footer">Все заявки <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>

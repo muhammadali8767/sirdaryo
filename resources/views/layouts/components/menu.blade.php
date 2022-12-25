@@ -30,7 +30,8 @@
                 <li class="header__navbar_item">
                     @lang('menu.Mahalliy Kengash')
                     <ul>
-                        <li><a href="{{ route('senators') }}">@lang('menu.Doimiy komissiya a’zolari')</a></li>
+                        <li><a href="{{ route('page', App\Models\StaticPage::find(20)->slug) }}">{{ App\Models\StaticPage::find(20)->title }}</a></li>
+                        {{-- <li><a href="{{ route('senators') }}">@lang('menu.Doimiy komissiya a’zolari')</a></li> --}}
                         <li><a href="{{ route('deputats') }}">@lang('menu.Deputatlar tarkibi')</a></li>
                         <li><a href="{{ route('kotibs') }}">@lang('menu.Kotibiyat mudirlari')</a></li>
                         <li><a href="{{ route('decrees') }}">@lang('menu.Qabul qilingan qarorlar')</a></li>
