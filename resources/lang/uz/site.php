@@ -96,11 +96,11 @@ return [
 
     // GULISTON TUMANI
 
-    'gulistantumani.uz_phone' => '+998 (67) 796-32-23',
-    'gulistantumani.uz_phone_call' => '+998677963223',
-    'gulistantumani.uz_map' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97105.10996704247!2d68.82879235757032!3d40.485558077906965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b1fd0060ede8cd%3A0xc94e119bb12730ed!2sGuliston%20tumani%20hokimligi!5e0!3m2!1suz!2s!4v1670317161956!5m2!1suz!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-    'gulistantumani.uz_social' =>'<a href="https://www.facebook.com/Gulistontumanhokimligi"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-instagram"></i></a><a href="https://t.me/guliston_t_press"><i class="fab fa-telegram"></i></a><a href=""><i class="fab fa-youtube"></i></a>',
-    'gulistantumani.uz_jivo' =>'<script src="//code.jivo.ru/widget/aGhB1phynr" async></script>',
+    'gulistontumani.uz_phone' => '+998 (67) 796-32-23',
+    'gulistontumani.uz_phone_call' => '+998677963223',
+    'gulistontumani.uz_map' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97105.10996704247!2d68.82879235757032!3d40.485558077906965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b1fd0060ede8cd%3A0xc94e119bb12730ed!2sGuliston%20tumani%20hokimligi!5e0!3m2!1suz!2s!4v1670317161956!5m2!1suz!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    'gulistontumani.uz_social' =>'<a href="https://www.facebook.com/Gulistontumanhokimligi"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-instagram"></i></a><a href="https://t.me/guliston_t_press"><i class="fab fa-telegram"></i></a><a href=""><i class="fab fa-youtube"></i></a>',
+    'gulistontumani.uz_jivo' =>'<script src="//code.jivo.ru/widget/aGhB1phynr" async></script>',
     // https://app.jivo.ru/join.html?token=a6aff9b398f3b73f2dd32e1d7874abc3.2132806
 
 ];
