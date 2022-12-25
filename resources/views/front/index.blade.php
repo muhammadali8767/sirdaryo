@@ -176,7 +176,7 @@
             <h2 class="section-title">@lang("site.". str_replace(['http://', 'https://'], '', url('/')) ."_raqamlarda")</h2>
             <div class="row">
                 @foreach ($inNumbers as $inNumber)
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class="col-12 col-md-3 col-xl-2">
                     <div class="numbers-box">
                         <div class="numbers-info">
                             <div class="numbers-img">
