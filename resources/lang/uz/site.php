@@ -45,8 +45,8 @@ return [
     // ---------------------------------------------------------------------------------------
     
      'sirdarya.uz_raqamlarda' => 'Sirdaryo tumani raqamlarda',
-     'gulistontumani.uz_logo' => 'Sirdaryo tumani hokimligi',
-     'gulistontumani.uz_location' => 'Sirdaryo tumani,  Oʼzbekiston  koʼchasi, 98-uy',
+     'sirdarya.uz_logo' => 'Sirdaryo tumani hokimligi',
+     'sirdarya.uz_location' => 'Sirdaryo tumani,  Oʼzbekiston  koʼchasi, 98-uy',
     
       // ---------------------------------------------------------------------------------------
 
